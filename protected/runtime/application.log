@@ -1032,3 +1032,325 @@ Stack trace:
 REQUEST_URI=/yii2/Reserva-camas/index.php/dependencia/admin
 HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/sala/admin
 ---
+2014/10/15 07:06:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mydb`.`paciente`, CONSTRAINT `fk_paciente_cama1` FOREIGN KEY (`pac_cam_id`) REFERENCES `cama` (`cam_id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `paciente` (`pac_categoria`, `pac_estado`, `pac_cam_id`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\PacienteController.php (73)
+in C:\xampp\htdocs\Yii2\Reserva-camas\index.php (13)
+2014/10/15 07:06:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mydb`.`paciente`, CONSTRAINT `fk_paciente_cama1` FOREIGN KEY (`pac_cam_id`) REFERENCES `cama` (`cam_id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `paciente` (`pac_categoria`, `pac_estado`, `pac_cam_id`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\Yii2\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\Yii2\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\PacienteController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(49): PacienteController->actionCreate()
+#4 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('paciente/create')
+#14 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php?r=paciente/create
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php?r=paciente/create
+---
+2014/10/15 07:06:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mydb`.`paciente`, CONSTRAINT `fk_paciente_cama1` FOREIGN KEY (`pac_cam_id`) REFERENCES `cama` (`cam_id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `paciente` (`pac_categoria`, `pac_estado`, `pac_cam_id`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\PacienteController.php (73)
+in C:\xampp\htdocs\Yii2\Reserva-camas\index.php (13)
+2014/10/15 07:06:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mydb`.`paciente`, CONSTRAINT `fk_paciente_cama1` FOREIGN KEY (`pac_cam_id`) REFERENCES `cama` (`cam_id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `paciente` (`pac_categoria`, `pac_estado`, `pac_cam_id`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\Yii2\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\Yii2\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\PacienteController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(49): PacienteController->actionCreate()
+#4 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('paciente/create')
+#14 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php?r=paciente/create
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php?r=paciente/create
+---
+2014/10/15 07:29:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('paciente/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/paciente/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/site/contact
+---
+2014/10/15 07:29:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('sala/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/sala/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/paciente/admin
+---
+2014/10/15 07:29:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('cama/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/cama/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/sala/admin
+---
+2014/10/15 07:29:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('cama/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/cama/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/cama/admin
+---
+2014/10/15 07:29:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/usuario/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/cama/admin
+---
+2014/10/15 07:29:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('antecedentes/ad...')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/antecedentes/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/usuario/admin
+---
+2014/10/15 07:29:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/usuario/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/antecedentes/admin
+---
+2014/10/15 07:29:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('antecedentes/ad...')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/antecedentes/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/usuario/admin
+---
+2014/10/15 07:29:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('cama/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/cama/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/antecedentes/admin
+---
+2014/10/15 07:29:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('sala/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/sala/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/cama/admin
+---
+2014/10/15 07:29:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('paciente/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/paciente/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/sala/admin
+---
+2014/10/15 07:29:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('paciente/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/paciente/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/paciente/admin
+---
+2014/10/15 07:29:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('sala/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/sala/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/paciente/admin
+---
+2014/10/15 07:29:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('cama/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/cama/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/sala/admin
+---
+2014/10/15 07:29:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/usuario/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/cama/admin
+---
+2014/10/15 07:29:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\Yii2\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Yii2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Yii2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('antecedentes/ad...')
+#9 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii2/reserva-camas/index.php/antecedentes/admin
+HTTP_REFERER=http://127.0.0.1/yii2/reserva-camas/index.php/usuario/admin
+---

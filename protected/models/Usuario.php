@@ -36,7 +36,7 @@ class Usuario extends CActiveRecord
 			array('usu_apellidoMat, usu_apellidoPat', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('usu_id, usu_nombre, usu_apellidoMat, usu_apellidoPat, usu_rut, usu_especialidad, usu_password, usu_username', 'safe', 'on'=>'search'),
+			array('usu_nombre, usu_apellidoMat, usu_apellidoPat, usu_rut, usu_especialidad', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,13 +58,13 @@ class Usuario extends CActiveRecord
 	{
 		return array(
 			'usu_id' => 'Usu',
-			'usu_nombre' => 'Usu Nombre',
-			'usu_apellidoMat' => 'Usu Apellido Mat',
-			'usu_apellidoPat' => 'Usu Apellido Pat',
-			'usu_rut' => 'Usu Rut',
-			'usu_especialidad' => 'Usu Especialidad',
-			'usu_password' => 'Usu Password',
-			'usu_username' => 'Usu Username',
+			'usu_nombre' => 'Nombre de usuario',
+			'usu_apellidoMat' => 'Apellido paterno de usuario',
+			'usu_apellidoPat' => 'Apellido materno de usuario',
+			'usu_rut' => 'Rut de usuario',
+			'usu_especialidad' => 'Especialidad del usuario',
+			'usu_password' => 'Contraseña del usuario',
+			'usu_username' => 'Nombre cuenta del usuario',
 		);
 	}
 

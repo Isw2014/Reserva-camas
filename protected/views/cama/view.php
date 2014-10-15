@@ -9,6 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	//array('label'=>'Volver a Administrar', 'url'=>array('index')),
+	array('label'=>'Volver a Inicio', 'url'=>array('site/index')),
 	array('label'=>'Agregar Cama', 'url'=>array('create')),
 	array('label'=>'Actualizar Cama', 'url'=>array('update', 'id'=>$model->cam_id)),
 	array('label'=>'Eliminar Cama', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cam_id),'confirm'=>'Are you sure you want to delete this item?')),

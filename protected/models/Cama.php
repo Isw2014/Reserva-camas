@@ -36,7 +36,7 @@ class Cama extends CActiveRecord
 			array('cam_sal_id', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('cam_id, cam_numero, cam_estado, cam_sal_id', 'safe', 'on'=>'search'),
+			array('cam_numero, cam_estado, cam_sal_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,7 +59,7 @@ class Cama extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cam_id' => 'id Cam',
+			'cam_id' => 'id Cama',
 			'cam_numero' => 'Número de la cama',
 			'cam_estado' => 'Estado de la cama',
 			'cam_sal_id' => 'Sala a la que pertenece',

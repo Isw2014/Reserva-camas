@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Volver a Home', 'url'=>array('site/index')),
+	array('label'=>'Volver a Inicio', 'url'=>array('site/index')),
 	array('label'=>'Lista de Salas', 'url'=>array('index')),
 	array('label'=>'Administrar Salas', 'url'=>array('admin')),
 );
