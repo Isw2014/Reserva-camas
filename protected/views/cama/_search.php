@@ -11,10 +11,10 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
+	<!--<div class="row">
 		<?php echo $form->label($model,'cam_id'); ?>
 		<?php echo $form->textField($model,'cam_id',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
+	</div>-->
 
 	<div class="row">
 		<?php echo $form->label($model,'cam_numero'); ?>
@@ -32,7 +32,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Buscar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
