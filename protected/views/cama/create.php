@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	//array('label'=>'List Cama', 'url'=>array('index')),
-	array('label'=>'Volver a Inicio', 'url'=>array('site/index')),
+	array('label'=>'Cancelar', 'url'=>array('admin')),
 );
 ?>
 

@@ -8,12 +8,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Volver a Inicio', 'url'=>array('site/index')),
-	array('label'=>'Lista de Salas', 'url'=>array('index')),
-	array('label'=>'Agregar Sala', 'url'=>array('create')),
 	array('label'=>'Actualizar Sala', 'url'=>array('update', 'id'=>$model->sal_id)),
-	array('label'=>'Borrar Sala', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->sal_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Administrar Sala', 'url'=>array('admin')),
+	array('label'=>'Borrar Sala', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->sal_id),'confirm'=>'¿Esta seguro de borrar esta sala?')),
+	array('label'=>'Ver Camas', 'url'=>array('//cama/admin', 'id'=>$model->sal_id)),
+	array('label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 

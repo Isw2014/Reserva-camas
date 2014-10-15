@@ -10,10 +10,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	//array('label'=>'Lista Camas', 'url'=>array('index')),
-	array('label'=>'Volver a Inicio', 'url'=>array('site/index')),
-	array('label'=>'Crear Cama', 'url'=>array('create')),
-	array('label'=>'Ver Cama', 'url'=>array('view', 'id'=>$model->cam_id)),
-	array('label'=>'Administrar Cama', 'url'=>array('admin')),
+	array('label'=>'Cancelar', 'url'=>array('admin')),
 );
 ?>
 

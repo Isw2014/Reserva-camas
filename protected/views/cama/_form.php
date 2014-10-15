@@ -31,11 +31,12 @@
 		<?php echo $form->error($model,'cam_estado'); ?>
 	</div>
 
-	<div class="row">
+	<!--<div class="row">
 		<?php echo $form->labelEx($model,'cam_sal_id'); ?>
 		<?php echo $form->textField($model,'cam_sal_id',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'cam_sal_id'); ?>
 	</div>
+-->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Agregar' : 'Save'); ?>

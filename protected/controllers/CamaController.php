@@ -133,6 +133,7 @@ class CamaController extends Controller
 	 */
 	public function actionAdmin()
 	{
+
 		$model=new Cama('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Cama']))
