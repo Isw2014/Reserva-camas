@@ -63,8 +63,8 @@ class Paciente extends CActiveRecord
 	{
 		return array(
 			'pac_id' => 'Pac',
-			'pac_categoria' => 'Pac Categoria',
-			'pac_estado' => 'Pac Estado',
+			'pac_categoria' => 'Categoria',
+			'pac_estado' => 'Estado',
 			'pac_cam_id' => 'Pac Cam',
 		);
 	}
