@@ -5,11 +5,11 @@
 
 $this->pageTitle=Yii::app()->name . ' - Contactenos';
 $this->breadcrumbs=array(
-	'Contactenos',
+	'Contáctenos',
 );
 ?>
 
-<h1>Contactenos</h1>
+<h1>Contáctenos</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
