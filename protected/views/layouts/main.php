@@ -34,10 +34,9 @@
 				array('label'=>'Acerca de Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contactenos', 'url'=>array('/site/contact')),
 				array('label'=>'Pacientes', 'url'=>array('/paciente/admin')),
-				array('label'=>'Salas', 'url'=>array('/sala/admin')),
-				array('label'=>'Dependencia', 'url'=>array('/dependencia/admin')),
+				array('label'=>'Salas', 'url'=>array('/sala/admin')),				
 				array('label'=>'Usuario', 'url'=>array('/usuario/admin')),
-				array('label'=>'Riesgo', 'url'=>array('/riesgo/admin')),
+				array('label'=>'Antecedentes', 'url'=>array('/antecedentes/admin')),
 				array('label'=>'Camas', 'url'=>array('/cama/admin')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)

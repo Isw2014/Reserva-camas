@@ -4,12 +4,13 @@
 
 $this->breadcrumbs=array(
 	'Salas'=>array('index'),
-	'Manage',
+	'Administrar',
 );
 
 $this->menu=array(
-	array('label'=>'List Sala', 'url'=>array('index')),
-	array('label'=>'Create Sala', 'url'=>array('create')),
+	array('label'=>'Volver a Home', 'url'=>array('site/index')),
+	array('label'=>'Lista de Salas', 'url'=>array('index')),
+	array('label'=>'Agregar Sala', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,14 +27,9 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Salas</h1>
+<h1>Administrar Salas</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<!--<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>-->
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
@@ -45,10 +41,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'sal_id',
+		//'sal_id',
+		'sal_numeroSala',
 		'sal_camasTotales',
 		'sal_camasLibres',
-		'sal_numeroSala',
+		
 		array(
 			'class'=>'CButtonColumn',
 		),

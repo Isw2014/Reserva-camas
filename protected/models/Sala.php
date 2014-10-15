@@ -57,9 +57,10 @@ class Sala extends CActiveRecord
 	{
 		return array(
 			'sal_id' => 'Sal',
-			'sal_camasTotales' => 'Sal Camas Totales',
-			'sal_camasLibres' => 'Sal Camas Libres',
-			'sal_numeroSala' => 'Sal Numero Sala',
+			'sal_numeroSala' => 'Número de Sala',
+			'sal_camasTotales' => 'Total de Camas',
+			'sal_camasLibres' => 'Total Camas Libres',
+			
 		);
 	}
 
