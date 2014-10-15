@@ -3,40 +3,27 @@
 /* @var $model Paciente */
 
 $this->breadcrumbs=array(
-	'Pacientes'=>array('index'),
-	'Manage',
+	'Pacientes',
 );
 
 $this->menu=array(
-	array('label'=>'List Paciente', 'url'=>array('index')),
-	array('label'=>'Create Paciente', 'url'=>array('create')),
+	array('icon' => 'glyphicon glyphicon-plus-sign','label'=>'Agregar Paciente', 'url'=>array('create')),
+	array('icon' => 'glyphicon glyphicon-plus-sign','label'=>'Volver', 'url'=>array('//site/index')),
 );
 
 ?>
 
-<h1>Manage Pacientes</h1>
-
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+<h1>Administrar pacientes</h1>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'paciente-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'pac_id',
+		//'pac_id',
 		'pac_categoria',
 		'pac_estado',
-		'pac_cam_id',
+		//'pac_cam_id',
 		array(
 			'class'=>'CButtonColumn',
 		),
