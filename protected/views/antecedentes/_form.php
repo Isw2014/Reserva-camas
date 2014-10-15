@@ -68,18 +68,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'ant_fecha'); ?>
-		<?php echo $form->textField($model,'ant_fecha'); ?>
-		<?php echo $form->error($model,'ant_fecha'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'ant_pac_id'); ?>
-		<?php echo $form->textField($model,'ant_pac_id',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'ant_pac_id'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'ant_cambioRopa'); ?>
 		<?php echo $form->textField($model,'ant_cambioRopa'); ?>
 		<?php echo $form->error($model,'ant_cambioRopa'); ?>
@@ -113,6 +101,12 @@
 		<?php echo $form->labelEx($model,'ant_vigilancia'); ?>
 		<?php echo $form->textField($model,'ant_vigilancia'); ?>
 		<?php echo $form->error($model,'ant_vigilancia'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'ant_fecha'); ?>
+		<?php echo $form->textField($model,'ant_fecha'); ?>
+		<?php echo $form->error($model,'ant_fecha'); ?>
 	</div>
 
 	<div class="row buttons">

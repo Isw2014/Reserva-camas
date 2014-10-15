@@ -1,14 +1,17 @@
 <?php
 /* @var $this AntecedentesController */
 /* @var $model Antecedentes */
+$modelo=new Paciente();
+$modelo->pac_id=$_GET['id'];
 
 $this->breadcrumbs=array(
 	'Pacientes'=>array('//paciente/admin'),
+	$modelo->pac_id=>array('//paciente/view','id'=>$modelo->pac_id),
 	'antecedentes'
 );
 
 $this->menu=array(
-	array('label'=>'Agregar Antecedentes', 'url'=>array('create')),
+	array('label'=>'Agregar Antecedentes', 'url'=>array('create','id'=>$modelo->pac_id)),
 	array('label'=>'Volver', 'url'=>array('//paciente/admin')),
 );?>
 

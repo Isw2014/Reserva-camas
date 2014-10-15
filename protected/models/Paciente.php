@@ -62,10 +62,10 @@ class Paciente extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'pac_id' => 'Pac',
+			'pac_id' => 'Paciente',
 			'pac_categoria' => 'Categoria',
 			'pac_estado' => 'Estado',
-			'pac_cam_id' => 'Pac Cam',
+			'pac_cam_id' => 'Cama de paciente',
 		);
 	}
 
