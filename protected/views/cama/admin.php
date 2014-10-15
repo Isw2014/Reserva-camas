@@ -9,8 +9,9 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	//array('label'=>'Lista Cama', 'url'=>array('index')),
+	array('label'=>'Volver a Inicio', 'url'=>array('site/index')),
 	array('label'=>'Agregar Camas', 'url'=>array('create')),
-	array('label'=>'Volver','url'=>array('site/index')),
+	
 );
 
 Yii::app()->clientScript->registerScript('search', "

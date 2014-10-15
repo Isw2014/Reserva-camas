@@ -3,11 +3,11 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Salas',
+	'Lista de Salas',
 );
 
 $this->menu=array(
-	array('label'=>'Volver a Home', 'url'=>array('site/index')),
+	array('label'=>'Volver a Inicio', 'url'=>array('site/index')),
 	array('label'=>'Agregar Sala', 'url'=>array('create')),
 	array('label'=>'Administrar Salas', 'url'=>array('admin')),
 );

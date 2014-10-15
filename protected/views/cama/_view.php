@@ -20,6 +20,5 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('cam_sal_id')); ?>:</b>
 	<?php echo CHtml::encode($data->cam_sal_id); ?>
 	<br />
-el juano se la come
 
 </div>
