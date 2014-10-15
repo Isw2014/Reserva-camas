@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Camas'=>array('index'),
-	'Create',
+	'Agregar',
 );
 
 $this->menu=array(
-	array('label'=>'List Cama', 'url'=>array('index')),
-	array('label'=>'Manage Cama', 'url'=>array('admin')),
+	//array('label'=>'List Cama', 'url'=>array('index')),
+	array('label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Cama</h1>
+<h1>Agregar Cama</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

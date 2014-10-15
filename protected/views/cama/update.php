@@ -5,17 +5,17 @@
 $this->breadcrumbs=array(
 	'Camas'=>array('index'),
 	$model->cam_id=>array('view','id'=>$model->cam_id),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Cama', 'url'=>array('index')),
-	array('label'=>'Create Cama', 'url'=>array('create')),
-	array('label'=>'View Cama', 'url'=>array('view', 'id'=>$model->cam_id)),
-	array('label'=>'Manage Cama', 'url'=>array('admin')),
+	//array('label'=>'Lista Camas', 'url'=>array('index')),
+	array('label'=>'Crear Cama', 'url'=>array('create')),
+	array('label'=>'Ver Cama', 'url'=>array('view', 'id'=>$model->cam_id)),
+	array('label'=>'Administrar Cama', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Cama <?php echo $model->cam_id; ?></h1>
+<h1>Actualizar Cama <?php echo $model->cam_id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
