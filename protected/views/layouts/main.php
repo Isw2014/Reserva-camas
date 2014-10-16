@@ -32,10 +32,9 @@
 			'items'=>array(
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
 				array('label'=>'Pacientes', 'url'=>array('/paciente/admin')),
-				array('label'=>'Salas', 'url'=>array('/sala/admin')),	
-				//array('label'=>'Camas', 'url'=>array('/cama/admin')),			
+				array('label'=>'Salas', 'url'=>array('/sala/admin')),						
 				array('label'=>'Usuario', 'url'=>array('/usuario/admin')),
-				//array('label'=>'Antecedentes', 'url'=>array('/antecedentes/admin')),				
+				array('label'=>'Especialidad', 'url'=>array('/Especialidad/admin')),								
 				array('label'=>'Contáctenos', 'url'=>array('/site/contact')),
 				array('label'=>'Acerca de Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),

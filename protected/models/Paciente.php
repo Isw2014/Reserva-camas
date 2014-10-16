@@ -32,13 +32,13 @@ class Paciente extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('pac_cam_id', 'required'),
-			array('pac_categoria', 'length', 'max'=>45),
+			array('pac_cam_id, pac_esp_id', 'required'),
+			array('pac_esp_id', 'length', 'max'=>45),
 			array('pac_estado', 'length', 'max'=>20),
 			array('pac_cam_id', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('pac_id, pac_categoria, pac_estado, pac_cam_id', 'safe', 'on'=>'search'),
+			array('pac_id, pac_estado, pac_cam_id, pac_esp_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,9 +50,10 @@ class Paciente extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'dependencias' => array(self::HAS_MANY, 'Dependencia', 'dep_pac_id'),
+			
 			'pacCam' => array(self::BELONGS_TO, 'Cama', 'pac_cam_id'),
-			'riesgos' => array(self::HAS_MANY, 'Riesgo', 'rie_pac_id'),
+			'pacEsp' => array(self::BELONGS_TO, 'Cama', 'pac_esp_id'),
+			
 		);
 	}
 
@@ -63,9 +64,9 @@ class Paciente extends CActiveRecord
 	{
 		return array(
 			'pac_id' => 'Paciente',
-			'pac_categoria' => 'Categoria',
 			'pac_estado' => 'Estado',
 			'pac_cam_id' => 'Cama de paciente',
+			'pac_esp_id' => 'Especialidad de Paciente',
 		);
 	}
 
@@ -87,10 +88,10 @@ class Paciente extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('pac_id',$this->pac_id,true);
-		$criteria->compare('pac_categoria',$this->pac_categoria,true);
+		$criteria->compare('pac_id',$this->pac_id,true);		
 		$criteria->compare('pac_estado',$this->pac_estado,true);
 		$criteria->compare('pac_cam_id',$this->pac_cam_id,true);
+		$criteria->compare('pac_esp_id',$this->pac_esp_id,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

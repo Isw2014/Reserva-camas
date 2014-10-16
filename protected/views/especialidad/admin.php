@@ -1,16 +1,15 @@
 <?php
-/* @var $this UsuarioController */
-/* @var $model Usuario */
+/* @var $this EspecialidadController */
+/* @var $model Especialidad */
 
 $this->breadcrumbs=array(
-	'Usuarios'=>array('index'),
-	'Administrar Usuarios',
+	'Especialidades'=>array('index'),
+	'Administrar',
 );
 
 $this->menu=array(
-	
-	array('label'=>'Lista de Usuario', 'url'=>array('index')),
-	array('label'=>'Agregar Usuario', 'url'=>array('create')),
+	array('label'=>'Lista de Especialidades', 'url'=>array('index')),
+	array('label'=>'Agregar Especialidad', 'url'=>array('create')),
 	array('label'=>'Volver', 'url'=>array('site/index')),
 );
 
@@ -20,7 +19,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$('#usuario-grid').yiiGridView('update', {
+	$('#especialidad-grid').yiiGridView('update', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -28,7 +27,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Administrar Usuarios</h1>
+<h1>Administrar Especialidades</h1>
 
 
 <!--<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>-->
@@ -39,19 +38,13 @@ $('.search-form form').submit(function(){
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'usuario-grid',
+	'id'=>'especialidad-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		//'usu_id',
-		'usu_nombre',
-		'usu_apellidoMat',
-		'usu_apellidoPat',
-		'usu_rut',
-		/*'usu_esp_id',		
-		'usu_password',
-		'usu_username',
-		*/
+		//'esp_id',
+		'esp_nombre',
+		'esp_descripcion',
 		array(
 			'class'=>'CButtonColumn',
 		),

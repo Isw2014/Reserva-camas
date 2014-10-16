@@ -1,26 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "usuario".
+ * This is the model class for table "especialidad".
  *
- * The followings are the available columns in table 'usuario':
- * @property string $usu_id
- * @property string $usu_nombre
- * @property string $usu_apellidoMat
- * @property string $usu_apellidoPat
- * @property string $usu_rut
- * @property string $usu_especialidad
- * @property string $usu_password
- * @property string $usu_username
+ * The followings are the available columns in table 'especialidad':
+ * @property string $esp_id
+ * @property string $esp_nombre
+ * @property string $esp_descripcion
+ *
+ * The followings are the available model relations:
+ * @property Paciente[] $pacientes
+ * @property Usuario[] $usuarios
  */
-class Usuario extends CActiveRecord
+class Especialidad extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'usuario';
+		return 'especialidad';
 	}
 
 	/**
@@ -31,12 +30,11 @@ class Usuario extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('usu_apellidoMat, usu_apellidoPat, usu_password, usu_username', 'required'),
-			array('usu_nombre, usu_rut, usu_password, usu_username', 'length', 'max'=>45),
-			array('usu_apellidoMat, usu_apellidoPat', 'length', 'max'=>30),
+			array('esp_nombre', 'length', 'max'=>20),
+			array('esp_descripcion', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('usu_nombre, usu_apellidoMat, usu_apellidoPat, usu_rut, usu_esp_id', 'safe', 'on'=>'search'),
+			array('esp_nombre, esp_descripcion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -48,6 +46,8 @@ class Usuario extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'pacientes' => array(self::HAS_MANY, 'Paciente', 'pac_esp_id'),
+			'usuarios' => array(self::HAS_MANY, 'Usuario', 'usu_esp_id'),
 		);
 	}
 
@@ -57,14 +57,9 @@ class Usuario extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'usu_id' => 'Usu',
-			'usu_nombre' => 'Nombre de usuario',
-			'usu_apellidoMat' => 'Apellido paterno de usuario',
-			'usu_apellidoPat' => 'Apellido materno de usuario',
-			'usu_rut' => 'Rut de usuario',			
-			'usu_password' => 'Contraseña del usuario',
-			'usu_username' => 'Nombre cuenta del usuario',
-			'usu_esp_id' => 'Especialidad de Usuario',
+			'esp_id' => 'Esp',
+			'esp_nombre' => 'Nombre de Especialidad',
+			'esp_descripcion' => 'Descripción de Especialidad',
 		);
 	}
 
@@ -86,14 +81,9 @@ class Usuario extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('usu_id',$this->usu_id,true);
-		$criteria->compare('usu_nombre',$this->usu_nombre,true);
-		$criteria->compare('usu_apellidoMat',$this->usu_apellidoMat,true);
-		$criteria->compare('usu_apellidoPat',$this->usu_apellidoPat,true);
-		$criteria->compare('usu_rut',$this->usu_rut,true);	
-		$criteria->compare('usu_password',$this->usu_password,true);
-		$criteria->compare('usu_username',$this->usu_username,true);
-		$criteria->compare('usu_esp_id',$this->usu_esp_id,true);
+		$criteria->compare('esp_id',$this->esp_id,true);
+		$criteria->compare('esp_nombre',$this->esp_nombre,true);
+		$criteria->compare('esp_descripcion',$this->esp_descripcion,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -104,7 +94,7 @@ class Usuario extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Usuario the static model class
+	 * @return Especialidad the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

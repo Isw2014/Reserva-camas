@@ -37,8 +37,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'usu_especialidad'); ?>
-		<?php echo $form->textField($model,'usu_especialidad',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->label($model,'usu_esp_id'); ?>
+		<?php echo $form->textField($model,'usu_esp_id',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">

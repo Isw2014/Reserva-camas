@@ -21,9 +21,9 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'pac_categoria'); ?>
-		<?php echo $form->textField($model,'pac_categoria',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'pac_categoria'); ?>
+		<?php echo $form->labelEx($model,'pac_esp_id'); ?>
+		<?php echo $form->textField($model,'pac_esp_id',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'pac_esp_id'); ?>
 	</div>
 
 	<div class="row">

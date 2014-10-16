@@ -21,7 +21,7 @@ $this->menu=array(
 	'filter'=>$model,
 	'columns'=>array(
 		//'pac_id',
-		'pac_categoria',
+		'pac_esp_id',
 		'pac_estado',
 		//'pac_cam_id',
 		array(

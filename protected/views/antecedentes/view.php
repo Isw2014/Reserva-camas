@@ -8,20 +8,20 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Antecedentes', 'url'=>array('index')),
-	array('label'=>'Create Antecedentes', 'url'=>array('create')),
-	array('label'=>'Update Antecedentes', 'url'=>array('update', 'id'=>$model->ant_id)),
-	array('label'=>'Delete Antecedentes', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ant_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Antecedentes', 'url'=>array('admin')),
+	array('label'=>'Lista de Antecedentes', 'url'=>array('index')),
+	array('label'=>'Agregar Antecedentes', 'url'=>array('create')),
+	array('label'=>'Actualizar Antecedentes', 'url'=>array('update', 'id'=>$model->ant_id)),
+	array('label'=>'Eliminar Antecedentes', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ant_id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Antecedentes', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Antecedentes #<?php echo $model->ant_id; ?></h1>
+<h1>Detalles Antecedentes #<?php echo $model->ant_id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'ant_id',
+		//'ant_id',
 		'ant_control',
 		'ant_balance',
 		'ant_cuidadoOxigenoterapia',
