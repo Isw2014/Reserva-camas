@@ -36,7 +36,7 @@ class Usuario extends CActiveRecord
 			array('usu_apellidoMat, usu_apellidoPat', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('usu_nombre, usu_apellidoMat, usu_apellidoPat, usu_rut, usu_esp_id', 'safe', 'on'=>'search'),
+			array('usu_nombre, usu_apellidoMat, usu_apellidoPat, usu_rut, usu_esp_nombre', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -48,6 +48,7 @@ class Usuario extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'especialidad' => array(self::BELONGS_TO, 'Especialidad', 'usu_esp_nombre'),
 		);
 	}
 
@@ -64,7 +65,7 @@ class Usuario extends CActiveRecord
 			'usu_rut' => 'Rut de usuario',			
 			'usu_password' => 'Contraseña del usuario',
 			'usu_username' => 'Nombre cuenta del usuario',
-			'usu_esp_id' => 'Especialidad de Usuario',
+			'usu_esp_nombre' => 'Especialidad de Usuario',
 		);
 	}
 
@@ -93,7 +94,7 @@ class Usuario extends CActiveRecord
 		$criteria->compare('usu_rut',$this->usu_rut,true);	
 		$criteria->compare('usu_password',$this->usu_password,true);
 		$criteria->compare('usu_username',$this->usu_username,true);
-		$criteria->compare('usu_esp_id',$this->usu_esp_id,true);
+		$criteria->compare('usu_esp_nombre',$this->usu_esp_nombre,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

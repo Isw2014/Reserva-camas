@@ -9,8 +9,8 @@
 	<?php echo CHtml::link(CHtml::encode($data->pac_id), array('view', 'id'=>$data->pac_id)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('pac_esp_id')); ?>:</b>
-	<?php echo CHtml::encode($data->pac_categoria); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('pac_esp_nombre')); ?>:</b>
+	<?php echo CHtml::encode($data->pac_esp_nombre); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('pac_estado')); ?>:</b>

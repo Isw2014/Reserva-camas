@@ -30,7 +30,8 @@ class Especialidad extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('esp_nombre', 'length', 'max'=>20),
+			array('esp_nombre', 'required'),
+			array('esp_nombre', 'length', 'max'=>45),
 			array('esp_descripcion', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -46,8 +47,8 @@ class Especialidad extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'pacientes' => array(self::HAS_MANY, 'Paciente', 'pac_esp_id'),
-			'usuarios' => array(self::HAS_MANY, 'Usuario', 'usu_esp_id'),
+			'pacientes' => array(self::HAS_MANY, 'Paciente', 'pac_esp_nombre'),
+			'usuarios' => array(self::HAS_MANY, 'Usuario', 'usu_esp_nombre'),
 		);
 	}
 
@@ -56,8 +57,7 @@ class Especialidad extends CActiveRecord
 	 */
 	public function attributeLabels()
 	{
-		return array(
-			'esp_id' => 'Esp',
+		return array(			
 			'esp_nombre' => 'Nombre de Especialidad',
 			'esp_descripcion' => 'Descripción de Especialidad',
 		);
@@ -81,7 +81,6 @@ class Especialidad extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('esp_id',$this->esp_id,true);
 		$criteria->compare('esp_nombre',$this->esp_nombre,true);
 		$criteria->compare('esp_descripcion',$this->esp_descripcion,true);
 

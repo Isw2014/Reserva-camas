@@ -19,13 +19,14 @@ $this->menu=array(
 	'id'=>'paciente-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
-	'columns'=>array(
-		//'pac_id',
-		'pac_esp_id',
+	'columns'=>array(		
 		'pac_estado',
-		//'pac_cam_id',
+		'pac_esp_nombre',		
 		array(
 			'class'=>'CButtonColumn',
 		),
 	),
-)); ?>
+)
+); 
+
+?>

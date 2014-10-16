@@ -21,7 +21,7 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		//'pac_id',
-		'pac_categoria',
+		'pac_esp_nombre',
 		'pac_estado',
 		//'pac_cam_id',
 	),

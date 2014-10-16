@@ -17,8 +17,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'pac_esp_id'); ?>
-		<?php echo $form->textField($model,'pac_esp_id',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->label($model,'pac_esp_nombre'); ?>
+		<?php echo $form->textField($model,'pac_esp_nombre',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">

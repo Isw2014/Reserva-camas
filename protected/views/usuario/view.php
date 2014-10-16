@@ -27,7 +27,7 @@ $this->menu=array(
 		'usu_apellidoMat',
 		'usu_apellidoPat',
 		'usu_rut',
-		'usu_especialidad',
+		'usu_esp_nombre',
 		'usu_password',
 		'usu_username',
 	),

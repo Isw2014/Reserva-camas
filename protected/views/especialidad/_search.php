@@ -11,14 +11,11 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'esp_id'); ?>
-		<?php echo $form->textField($model,'esp_id',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
+
 
 	<div class="row">
 		<?php echo $form->label($model,'esp_nombre'); ?>
-		<?php echo $form->textField($model,'esp_nombre',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->textField($model,'esp_nombre',array('size'=>45,'maxlength'=>20)); ?>
 	</div>
 
 	<div class="row">

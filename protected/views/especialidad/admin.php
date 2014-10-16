@@ -41,8 +41,7 @@ $('.search-form form').submit(function(){
 	'id'=>'especialidad-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
-	'columns'=>array(
-		//'esp_id',
+	'columns'=>array(		
 		'esp_nombre',
 		'esp_descripcion',
 		array(

@@ -44,9 +44,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'usu_esp_id'); ?>
-		<?php echo $form->textField($model,'usu_esp_id',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'usu_esp_id'); ?>
+		<?php echo $form->labelEx($model,'usu_esp_nombre'); ?>
+		<?php echo $form->textField($model,'usu_esp_nombre',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'usu_esp_nombre'); ?>
 	</div>
 
 	<div class="row">

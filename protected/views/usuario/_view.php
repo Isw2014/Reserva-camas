@@ -25,19 +25,19 @@
 	<?php echo CHtml::encode($data->usu_rut); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_especialidad')); ?>:</b>
-	<?php echo CHtml::encode($data->usu_especialidad); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_esp_nombre')); ?>:</b>
+	<?php echo CHtml::encode($data->usu_esp_nombre); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_password')); ?>:</b>
 	<?php echo CHtml::encode($data->usu_password); ?>
 	<br />
 
-	<?php /*
+	<?php 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_username')); ?>:</b>
 	<?php echo CHtml::encode($data->usu_username); ?>
 	<br />
 
-	*/ ?>
+	 ?>
 
 </div>

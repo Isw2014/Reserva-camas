@@ -56,7 +56,7 @@ class Sala extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'sal_id' => 'Sal',
+			'sal_id' => 'Sala',
 			'sal_numeroSala' => 'Número de Sala',
 			'sal_camasTotales' => 'Total de Camas',
 			'sal_camasLibres' => 'Total Camas Libres',
