@@ -61,10 +61,10 @@
 		<?php echo $form->textField($model,'ant_fecha'); ?>
 	</div>
 
-	<div class="row">
+	<!--<div class="row">
 		<?php echo $form->label($model,'ant_pac_id'); ?>
 		<?php echo $form->textField($model,'ant_pac_id',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
+	</div>-->
 
 	<div class="row">
 		<?php echo $form->label($model,'ant_cambioRopa'); ?>

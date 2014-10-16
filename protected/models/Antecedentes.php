@@ -86,8 +86,8 @@ class Antecedentes extends CActiveRecord
 			'ant_cuidadosEliminacion' => 'Cuidados en Eliminación',
 			'ant_apoyo' => 'Apoyo Psicosocial y Emocional',
 			'ant_vigilancia' => 'Vigilancia',
-			'ant_fecha' => 'Ant Fecha',
-			'ant_pac_id' => 'Ant Pac',
+			'ant_fecha' => 'Fecha de registro',
+			'ant_pac_id' => 'Paciente',
 		);
 	}
 

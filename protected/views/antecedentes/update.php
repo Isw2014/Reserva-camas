@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Antecedentes'=>array('admin'),
 	$model->ant_id=>array('view','id'=>$model->ant_id),
-	'Editar',
+	'Actualizar',
 );
 
 $this->menu=array(
@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Editar Antecedentes <?php echo $model->ant_id; ?></h1>
+<h1>Actualizar Antecedentes <?php echo $model->ant_id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
