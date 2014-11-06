@@ -5,39 +5,39 @@
 
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->usu_id), array('view', 'id'=>$data->usu_id)); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_correl')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->usu_correl), array('view', 'id'=>$data->usu_correl)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_nombre')); ?>:</b>
 	<?php echo CHtml::encode($data->usu_nombre); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_apellidoMat')); ?>:</b>
-	<?php echo CHtml::encode($data->usu_apellidoMat); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_aPaterno')); ?>:</b>
+	<?php echo CHtml::encode($data->usu_aPaterno); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_apellidoPat')); ?>:</b>
-	<?php echo CHtml::encode($data->usu_apellidoPat); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_aMaterno')); ?>:</b>
+	<?php echo CHtml::encode($data->usu_aMaterno); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_usuario')); ?>:</b>
+	<?php echo CHtml::encode($data->usu_usuario); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_clave')); ?>:</b>
+	<?php echo CHtml::encode($data->usu_clave); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_rut')); ?>:</b>
 	<?php echo CHtml::encode($data->usu_rut); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_esp_nombre')); ?>:</b>
-	<?php echo CHtml::encode($data->usu_esp_nombre); ?>
+	<?php /*
+	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_mail')); ?>:</b>
+	<?php echo CHtml::encode($data->usu_mail); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_password')); ?>:</b>
-	<?php echo CHtml::encode($data->usu_password); ?>
-	<br />
-
-	<?php 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_username')); ?>:</b>
-	<?php echo CHtml::encode($data->usu_username); ?>
-	<br />
-
-	 ?>
+	*/ ?>
 
 </div>

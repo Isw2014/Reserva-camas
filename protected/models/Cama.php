@@ -4,13 +4,13 @@
  * This is the model class for table "cama".
  *
  * The followings are the available columns in table 'cama':
- * @property string $cam_id
+ * @property string $cam_correl
  * @property string $cam_numero
  * @property string $cam_estado
- * @property string $cam_sal_id
+ * @property string $cam_sal_correl
  *
  * The followings are the available model relations:
- * @property Sala $camSal
+ * @property Sala $camSalCorrel
  * @property Paciente[] $pacientes
  */
 class Cama extends CActiveRecord
@@ -31,12 +31,12 @@ class Cama extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cam_sal_id', 'required'),
-			array('cam_numero, cam_estado', 'length', 'max'=>20),
-			array('cam_sal_id', 'length', 'max'=>10),
+			array('cam_numero, cam_estado, cam_sal_correl', 'required'),
+			array('cam_numero, cam_sal_correl', 'length', 'max'=>10),
+			array('cam_estado', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('cam_numero, cam_estado, cam_sal_id', 'safe', 'on'=>'search'),
+			array('cam_correl, cam_numero, cam_estado, cam_sal_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -48,8 +48,8 @@ class Cama extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'camSal' => array(self::BELONGS_TO, 'Sala', 'cam_sal_id'),
-			'pacientes' => array(self::HAS_MANY, 'Paciente', 'pac_cam_id'),
+			'camSalCorrel' => array(self::BELONGS_TO, 'Sala', 'cam_sal_correl'),
+			'pacientes' => array(self::HAS_MANY, 'Paciente', 'pac_cam_correl'),
 		);
 	}
 
@@ -59,10 +59,10 @@ class Cama extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cam_id' => 'id Cama',
-			'cam_numero' => 'Número de la cama',
-			'cam_estado' => 'Estado de la cama',
-			'cam_sal_id' => 'Sala a la que pertenece',
+			'cam_correl' => 'Cam Correl',
+			'cam_numero' => 'Cam Numero',
+			'cam_estado' => 'Cam Estado',
+			'cam_sal_correl' => 'Cam Sal Correl',
 		);
 	}
 
@@ -84,10 +84,10 @@ class Cama extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('cam_id',$this->cam_id,true);
+		$criteria->compare('cam_correl',$this->cam_correl,true);
 		$criteria->compare('cam_numero',$this->cam_numero,true);
 		$criteria->compare('cam_estado',$this->cam_estado,true);
-		$criteria->compare('cam_sal_id',$this->cam_sal_id,true);
+		$criteria->compare('cam_sal_correl',$this->cam_sal_correl,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

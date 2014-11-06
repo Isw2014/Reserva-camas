@@ -60,19 +60,18 @@ class CamaController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate($id)
+	public function actionCreate()
 	{
 		$model=new Cama;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-		$model->cam_sal_id=$id;
 
 		if(isset($_POST['Cama']))
 		{
 			$model->attributes=$_POST['Cama'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->cam_id));
+				$this->redirect(array('view','id'=>$model->cam_correl));
 		}
 
 		$this->render('create',array(
@@ -96,7 +95,7 @@ class CamaController extends Controller
 		{
 			$model->attributes=$_POST['Cama'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->cam_id));
+				$this->redirect(array('view','id'=>$model->cam_correl));
 		}
 
 		$this->render('update',array(
@@ -134,7 +133,6 @@ class CamaController extends Controller
 	 */
 	public function actionAdmin()
 	{
-
 		$model=new Cama('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Cama']))

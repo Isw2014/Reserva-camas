@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Agregar Antecedentes', 'url'=>array('create')),
-	array('label'=>'Administrar Antecedentes', 'url'=>array('admin')),
+	array('label'=>'Create Antecedentes', 'url'=>array('create')),
+	array('label'=>'Manage Antecedentes', 'url'=>array('admin')),
 );
 ?>
 

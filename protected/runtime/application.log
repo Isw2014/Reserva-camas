@@ -3818,3 +3818,92 @@ HTTP_REFERER=http://localhost/yii2/Reserva-camas/index.php/antecedentes/index
 2014/10/16 08:26:43 [warning] [application] Failed to set unsafe attribute "usu_esp_nombre" of "Usuario".
 in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php (96)
 in C:\xampp\htdocs\Yii2\Reserva-camas\index.php (13)
+2014/11/06 20:44:32 [error] [exception.CException] exception 'CException' with message 'Property "Usuario.usu_esp_nombre" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('usu_esp_nombre')
+#1 C:\xampp\htdocs\Yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('usu_esp_nombre')
+#2 C:\xampp\htdocs\Yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Usuario), 'usu_esp_nombre')
+#3 C:\xampp\htdocs\Yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Usuario), 'usu_esp_nombre', Array)
+#4 C:\xampp\htdocs\Yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(Usuario), 'usu_esp_nombre', Array)
+#5 C:\xampp\htdocs\Yii\test\protected\views\usuario\_search.php(41): CActiveForm->textField(Object(Usuario), 'usu_esp_nombre', Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\Yii\test\protected\views\usuario\admin.php(38): CController->renderPartial('_search', Array)
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#14 C:\xampp\htdocs\Yii\test\protected\controllers\UsuarioController.php(143): CController->render('admin', Array)
+#15 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): UsuarioController->actionAdmin()
+#16 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#25 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#26 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\Yii\test\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/test/index.php/usuario/admin
+HTTP_REFERER=http://localhost:200/yii/test/index.php/sala/admin
+---
+2014/11/06 20:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "paciente/admin".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('paciente/admin')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/
+---
+2014/11/06 20:48:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "paciente/admin".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('paciente/admin')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/paciente/admin
+---
+2014/11/06 20:48:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sala/admin".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sala/admin')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/sala/admin
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/paciente/admin
+---
+2014/11/06 20:48:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuario/admin".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/usuario/admin
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/sala/admin
+---
+2014/11/06 20:48:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Especialidad/admin".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Especialidad/ad...')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/Especialidad/admin
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/usuario/admin
+---
+2014/11/06 20:48:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('gii')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('gii')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/gii')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/site/gii
+---

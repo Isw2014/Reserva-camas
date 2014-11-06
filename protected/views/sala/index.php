@@ -3,17 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Lista de Salas',
+	'Salas',
 );
 
 $this->menu=array(
-	array('label'=>'Volver a Inicio', 'url'=>array('site/index')),
-	array('label'=>'Agregar Sala', 'url'=>array('create')),
-	array('label'=>'Administrar Salas', 'url'=>array('admin')),
+	array('label'=>'Create Sala', 'url'=>array('create')),
+	array('label'=>'Manage Sala', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Lista de Salas</h1>
+<h1>Salas</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

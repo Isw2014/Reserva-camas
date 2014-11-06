@@ -4,13 +4,15 @@
  * This is the model class for table "sala".
  *
  * The followings are the available columns in table 'sala':
- * @property string $sal_id
- * @property integer $sal_camasTotales
- * @property integer $sal_camasLibres
- * @property string $sal_numeroSala
+ * @property string $sal_correl
+ * @property string $sal_numero
+ * @property integer $sal_totalCamas
+ * @property integer $sal_camasDisponibles
+ * @property string $sal_are_correl
  *
  * The followings are the available model relations:
  * @property Cama[] $camas
+ * @property Area $salAreCorrel
  */
 class Sala extends CActiveRecord
 {
@@ -30,11 +32,12 @@ class Sala extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('sal_camasTotales, sal_camasLibres', 'numerical', 'integerOnly'=>true),
-			array('sal_numeroSala', 'length', 'max'=>15),
+			array('sal_numero, sal_are_correl', 'required'),
+			array('sal_totalCamas, sal_camasDisponibles', 'numerical', 'integerOnly'=>true),
+			array('sal_numero, sal_are_correl', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('sal_id, sal_camasTotales, sal_camasLibres, sal_numeroSala', 'safe', 'on'=>'search'),
+			array('sal_correl, sal_numero, sal_totalCamas, sal_camasDisponibles, sal_are_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -46,7 +49,8 @@ class Sala extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'camas' => array(self::HAS_MANY, 'Cama', 'cam_sal_id'),
+			'camas' => array(self::HAS_MANY, 'Cama', 'cam_sal_correl'),
+			'salAreCorrel' => array(self::BELONGS_TO, 'Area', 'sal_are_correl'),
 		);
 	}
 
@@ -56,11 +60,11 @@ class Sala extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'sal_id' => 'Sala',
-			'sal_numeroSala' => 'Número de Sala',
-			'sal_camasTotales' => 'Total de Camas',
-			'sal_camasLibres' => 'Total Camas Libres',
-			
+			'sal_correl' => 'Sal Correl',
+			'sal_numero' => 'Sal Numero',
+			'sal_totalCamas' => 'Sal Total Camas',
+			'sal_camasDisponibles' => 'Sal Camas Disponibles',
+			'sal_are_correl' => 'Sal Are Correl',
 		);
 	}
 
@@ -82,10 +86,11 @@ class Sala extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('sal_id',$this->sal_id,true);
-		$criteria->compare('sal_camasTotales',$this->sal_camasTotales);
-		$criteria->compare('sal_camasLibres',$this->sal_camasLibres);
-		$criteria->compare('sal_numeroSala',$this->sal_numeroSala,true);
+		$criteria->compare('sal_correl',$this->sal_correl,true);
+		$criteria->compare('sal_numero',$this->sal_numero,true);
+		$criteria->compare('sal_totalCamas',$this->sal_totalCamas);
+		$criteria->compare('sal_camasDisponibles',$this->sal_camasDisponibles);
+		$criteria->compare('sal_are_correl',$this->sal_are_correl,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

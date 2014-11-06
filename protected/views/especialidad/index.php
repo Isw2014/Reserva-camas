@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Especialidades',
+	'Especialidads',
 );
 
 $this->menu=array(
-	array('label'=>'Agregar Especialidad', 'url'=>array('create')),
-	array('label'=>'Administrar Especialidad', 'url'=>array('admin')),
+	array('label'=>'Create Especialidad', 'url'=>array('create')),
+	array('label'=>'Manage Especialidad', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Especialidades</h1>
+<h1>Especialidads</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

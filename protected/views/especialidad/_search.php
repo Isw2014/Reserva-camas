@@ -11,11 +11,14 @@
 	'method'=>'get',
 )); ?>
 
-
+	<div class="row">
+		<?php echo $form->label($model,'esp_correl'); ?>
+		<?php echo $form->textField($model,'esp_correl',array('size'=>10,'maxlength'=>10)); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'esp_nombre'); ?>
-		<?php echo $form->textField($model,'esp_nombre',array('size'=>45,'maxlength'=>20)); ?>
+		<?php echo $form->textField($model,'esp_nombre',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">
@@ -23,8 +26,13 @@
 		<?php echo $form->textArea($model,'esp_descripcion',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'esp_usu_correl'); ?>
+		<?php echo $form->textField($model,'esp_usu_correl',array('size'=>10,'maxlength'=>10)); ?>
+	</div>
+
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Buscar'); ?>
+		<?php echo CHtml::submitButton('Search'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

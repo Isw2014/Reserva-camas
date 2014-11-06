@@ -3,32 +3,31 @@
 /* @var $model Usuario */
 
 $this->breadcrumbs=array(
-	'Lista de Usuarios'=>array('index'),
-	$model->usu_id,
+	'Usuarios'=>array('index'),
+	$model->usu_correl,
 );
 
 $this->menu=array(
-	array('label'=>'Volver a Inicio', 'url'=>array('site/index')),
-	array('label'=>'Lista de Usuarios', 'url'=>array('index')),
-	array('label'=>'Agregar Usuario', 'url'=>array('create')),
-	array('label'=>'Actualizar Usuario', 'url'=>array('update', 'id'=>$model->usu_id)),
-	array('label'=>'Borrar Usuario', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->usu_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Administrar Usuarios', 'url'=>array('admin')),
+	array('label'=>'List Usuario', 'url'=>array('index')),
+	array('label'=>'Create Usuario', 'url'=>array('create')),
+	array('label'=>'Update Usuario', 'url'=>array('update', 'id'=>$model->usu_correl)),
+	array('label'=>'Delete Usuario', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->usu_correl),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manage Usuario', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Detalles de Usuario #<?php echo $model->usu_id; ?></h1>
+<h1>View Usuario #<?php echo $model->usu_correl; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		//'usu_id',
+		'usu_correl',
 		'usu_nombre',
-		'usu_apellidoMat',
-		'usu_apellidoPat',
+		'usu_aPaterno',
+		'usu_aMaterno',
+		'usu_usuario',
+		'usu_clave',
 		'usu_rut',
-		'usu_esp_nombre',
-		'usu_password',
-		'usu_username',
+		'usu_mail',
 	),
 )); ?>

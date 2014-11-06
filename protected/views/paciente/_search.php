@@ -12,27 +12,52 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'pac_id'); ?>
-		<?php echo $form->textField($model,'pac_id',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->label($model,'pac_correl'); ?>
+		<?php echo $form->textField($model,'pac_correl',array('size'=>10,'maxlength'=>10)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'pac_esp_nombre'); ?>
-		<?php echo $form->textField($model,'pac_esp_nombre',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->label($model,'pac_nombre'); ?>
+		<?php echo $form->textField($model,'pac_nombre',array('size'=>45,'maxlength'=>45)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'pac_aPaterno'); ?>
+		<?php echo $form->textField($model,'pac_aPaterno',array('size'=>45,'maxlength'=>45)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'pac_aMaterno'); ?>
+		<?php echo $form->textField($model,'pac_aMaterno',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'pac_estado'); ?>
-		<?php echo $form->textField($model,'pac_estado',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->textField($model,'pac_estado',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'pac_cam_id'); ?>
-		<?php echo $form->textField($model,'pac_cam_id',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->label($model,'pac_puntaje'); ?>
+		<?php echo $form->textField($model,'pac_puntaje'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'pac_rut'); ?>
+		<?php echo $form->textField($model,'pac_rut',array('size'=>12,'maxlength'=>12)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'pac_esp_correl'); ?>
+		<?php echo $form->textField($model,'pac_esp_correl',array('size'=>10,'maxlength'=>10)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'pac_cam_correl'); ?>
+		<?php echo $form->textField($model,'pac_cam_correl',array('size'=>10,'maxlength'=>10)); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Buscar'); ?>
+		<?php echo CHtml::submitButton('Search'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

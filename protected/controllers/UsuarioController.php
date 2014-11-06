@@ -71,7 +71,7 @@ class UsuarioController extends Controller
 		{
 			$model->attributes=$_POST['Usuario'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->usu_id));
+				$this->redirect(array('view','id'=>$model->usu_correl));
 		}
 
 		$this->render('create',array(
@@ -95,7 +95,7 @@ class UsuarioController extends Controller
 		{
 			$model->attributes=$_POST['Usuario'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->usu_id));
+				$this->redirect(array('view','id'=>$model->usu_correl));
 		}
 
 		$this->render('update',array(

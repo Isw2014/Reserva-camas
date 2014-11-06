@@ -4,19 +4,18 @@
 
 $this->breadcrumbs=array(
 	'Usuarios'=>array('index'),
-	$model->usu_id=>array('view','id'=>$model->usu_id),
-	'Actualizar',
+	$model->usu_correl=>array('view','id'=>$model->usu_correl),
+	'Update',
 );
 
 $this->menu=array(
-	array('label'=>'Volver a Inicio', 'url'=>array('site/index')),
-	array('label'=>'Lista de Usuarios', 'url'=>array('index')),
-	array('label'=>'Agregar Usuario', 'url'=>array('create')),
-	array('label'=>'Detalles de Usuario', 'url'=>array('view', 'id'=>$model->usu_id)),
-	array('label'=>'Administrar Usuario', 'url'=>array('admin')),
+	array('label'=>'List Usuario', 'url'=>array('index')),
+	array('label'=>'Create Usuario', 'url'=>array('create')),
+	array('label'=>'View Usuario', 'url'=>array('view', 'id'=>$model->usu_correl)),
+	array('label'=>'Manage Usuario', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Actualizar Usuario <?php echo $model->usu_id; ?></h1>
+<h1>Update Usuario <?php echo $model->usu_correl; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

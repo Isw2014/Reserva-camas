@@ -4,14 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Salas'=>array('index'),
-	'Agregar',
+	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'Cancelar', 'url'=>array('admin')),
+	array('label'=>'List Sala', 'url'=>array('index')),
+	array('label'=>'Manage Sala', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Agregar Sala</h1>
+<h1>Create Sala</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

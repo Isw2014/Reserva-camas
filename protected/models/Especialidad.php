@@ -4,13 +4,14 @@
  * This is the model class for table "especialidad".
  *
  * The followings are the available columns in table 'especialidad':
- * @property string $esp_id
+ * @property string $esp_correl
  * @property string $esp_nombre
  * @property string $esp_descripcion
+ * @property string $esp_usu_correl
  *
  * The followings are the available model relations:
+ * @property Usuario $espUsuCorrel
  * @property Paciente[] $pacientes
- * @property Usuario[] $usuarios
  */
 class Especialidad extends CActiveRecord
 {
@@ -32,10 +33,11 @@ class Especialidad extends CActiveRecord
 		return array(
 			array('esp_nombre', 'required'),
 			array('esp_nombre', 'length', 'max'=>45),
+			array('esp_usu_correl', 'length', 'max'=>10),
 			array('esp_descripcion', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('esp_nombre, esp_descripcion', 'safe', 'on'=>'search'),
+			array('esp_correl, esp_nombre, esp_descripcion, esp_usu_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,8 +49,8 @@ class Especialidad extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'pacientes' => array(self::HAS_MANY, 'Paciente', 'pac_esp_nombre'),
-			'usuarios' => array(self::HAS_MANY, 'Usuario', 'usu_esp_nombre'),
+			'espUsuCorrel' => array(self::BELONGS_TO, 'Usuario', 'esp_usu_correl'),
+			'pacientes' => array(self::HAS_MANY, 'Paciente', 'pac_esp_correl'),
 		);
 	}
 
@@ -57,9 +59,11 @@ class Especialidad extends CActiveRecord
 	 */
 	public function attributeLabels()
 	{
-		return array(			
-			'esp_nombre' => 'Nombre de Especialidad',
-			'esp_descripcion' => 'Descripción de Especialidad',
+		return array(
+			'esp_correl' => 'Esp Correl',
+			'esp_nombre' => 'Esp Nombre',
+			'esp_descripcion' => 'Esp Descripcion',
+			'esp_usu_correl' => 'Esp Usu Correl',
 		);
 	}
 
@@ -81,8 +85,10 @@ class Especialidad extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('esp_correl',$this->esp_correl,true);
 		$criteria->compare('esp_nombre',$this->esp_nombre,true);
 		$criteria->compare('esp_descripcion',$this->esp_descripcion,true);
+		$criteria->compare('esp_usu_correl',$this->esp_usu_correl,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

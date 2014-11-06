@@ -71,7 +71,7 @@ class EspecialidadController extends Controller
 		{
 			$model->attributes=$_POST['Especialidad'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->esp_id));
+				$this->redirect(array('view','id'=>$model->esp_correl));
 		}
 
 		$this->render('create',array(
@@ -95,7 +95,7 @@ class EspecialidadController extends Controller
 		{
 			$model->attributes=$_POST['Especialidad'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->esp_id));
+				$this->redirect(array('view','id'=>$model->esp_correl));
 		}
 
 		$this->render('update',array(

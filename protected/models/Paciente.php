@@ -4,15 +4,20 @@
  * This is the model class for table "paciente".
  *
  * The followings are the available columns in table 'paciente':
- * @property string $pac_id
- * @property string $pac_categoria
+ * @property string $pac_correl
+ * @property string $pac_nombre
+ * @property string $pac_aPaterno
+ * @property string $pac_aMaterno
  * @property string $pac_estado
- * @property string $pac_cam_id
+ * @property integer $pac_puntaje
+ * @property string $pac_rut
+ * @property string $pac_esp_correl
+ * @property string $pac_cam_correl
  *
  * The followings are the available model relations:
- * @property Dependencia[] $dependencias
- * @property Cama $pacCam
- * @property Riesgo[] $riesgos
+ * @property Antecedentes[] $antecedentes
+ * @property Cama $pacCamCorrel
+ * @property Especialidad $pacEspCorrel
  */
 class Paciente extends CActiveRecord
 {
@@ -32,13 +37,14 @@ class Paciente extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('pac_cam_id, pac_esp_nombre', 'required'),
-			array('pac_esp_nombre', 'length', 'max'=>45),
-			array('pac_estado', 'length', 'max'=>20),
-			array('pac_cam_id', 'length', 'max'=>10),
+			array('pac_esp_correl, pac_cam_correl', 'required'),
+			array('pac_puntaje', 'numerical', 'integerOnly'=>true),
+			array('pac_nombre, pac_aPaterno, pac_aMaterno, pac_estado', 'length', 'max'=>45),
+			array('pac_rut', 'length', 'max'=>12),
+			array('pac_esp_correl, pac_cam_correl', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('pac_id, pac_estado, pac_cam_id, pac_esp_nombre', 'safe', 'on'=>'search'),
+			array('pac_correl, pac_nombre, pac_aPaterno, pac_aMaterno, pac_estado, pac_puntaje, pac_rut, pac_esp_correl, pac_cam_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,10 +56,9 @@ class Paciente extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			
-			'cama' => array(self::BELONGS_TO, 'Cama', 'pac_cam_id'),
-			'especialidad' => array(self::BELONGS_TO, 'Especialidad', 'pac_esp_nombre'),
-			
+			'antecedentes' => array(self::HAS_MANY, 'Antecedentes', 'ant_pac_correl'),
+			'pacCamCorrel' => array(self::BELONGS_TO, 'Cama', 'pac_cam_correl'),
+			'pacEspCorrel' => array(self::BELONGS_TO, 'Especialidad', 'pac_esp_correl'),
 		);
 	}
 
@@ -63,10 +68,15 @@ class Paciente extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'pac_id' => 'Paciente',
-			'pac_estado' => 'Estado',
-			'pac_cam_id' => 'Cama de paciente',
-			'pac_esp_nombre' => 'Especialidad de Paciente',
+			'pac_correl' => 'Pac Correl',
+			'pac_nombre' => 'Pac Nombre',
+			'pac_aPaterno' => 'Pac A Paterno',
+			'pac_aMaterno' => 'Pac A Materno',
+			'pac_estado' => 'Pac Estado',
+			'pac_puntaje' => 'Pac Puntaje',
+			'pac_rut' => 'Pac Rut',
+			'pac_esp_correl' => 'Pac Esp Correl',
+			'pac_cam_correl' => 'Pac Cam Correl',
 		);
 	}
 
@@ -88,10 +98,15 @@ class Paciente extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('pac_id',$this->pac_id,true);		
+		$criteria->compare('pac_correl',$this->pac_correl,true);
+		$criteria->compare('pac_nombre',$this->pac_nombre,true);
+		$criteria->compare('pac_aPaterno',$this->pac_aPaterno,true);
+		$criteria->compare('pac_aMaterno',$this->pac_aMaterno,true);
 		$criteria->compare('pac_estado',$this->pac_estado,true);
-		$criteria->compare('pac_cam_id',$this->pac_cam_id,true);
-		$criteria->compare('pac_esp_nombre',$this->pac_esp_nombre,true);
+		$criteria->compare('pac_puntaje',$this->pac_puntaje);
+		$criteria->compare('pac_rut',$this->pac_rut,true);
+		$criteria->compare('pac_esp_correl',$this->pac_esp_correl,true);
+		$criteria->compare('pac_cam_correl',$this->pac_cam_correl,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

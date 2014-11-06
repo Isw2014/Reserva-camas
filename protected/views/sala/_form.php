@@ -15,30 +15,36 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'sal_camasTotales'); ?>
-		<?php echo $form->textField($model,'sal_camasTotales'); ?>
-		<?php echo $form->error($model,'sal_camasTotales'); ?>
+		<?php echo $form->labelEx($model,'sal_numero'); ?>
+		<?php echo $form->textField($model,'sal_numero',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->error($model,'sal_numero'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'sal_camasLibres'); ?>
-		<?php echo $form->textField($model,'sal_camasLibres'); ?>
-		<?php echo $form->error($model,'sal_camasLibres'); ?>
+		<?php echo $form->labelEx($model,'sal_totalCamas'); ?>
+		<?php echo $form->textField($model,'sal_totalCamas'); ?>
+		<?php echo $form->error($model,'sal_totalCamas'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'sal_numeroSala'); ?>
-		<?php echo $form->textField($model,'sal_numeroSala',array('size'=>15,'maxlength'=>15)); ?>
-		<?php echo $form->error($model,'sal_numeroSala'); ?>
+		<?php echo $form->labelEx($model,'sal_camasDisponibles'); ?>
+		<?php echo $form->textField($model,'sal_camasDisponibles'); ?>
+		<?php echo $form->error($model,'sal_camasDisponibles'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'sal_are_correl'); ?>
+		<?php echo $form->textField($model,'sal_are_correl',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->error($model,'sal_are_correl'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Agregar' : 'Guardar'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

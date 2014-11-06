@@ -3,16 +3,16 @@
 /* @var $model Antecedentes */
 
 $this->breadcrumbs=array(
-	'Paciente'=>array('//paciente/admin'),
-	'Antecedentes'=>array('admin'),
-	'Agregar',
+	'Antecedentes'=>array('index'),
+	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'Cancelar', 'url'=>array('admin')),
+	array('label'=>'List Antecedentes', 'url'=>array('index')),
+	array('label'=>'Manage Antecedentes', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Agregar Antecedentes</h1>
+<h1>Create Antecedentes</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

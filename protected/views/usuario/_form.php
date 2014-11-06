@@ -15,7 +15,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -26,43 +26,43 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'usu_apellidoMat'); ?>
-		<?php echo $form->textField($model,'usu_apellidoMat',array('size'=>30,'maxlength'=>30)); ?>
-		<?php echo $form->error($model,'usu_apellidoMat'); ?>
+		<?php echo $form->labelEx($model,'usu_aPaterno'); ?>
+		<?php echo $form->textField($model,'usu_aPaterno',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'usu_aPaterno'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'usu_apellidoPat'); ?>
-		<?php echo $form->textField($model,'usu_apellidoPat',array('size'=>30,'maxlength'=>30)); ?>
-		<?php echo $form->error($model,'usu_apellidoPat'); ?>
+		<?php echo $form->labelEx($model,'usu_aMaterno'); ?>
+		<?php echo $form->textField($model,'usu_aMaterno',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'usu_aMaterno'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'usu_usuario'); ?>
+		<?php echo $form->textField($model,'usu_usuario',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'usu_usuario'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'usu_clave'); ?>
+		<?php echo $form->textField($model,'usu_clave',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->error($model,'usu_clave'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'usu_rut'); ?>
-		<?php echo $form->textField($model,'usu_rut',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'usu_rut',array('size'=>12,'maxlength'=>12)); ?>
 		<?php echo $form->error($model,'usu_rut'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'usu_esp_nombre'); ?>
-		<?php echo $form->textField($model,'usu_esp_nombre',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'usu_esp_nombre'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'usu_password'); ?>
-		<?php echo $form->textField($model,'usu_password',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'usu_password'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'usu_username'); ?>
-		<?php echo $form->textField($model,'usu_username',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'usu_username'); ?>
+		<?php echo $form->labelEx($model,'usu_mail'); ?>
+		<?php echo $form->textField($model,'usu_mail',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'usu_mail'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Agregar' : 'Guardar'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -3,16 +3,16 @@
 /* @var $model Especialidad */
 
 $this->breadcrumbs=array(
-	'Especialidades'=>array('index'),
-	'Agregar',
+	'Especialidads'=>array('index'),
+	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'Lista de Especialidades', 'url'=>array('index')),
-	array('label'=>'Administrar Especialidades', 'url'=>array('admin')),
+	array('label'=>'List Especialidad', 'url'=>array('index')),
+	array('label'=>'Manage Especialidad', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Agregar Especialidad</h1>
+<h1>Create Especialidad</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -71,7 +71,7 @@ class SalaController extends Controller
 		{
 			$model->attributes=$_POST['Sala'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->sal_id));
+				$this->redirect(array('view','id'=>$model->sal_correl));
 		}
 
 		$this->render('create',array(
@@ -95,7 +95,7 @@ class SalaController extends Controller
 		{
 			$model->attributes=$_POST['Sala'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->sal_id));
+				$this->redirect(array('view','id'=>$model->sal_correl));
 		}
 
 		$this->render('update',array(
@@ -154,7 +154,7 @@ class SalaController extends Controller
 	{
 		$model=Sala::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'La página requerida no existe.');
+			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
 
