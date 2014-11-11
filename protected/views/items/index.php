@@ -1,20 +1,21 @@
 <?php
 /* @var $this ItemsController */
 /* @var $dataProvider CActiveDataProvider */
+?>
 
+<?php
 $this->breadcrumbs=array(
 	'Items',
 );
 
 $this->menu=array(
-	array('label'=>'Create Items', 'url'=>array('create')),
-	array('label'=>'Manage Items', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-plus-sign','label'=>'Create Items', 'url'=>array('create')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Manage Items', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Items</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
+<?php echo BsHtml::pageHeader('Items') ?>
+<?php $this->widget('bootstrap.widgets.BsListView',array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>

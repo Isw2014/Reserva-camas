@@ -1,27 +1,29 @@
 <?php
 /* @var $this PacienteController */
 /* @var $model Paciente */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Pacientes'=>array('index'),
-	$model->pac_correl,
+	'Pacientes'=>array('admin'),
+	$model->pac_nombre." ".$model->pac_aPaterno,
 );
 
 $this->menu=array(
-	array('label'=>'List Paciente', 'url'=>array('index')),
-	array('label'=>'Create Paciente', 'url'=>array('create')),
-	array('label'=>'Update Paciente', 'url'=>array('update', 'id'=>$model->pac_correl)),
-	array('label'=>'Delete Paciente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->pac_correl),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Paciente', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Antecedentes', 'url'=>array('//antecedentes/admin','id'=>$model->pac_correl)),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Paciente #<?php echo $model->pac_correl; ?></h1>
+<?php echo BsHtml::pageHeader('Detalle','Paciente '.$model->pac_nombre." ".$model->pac_aPaterno) ?>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('zii.widgets.CDetailView',array(
+	'htmlOptions' => array(
+		'class' => 'table table-striped table-condensed table-hover',
+	),
 	'data'=>$model,
 	'attributes'=>array(
-		'pac_correl',
+		//'pac_correl',
 		'pac_nombre',
 		'pac_aPaterno',
 		'pac_aMaterno',

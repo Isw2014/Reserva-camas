@@ -13,6 +13,7 @@
  * @property string $pac_rut
  * @property string $pac_esp_correl
  * @property string $pac_cam_correl
+ * @property string $pac_codigo
  *
  * The followings are the available model relations:
  * @property Antecedentes[] $antecedentes
@@ -42,9 +43,10 @@ class Paciente extends CActiveRecord
 			array('pac_nombre, pac_aPaterno, pac_aMaterno, pac_estado', 'length', 'max'=>45),
 			array('pac_rut', 'length', 'max'=>12),
 			array('pac_esp_correl, pac_cam_correl', 'length', 'max'=>10),
+			array('pac_codigo', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('pac_correl, pac_nombre, pac_aPaterno, pac_aMaterno, pac_estado, pac_puntaje, pac_rut, pac_esp_correl, pac_cam_correl', 'safe', 'on'=>'search'),
+			array('pac_correl, pac_nombre, pac_aPaterno, pac_aMaterno, pac_estado, pac_puntaje, pac_rut, pac_esp_correl, pac_cam_correl, pac_codigo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -77,6 +79,7 @@ class Paciente extends CActiveRecord
 			'pac_rut' => 'Pac Rut',
 			'pac_esp_correl' => 'Pac Esp Correl',
 			'pac_cam_correl' => 'Pac Cam Correl',
+			'pac_codigo' => 'Pac Codigo',
 		);
 	}
 
@@ -107,6 +110,7 @@ class Paciente extends CActiveRecord
 		$criteria->compare('pac_rut',$this->pac_rut,true);
 		$criteria->compare('pac_esp_correl',$this->pac_esp_correl,true);
 		$criteria->compare('pac_cam_correl',$this->pac_cam_correl,true);
+		$criteria->compare('pac_codigo',$this->pac_codigo,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

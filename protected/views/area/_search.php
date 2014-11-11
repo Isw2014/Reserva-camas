@@ -1,30 +1,20 @@
 <?php
 /* @var $this AreaController */
 /* @var $model Area */
-/* @var $form CActiveForm */
+/* @var $form BSActiveForm */
 ?>
 
-<div class="wide form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'action'=>Yii::app()->createUrl($this->route),
-	'method'=>'get',
+<?php $form=$this->beginWidget('bootstrap.widgets.BsActiveForm', array(
+    'action'=>Yii::app()->createUrl($this->route),
+    'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'are_correl'); ?>
-		<?php echo $form->textField($model,'are_correl',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
+    <?php echo $form->textFieldControlGroup($model,'are_correl',array('maxlength'=>10)); ?>
+    <?php echo $form->textFieldControlGroup($model,'are_nombre',array('maxlength'=>45)); ?>
+    <?php echo $form->textAreaControlGroup($model,'are_descripcion',array('rows'=>6)); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'are_nombre'); ?>
-		<?php echo $form->textField($model,'are_nombre',array('size'=>45,'maxlength'=>45)); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
-	</div>
+    <div class="form-actions">
+        <?php echo BsHtml::submitButton('Search',  array('color' => BsHtml::BUTTON_COLOR_PRIMARY,));?>
+    </div>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- search-form -->

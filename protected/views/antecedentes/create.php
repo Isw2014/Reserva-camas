@@ -1,18 +1,19 @@
 <?php
 /* @var $this AntecedentesController */
 /* @var $model Antecedentes */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Antecedentes'=>array('index'),
-	'Create',
+	'Antecedentes'=>array('admin'),
+	'Agregar',
 );
 
 $this->menu=array(
-	array('label'=>'List Antecedentes', 'url'=>array('index')),
-	array('label'=>'Manage Antecedentes', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Antecedentes</h1>
+<?php echo BsHtml::pageHeader('Agregar','Antecedentes') ?>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

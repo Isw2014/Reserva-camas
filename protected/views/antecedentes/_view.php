@@ -6,7 +6,7 @@
 <div class="view">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ant_correl')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->ant_correl), array('view', 'id'=>$data->ant_correl)); ?>
+	<?php echo CHtml::link(CHtml::encode($data->ant_correl),array('view','id'=>$data->ant_correl)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ant_fecha')); ?>:</b>

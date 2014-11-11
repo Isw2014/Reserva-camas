@@ -1,27 +1,30 @@
 <?php
 /* @var $this SalaController */
 /* @var $model Sala */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Salas'=>array('index'),
-	$model->sal_correl,
+	'Salas'=>array('admin'),
+	$model->sal_numero,
 );
 
 $this->menu=array(
-	array('label'=>'List Sala', 'url'=>array('index')),
-	array('label'=>'Create Sala', 'url'=>array('create')),
-	array('label'=>'Update Sala', 'url'=>array('update', 'id'=>$model->sal_correl)),
-	array('label'=>'Delete Sala', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->sal_correl),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Sala', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-edit','label'=>'Editar Sala', 'url'=>array('update', 'id'=>$model->sal_correl)),
+	array('icon' => 'glyphicon glyphicon-minus-sign','label'=>'Eliminar Sala', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->sal_correl),'confirm'=>'Are you sure you want to delete this item?')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Sala #<?php echo $model->sal_correl; ?></h1>
+<?php echo BsHtml::pageHeader('Detalle','Sala '.$model->sal_numero) ?>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('zii.widgets.CDetailView',array(
+	'htmlOptions' => array(
+		'class' => 'table table-striped table-condensed table-hover',
+	),
 	'data'=>$model,
 	'attributes'=>array(
-		'sal_correl',
+		//'sal_correl',
 		'sal_numero',
 		'sal_totalCamas',
 		'sal_camasDisponibles',

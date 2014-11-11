@@ -1,20 +1,21 @@
 <?php
 /* @var $this PacienteController */
 /* @var $dataProvider CActiveDataProvider */
+?>
 
+<?php
 $this->breadcrumbs=array(
 	'Pacientes',
 );
 
 $this->menu=array(
-	array('label'=>'Create Paciente', 'url'=>array('create')),
-	array('label'=>'Manage Paciente', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-plus-sign','label'=>'Create Paciente', 'url'=>array('create')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Manage Paciente', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Pacientes</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
+<?php echo BsHtml::pageHeader('Pacientes') ?>
+<?php $this->widget('bootstrap.widgets.BsListView',array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>

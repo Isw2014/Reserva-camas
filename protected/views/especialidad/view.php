@@ -1,29 +1,31 @@
 <?php
 /* @var $this EspecialidadController */
 /* @var $model Especialidad */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Especialidads'=>array('index'),
-	$model->esp_correl,
+	'Especialidades'=>array('admin'),
+	$model->esp_nombre,
 );
 
 $this->menu=array(
-	array('label'=>'List Especialidad', 'url'=>array('index')),
-	array('label'=>'Create Especialidad', 'url'=>array('create')),
-	array('label'=>'Update Especialidad', 'url'=>array('update', 'id'=>$model->esp_correl)),
-	array('label'=>'Delete Especialidad', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->esp_correl),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Especialidad', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-edit','label'=>'Editar Especialidad', 'url'=>array('update', 'id'=>$model->esp_correl)),
+	array('icon' => 'glyphicon glyphicon-minus-sign','label'=>'Eliminar Especialidad', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->esp_correl),'confirm'=>'Are you sure you want to delete this item?')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Especialidad #<?php echo $model->esp_correl; ?></h1>
+<?php echo BsHtml::pageHeader('Detalle','Especialidad '.$model->esp_nombre) ?>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('zii.widgets.CDetailView',array(
+	'htmlOptions' => array(
+		'class' => 'table table-striped table-condensed table-hover',
+	),
 	'data'=>$model,
 	'attributes'=>array(
-		'esp_correl',
+		//'esp_correl',
 		'esp_nombre',
 		'esp_descripcion',
-		'esp_usu_correl',
 	),
 )); ?>

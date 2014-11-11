@@ -8,14 +8,26 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Sistema Camas',
+	'language'=>'es',
+	'sourceLanguage' => 'es',
+    'charset'=>'utf-8',
+	'theme'=>'blackboot',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array(
+        'log'), 
 
+	// path aliases
+    'aliases' => array(
+    	'bootstrap' => 'ext.bootstrap',
+	),
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'bootstrap.behaviors.*',
+	    'bootstrap.helpers.*',
+	    'bootstrap.widgets.*'
 	),
 
 	'modules'=>array(
@@ -26,12 +38,15 @@ return array(
 			'password'=>'123456',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
+			'generatorPaths' => array('bootstrap.gii'),
+            ),
 		),
-		
-	),
 
 	// application components
 	'components'=>array(
+		 'bootstrap' => array(
+            'class' => 'bootstrap.components.TbApi',   
+        ),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
@@ -53,7 +68,7 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=isw2014db',
+			'connectionString' => 'mysql:host=localhost;dbname=mydb',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',

@@ -1,20 +1,21 @@
 <?php
 /* @var $this CamaController */
 /* @var $dataProvider CActiveDataProvider */
+?>
 
+<?php
 $this->breadcrumbs=array(
 	'Camas',
 );
 
 $this->menu=array(
-	array('label'=>'Create Cama', 'url'=>array('create')),
-	array('label'=>'Manage Cama', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-plus-sign','label'=>'Create Cama', 'url'=>array('create')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Manage Cama', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Camas</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
+<?php echo BsHtml::pageHeader('Camas') ?>
+<?php $this->widget('bootstrap.widgets.BsListView',array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>

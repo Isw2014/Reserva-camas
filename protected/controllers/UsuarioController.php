@@ -3,14 +3,14 @@
 class UsuarioController extends Controller
 {
 	/**
-	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
-	 * using two-column layout. See 'protected/views/layouts/column2.php'.
-	 */
+	* @var string the default layout for the views. Defaults to '//layouts/column2', meaning
+	* using two-column layout. See 'protected/views/layouts/column2.php'.
+	*/
 	public $layout='//layouts/column2';
 
 	/**
-	 * @return array action filters
-	 */
+	* @return array action filters
+	*/
 	public function filters()
 	{
 		return array(
@@ -20,10 +20,10 @@ class UsuarioController extends Controller
 	}
 
 	/**
-	 * Specifies the access control rules.
-	 * This method is used by the 'accessControl' filter.
-	 * @return array access control rules
-	 */
+	* Specifies the access control rules.
+	* This method is used by the 'accessControl' filter.
+	* @return array access control rules
+	*/
 	public function accessRules()
 	{
 		return array(
@@ -46,9 +46,9 @@ class UsuarioController extends Controller
 	}
 
 	/**
-	 * Displays a particular model.
-	 * @param integer $id the ID of the model to be displayed
-	 */
+	* Displays a particular model.
+	* @param integer $id the ID of the model to be displayed
+	*/
 	public function actionView($id)
 	{
 		$this->render('view',array(
@@ -57,9 +57,9 @@ class UsuarioController extends Controller
 	}
 
 	/**
-	 * Creates a new model.
-	 * If creation is successful, the browser will be redirected to the 'view' page.
-	 */
+	* Creates a new model.
+	* If creation is successful, the browser will be redirected to the 'view' page.
+	*/
 	public function actionCreate()
 	{
 		$model=new Usuario;
@@ -75,15 +75,15 @@ class UsuarioController extends Controller
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
+		'model'=>$model,
 		));
 	}
 
 	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
-	 */
+	* Updates a particular model.
+	* If update is successful, the browser will be redirected to the 'view' page.
+	* @param integer $id the ID of the model to be updated
+	*/
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
@@ -104,22 +104,28 @@ class UsuarioController extends Controller
 	}
 
 	/**
-	 * Deletes a particular model.
-	 * If deletion is successful, the browser will be redirected to the 'admin' page.
-	 * @param integer $id the ID of the model to be deleted
-	 */
+	* Deletes a particular model.
+	* If deletion is successful, the browser will be redirected to the 'admin' page.
+	* @param integer $id the ID of the model to be deleted
+	*/
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+		if(Yii::app()->request->isPostRequest)
+		{
+			// we only allow deletion via POST request
+			$this->loadModel($id)->delete();
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+			if(!isset($_GET['ajax']))
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		}
+		else
+			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
 	}
 
 	/**
-	 * Lists all models.
-	 */
+	* Lists all models.
+	*/
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Usuario');
@@ -129,8 +135,8 @@ class UsuarioController extends Controller
 	}
 
 	/**
-	 * Manages all models.
-	 */
+	* Manages all models.
+	*/
 	public function actionAdmin()
 	{
 		$model=new Usuario('search');
@@ -144,12 +150,12 @@ class UsuarioController extends Controller
 	}
 
 	/**
-	 * Returns the data model based on the primary key given in the GET variable.
-	 * If the data model is not found, an HTTP exception will be raised.
-	 * @param integer $id the ID of the model to be loaded
-	 * @return Usuario the loaded model
-	 * @throws CHttpException
-	 */
+	* Returns the data model based on the primary key given in the GET variable.
+	* If the data model is not found, an HTTP exception will be raised.
+	* @param integer $id the ID of the model to be loaded
+	* @return Usuario the loaded model
+	* @throws CHttpException
+	*/
 	public function loadModel($id)
 	{
 		$model=Usuario::model()->findByPk($id);
@@ -159,9 +165,9 @@ class UsuarioController extends Controller
 	}
 
 	/**
-	 * Performs the AJAX validation.
-	 * @param Usuario $model the model to be validated
-	 */
+	* Performs the AJAX validation.
+	* @param Usuario $model the model to be validated
+	*/
 	protected function performAjaxValidation($model)
 	{
 		if(isset($_POST['ajax']) && $_POST['ajax']==='usuario-form')

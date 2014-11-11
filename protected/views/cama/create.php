@@ -1,18 +1,19 @@
 <?php
 /* @var $this CamaController */
 /* @var $model Cama */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Camas'=>array('index'),
-	'Create',
+	'Camas'=>array('admin'),
+	'Agregar',
 );
 
 $this->menu=array(
-	array('label'=>'List Cama', 'url'=>array('index')),
-	array('label'=>'Manage Cama', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Cama</h1>
+<?php echo BsHtml::pageHeader('Agregar','Cama') ?>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

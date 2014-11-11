@@ -7,10 +7,9 @@
  * @property string $ite_correl
  * @property string $ite_nombre
  * @property integer $ite_estado
- * @property string $ite_ant_correl
  *
  * The followings are the available model relations:
- * @property Antecedentes $iteAntCorrel
+ * @property Antecedentes[] $antecedentes
  */
 class Items extends CActiveRecord
 {
@@ -30,13 +29,12 @@ class Items extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ite_nombre, ite_estado, ite_ant_correl', 'required'),
+			array('ite_nombre, ite_estado', 'required'),
 			array('ite_estado', 'numerical', 'integerOnly'=>true),
 			array('ite_nombre', 'length', 'max'=>45),
-			array('ite_ant_correl', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ite_correl, ite_nombre, ite_estado, ite_ant_correl', 'safe', 'on'=>'search'),
+			array('ite_correl, ite_nombre, ite_estado', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -48,7 +46,7 @@ class Items extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'iteAntCorrel' => array(self::BELONGS_TO, 'Antecedentes', 'ite_ant_correl'),
+			'antecedentes' => array(self::MANY_MANY, 'Antecedentes', 'items_has_antecedentes(ite_ite_correl, ant_ant_correl)'),
 		);
 	}
 
@@ -61,7 +59,6 @@ class Items extends CActiveRecord
 			'ite_correl' => 'Ite Correl',
 			'ite_nombre' => 'Ite Nombre',
 			'ite_estado' => 'Ite Estado',
-			'ite_ant_correl' => 'Ite Ant Correl',
 		);
 	}
 
@@ -86,7 +83,6 @@ class Items extends CActiveRecord
 		$criteria->compare('ite_correl',$this->ite_correl,true);
 		$criteria->compare('ite_nombre',$this->ite_nombre,true);
 		$criteria->compare('ite_estado',$this->ite_estado);
-		$criteria->compare('ite_ant_correl',$this->ite_ant_correl,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

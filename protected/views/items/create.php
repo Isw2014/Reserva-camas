@@ -1,18 +1,19 @@
 <?php
 /* @var $this ItemsController */
 /* @var $model Items */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Items'=>array('index'),
-	'Create',
+	'Items'=>array('admin'),
+	'Agregar',
 );
 
 $this->menu=array(
-	array('label'=>'List Items', 'url'=>array('index')),
-	array('label'=>'Manage Items', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Items</h1>
+<?php echo BsHtml::pageHeader('Agregar','Items') ?>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

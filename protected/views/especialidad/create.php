@@ -1,18 +1,19 @@
 <?php
 /* @var $this EspecialidadController */
 /* @var $model Especialidad */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Especialidads'=>array('index'),
-	'Create',
+	'Especialidades'=>array('admin'),
+	'Agregar',
 );
 
 $this->menu=array(
-	array('label'=>'List Especialidad', 'url'=>array('index')),
-	array('label'=>'Manage Especialidad', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Especialidad</h1>
+<?php echo BsHtml::pageHeader('Agregar','Especialidad') ?>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

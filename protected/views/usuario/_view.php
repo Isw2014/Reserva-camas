@@ -6,7 +6,7 @@
 <div class="view">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_correl')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->usu_correl), array('view', 'id'=>$data->usu_correl)); ?>
+	<?php echo CHtml::link(CHtml::encode($data->usu_correl),array('view','id'=>$data->usu_correl)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_nombre')); ?>:</b>
@@ -34,6 +34,10 @@
 	<br />
 
 	<?php /*
+	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_esp_correl')); ?>:</b>
+	<?php echo CHtml::encode($data->usu_esp_correl); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('usu_mail')); ?>:</b>
 	<?php echo CHtml::encode($data->usu_mail); ?>
 	<br />

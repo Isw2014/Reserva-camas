@@ -1,21 +1,19 @@
 <?php
 /* @var $this ItemsController */
 /* @var $model Items */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Items'=>array('index'),
-	$model->ite_correl=>array('view','id'=>$model->ite_correl),
-	'Update',
+	'Items'=>array('admin'),
+	$model->ite_nombre=>array('view','id'=>$model->ite_correl),
+	'Editar',
 );
 
 $this->menu=array(
-	array('label'=>'List Items', 'url'=>array('index')),
-	array('label'=>'Create Items', 'url'=>array('create')),
-	array('label'=>'View Items', 'url'=>array('view', 'id'=>$model->ite_correl)),
-	array('label'=>'Manage Items', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Items <?php echo $model->ite_correl; ?></h1>
-
+<?php echo BsHtml::pageHeader('Update','Items '.$model->ite_correl) ?>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

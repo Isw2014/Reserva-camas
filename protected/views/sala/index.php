@@ -1,20 +1,21 @@
 <?php
 /* @var $this SalaController */
 /* @var $dataProvider CActiveDataProvider */
+?>
 
+<?php
 $this->breadcrumbs=array(
 	'Salas',
 );
 
 $this->menu=array(
-	array('label'=>'Create Sala', 'url'=>array('create')),
-	array('label'=>'Manage Sala', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-plus-sign','label'=>'Create Sala', 'url'=>array('create')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Manage Sala', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Salas</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
+<?php echo BsHtml::pageHeader('Salas') ?>
+<?php $this->widget('bootstrap.widgets.BsListView',array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>

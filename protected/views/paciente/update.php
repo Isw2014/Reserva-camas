@@ -1,7 +1,9 @@
 <?php
 /* @var $this PacienteController */
 /* @var $model Paciente */
+?>
 
+<?php
 $this->breadcrumbs=array(
 	'Pacientes'=>array('index'),
 	$model->pac_correl=>array('view','id'=>$model->pac_correl),
@@ -9,13 +11,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Paciente', 'url'=>array('index')),
-	array('label'=>'Create Paciente', 'url'=>array('create')),
-	array('label'=>'View Paciente', 'url'=>array('view', 'id'=>$model->pac_correl)),
-	array('label'=>'Manage Paciente', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-list','label'=>'List Paciente', 'url'=>array('index')),
+	array('icon' => 'glyphicon glyphicon-plus-sign','label'=>'Create Paciente', 'url'=>array('create')),
+    array('icon' => 'glyphicon glyphicon-list-alt','label'=>'View Paciente', 'url'=>array('view', 'id'=>$model->pac_correl)),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Manage Paciente', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Paciente <?php echo $model->pac_correl; ?></h1>
-
+<?php echo BsHtml::pageHeader('Update','Paciente '.$model->pac_correl) ?>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

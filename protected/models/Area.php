@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'area':
  * @property string $are_correl
  * @property string $are_nombre
+ * @property string $are_descripcion
  *
  * The followings are the available model relations:
  * @property Sala[] $salas
@@ -30,9 +31,10 @@ class Area extends CActiveRecord
 		return array(
 			array('are_nombre', 'required'),
 			array('are_nombre', 'length', 'max'=>45),
+			array('are_descripcion', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('are_correl, are_nombre', 'safe', 'on'=>'search'),
+			array('are_correl, are_nombre, are_descripcion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,6 +58,7 @@ class Area extends CActiveRecord
 		return array(
 			'are_correl' => 'Are Correl',
 			'are_nombre' => 'Are Nombre',
+			'are_descripcion' => 'Are Descripcion',
 		);
 	}
 
@@ -79,6 +82,7 @@ class Area extends CActiveRecord
 
 		$criteria->compare('are_correl',$this->are_correl,true);
 		$criteria->compare('are_nombre',$this->are_nombre,true);
+		$criteria->compare('are_descripcion',$this->are_descripcion,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

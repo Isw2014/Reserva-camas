@@ -48,7 +48,7 @@ class Antecedentes extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'antPacCorrel' => array(self::BELONGS_TO, 'Paciente', 'ant_pac_correl'),
-			'items' => array(self::HAS_MANY, 'Items', 'ite_ant_correl'),
+			'items' => array(self::MANY_MANY, 'Items', 'items_has_antecedentes(ant_ant_correl, ite_ite_correl)'),
 		);
 	}
 

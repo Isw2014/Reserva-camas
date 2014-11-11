@@ -1,18 +1,19 @@
 <?php
 /* @var $this AreaController */
 /* @var $model Area */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Areas'=>array('index'),
-	'Create',
+	'Areas'=>array('admin'),
+	'Agregar',
 );
 
 $this->menu=array(
-	array('label'=>'List Area', 'url'=>array('index')),
-	array('label'=>'Manage Area', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Area</h1>
+<?php echo BsHtml::pageHeader('Agregar','Area') ?>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

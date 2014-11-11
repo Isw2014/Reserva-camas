@@ -6,7 +6,7 @@
 <div class="view">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('pac_correl')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->pac_correl), array('view', 'id'=>$data->pac_correl)); ?>
+	<?php echo CHtml::link(CHtml::encode($data->pac_correl),array('view','id'=>$data->pac_correl)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('pac_nombre')); ?>:</b>

@@ -1,33 +1,37 @@
 <?php
 /* @var $this UsuarioController */
 /* @var $model Usuario */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Usuarios'=>array('index'),
-	$model->usu_correl,
+	'Usuarios'=>array('admin'),
+	$model->usu_usuario,
 );
 
 $this->menu=array(
-	array('label'=>'List Usuario', 'url'=>array('index')),
-	array('label'=>'Create Usuario', 'url'=>array('create')),
-	array('label'=>'Update Usuario', 'url'=>array('update', 'id'=>$model->usu_correl)),
-	array('label'=>'Delete Usuario', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->usu_correl),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Usuario', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-edit','label'=>'Editar Usuario', 'url'=>array('update', 'id'=>$model->usu_correl)),
+	array('icon' => 'glyphicon glyphicon-minus-sign','label'=>'Borrar Usuario', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->usu_correl),'confirm'=>'Are you sure you want to delete this item?')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Usuario #<?php echo $model->usu_correl; ?></h1>
+<?php echo BsHtml::pageHeader('Detalle','Usuario '.$model->usu_usuario) ?>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('zii.widgets.CDetailView',array(
+	'htmlOptions' => array(
+		'class' => 'table table-striped table-condensed table-hover',
+	),
 	'data'=>$model,
 	'attributes'=>array(
-		'usu_correl',
+		//'usu_correl',
 		'usu_nombre',
 		'usu_aPaterno',
 		'usu_aMaterno',
 		'usu_usuario',
 		'usu_clave',
 		'usu_rut',
+		'usu_esp_correl',
 		'usu_mail',
 	),
 )); ?>

@@ -1,18 +1,19 @@
 <?php
 /* @var $this SalaController */
 /* @var $model Sala */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Salas'=>array('index'),
-	'Create',
+	'Salas'=>array('admin'),
+	'Agregar',
 );
 
 $this->menu=array(
-	array('label'=>'List Sala', 'url'=>array('index')),
-	array('label'=>'Manage Sala', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Sala</h1>
+<?php echo BsHtml::pageHeader('Agregar','Sala') ?>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -12,9 +12,10 @@
  * @property string $usu_clave
  * @property string $usu_rut
  * @property string $usu_mail
+ * @property string $usu_esp_correl
  *
  * The followings are the available model relations:
- * @property Especialidad[] $especialidads
+ * @property Especialidad $usuEspCorrel
  */
 class Usuario extends CActiveRecord
 {
@@ -39,9 +40,10 @@ class Usuario extends CActiveRecord
 			array('usu_clave', 'length', 'max'=>20),
 			array('usu_rut', 'length', 'max'=>12),
 			array('usu_mail', 'length', 'max'=>100),
+			array('usu_esp_correl', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('usu_correl, usu_nombre, usu_aPaterno, usu_aMaterno, usu_usuario, usu_clave, usu_rut, usu_mail', 'safe', 'on'=>'search'),
+			array('usu_correl, usu_nombre, usu_aPaterno, usu_aMaterno, usu_usuario, usu_clave, usu_rut, usu_mail, usu_esp_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,7 +55,7 @@ class Usuario extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'especialidads' => array(self::HAS_MANY, 'Especialidad', 'esp_usu_correl'),
+			'usuEspCorrel' => array(self::BELONGS_TO, 'Especialidad', 'usu_esp_correl'),
 		);
 	}
 
@@ -71,6 +73,7 @@ class Usuario extends CActiveRecord
 			'usu_clave' => 'Usu Clave',
 			'usu_rut' => 'Usu Rut',
 			'usu_mail' => 'Usu Mail',
+			'usu_esp_correl' => 'Usu Esp Correl',
 		);
 	}
 
@@ -100,6 +103,7 @@ class Usuario extends CActiveRecord
 		$criteria->compare('usu_clave',$this->usu_clave,true);
 		$criteria->compare('usu_rut',$this->usu_rut,true);
 		$criteria->compare('usu_mail',$this->usu_mail,true);
+		$criteria->compare('usu_esp_correl',$this->usu_esp_correl,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

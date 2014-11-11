@@ -1,34 +1,25 @@
 <?php
 /* @var $this AreaController */
 /* @var $model Area */
-/* @var $form CActiveForm */
+/* @var $form BSActiveForm */
 ?>
 
-<div class="form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'area-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
-	'enableAjaxValidation'=>false,
+<?php $form=$this->beginWidget('bootstrap.widgets.BsActiveForm', array(
+    'id'=>'area-form',
+    // Please note: When you enable ajax validation, make sure the corresponding
+    // controller action is handling ajax validation correctly.
+    // There is a call to performAjaxValidation() commented in generated controller code.
+    // See class documentation of CActiveForm for details on this.
+    'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+<p class="help-block">Campos con <span class="required">*</span> son obligatorios.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+    <?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'are_nombre'); ?>
-		<?php echo $form->textField($model,'are_nombre',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'are_nombre'); ?>
-	</div>
+    <?php echo $form->textFieldControlGroup($model,'are_nombre',array('maxlength'=>45)); ?>
+    <?php echo $form->textAreaControlGroup($model,'are_descripcion',array('rows'=>6)); ?>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
+    <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 
 <?php $this->endWidget(); ?>
-
-</div><!-- form -->

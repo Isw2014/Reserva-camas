@@ -1,21 +1,19 @@
 <?php
 /* @var $this AntecedentesController */
 /* @var $model Antecedentes */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Antecedentes'=>array('index'),
-	$model->ant_correl=>array('view','id'=>$model->ant_correl),
-	'Update',
+	'Antecedentes'=>array('admin'),
+	$model->ant_fecha=>array('view','id'=>$model->ant_correl),
+	'Editar',
 );
 
 $this->menu=array(
-	array('label'=>'List Antecedentes', 'url'=>array('index')),
-	array('label'=>'Create Antecedentes', 'url'=>array('create')),
-	array('label'=>'View Antecedentes', 'url'=>array('view', 'id'=>$model->ant_correl)),
-	array('label'=>'Manage Antecedentes', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Antecedentes <?php echo $model->ant_correl; ?></h1>
-
+<?php echo BsHtml::pageHeader('Editar','Antecedentes '.$model->ant_fecha) ?>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

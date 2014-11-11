@@ -1,29 +1,31 @@
 <?php
 /* @var $this ItemsController */
 /* @var $model Items */
+?>
 
+<?php
 $this->breadcrumbs=array(
-	'Items'=>array('index'),
-	$model->ite_correl,
+	'Items'=>array('admin'),
+	$model->ite_nombre,
 );
 
 $this->menu=array(
-	array('label'=>'List Items', 'url'=>array('index')),
-	array('label'=>'Create Items', 'url'=>array('create')),
-	array('label'=>'Update Items', 'url'=>array('update', 'id'=>$model->ite_correl)),
-	array('label'=>'Delete Items', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ite_correl),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Items', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-edit','label'=>'Editar Items', 'url'=>array('update', 'id'=>$model->ite_correl)),
+	array('icon' => 'glyphicon glyphicon-minus-sign','label'=>'Eliminar Items', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ite_correl),'confirm'=>'Are you sure you want to delete this item?')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Items #<?php echo $model->ite_correl; ?></h1>
+<?php echo BsHtml::pageHeader('Detalle','Items '.$model->ite_nombre) ?>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('zii.widgets.CDetailView',array(
+	'htmlOptions' => array(
+		'class' => 'table table-striped table-condensed table-hover',
+	),
 	'data'=>$model,
 	'attributes'=>array(
-		'ite_correl',
+		//'ite_correl',
 		'ite_nombre',
 		'ite_estado',
-		'ite_ant_correl',
 	),
 )); ?>
