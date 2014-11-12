@@ -20,7 +20,12 @@
     <?php echo $form->textFieldControlGroup($model,'sal_numero',array('maxlength'=>10)); ?>
     <?php echo $form->textFieldControlGroup($model,'sal_totalCamas'); ?>
     <?php echo $form->textFieldControlGroup($model,'sal_camasDisponibles'); ?>
-    <?php echo $form->textFieldControlGroup($model,'sal_are_correl',array('maxlength'=>10)); ?>
+
+    <?php echo $form->dropDownListControlGroup($model, 'sal_are_correl', array(
+        CHtml::listData(area::model()->findAll(),'are_correl','are_nombre'),
+        ), array('empty' => '(Seleccione Area)',
+        ));
+    ?>
 
     <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 

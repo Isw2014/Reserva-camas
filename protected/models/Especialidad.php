@@ -58,9 +58,9 @@ class Especialidad extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'esp_correl' => 'Esp Correl',
-			'esp_nombre' => 'Esp Nombre',
-			'esp_descripcion' => 'Esp Descripcion',
+			'esp_correl' => 'Codigo',
+			'esp_nombre' => 'Nombre',
+			'esp_descripcion' => 'Descripcion',
 		);
 	}
 

@@ -59,10 +59,10 @@ class Cama extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cam_correl' => 'Cam Correl',
-			'cam_numero' => 'Cam Numero',
-			'cam_estado' => 'Cam Estado',
-			'cam_sal_correl' => 'Cam Sal Correl',
+			'cam_correl' => 'Codigo',
+			'cam_numero' => 'Numero',
+			'cam_estado' => 'Estado',
+			'cam_sal_correl' => 'Sala',
 		);
 	}
 

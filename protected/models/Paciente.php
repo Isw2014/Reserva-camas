@@ -70,16 +70,16 @@ class Paciente extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'pac_correl' => 'Pac Correl',
-			'pac_nombre' => 'Pac Nombre',
-			'pac_aPaterno' => 'Pac A Paterno',
-			'pac_aMaterno' => 'Pac A Materno',
-			'pac_estado' => 'Pac Estado',
-			'pac_puntaje' => 'Pac Puntaje',
-			'pac_rut' => 'Pac Rut',
-			'pac_esp_correl' => 'Pac Esp Correl',
-			'pac_cam_correl' => 'Pac Cam Correl',
-			'pac_codigo' => 'Pac Codigo',
+			'pac_correl' => 'Codigo',
+			'pac_nombre' => 'Nombre',
+			'pac_aPaterno' => 'Apellido Paterno',
+			'pac_aMaterno' => 'Apellido Materno',
+			'pac_estado' => 'Estado',
+			'pac_puntaje' => 'Puntaje',
+			'pac_rut' => 'Rut',
+			'pac_esp_correl' => 'Especialidad',
+			'pac_cam_correl' => 'Cama',
+			'pac_codigo' => 'Codigo Barra',
 		);
 	}
 

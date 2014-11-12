@@ -60,11 +60,11 @@ class Sala extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'sal_correl' => 'Sal Correl',
-			'sal_numero' => 'Sal Numero',
-			'sal_totalCamas' => 'Sal Total Camas',
-			'sal_camasDisponibles' => 'Sal Camas Disponibles',
-			'sal_are_correl' => 'Sal Are Correl',
+			'sal_correl' => 'Codigo',
+			'sal_numero' => 'Numero',
+			'sal_totalCamas' => 'Total Camas',
+			'sal_camasDisponibles' => 'Camas Disponibles',
+			'sal_are_correl' => 'Area',
 		);
 	}
 

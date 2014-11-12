@@ -17,8 +17,19 @@
     <?php echo $form->errorSummary($model); ?>
 
     <?php echo $form->textFieldControlGroup($model,'cam_numero',array('maxlength'=>10)); ?>
-    <?php echo $form->textFieldControlGroup($model,'cam_estado',array('maxlength'=>45)); ?>
-    <?php echo $form->textFieldControlGroup($model,'cam_sal_correl',array('maxlength'=>10)); ?>
+
+    <?php echo $form->dropDownListControlGroup($model, 'cam_estado', array(
+        'Libre' => 'Libre', 'Ocupada' => 'Ocupada',
+        ), array('empty' => 'Seleccione Estado'
+        ));     ?>
+
+    <?php echo $form->dropDownListControlGroup($model, 'cam_sal_correl', array(
+        CHtml::listData(sala::model()->findAll(),'sal_correl','sal_numero'),
+        ), array('empty' => '(Seleccione Sala)',
+        ));
+    ?>
+
+
 
     <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 

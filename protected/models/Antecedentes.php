@@ -58,9 +58,9 @@ class Antecedentes extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ant_correl' => 'Ant Correl',
-			'ant_fecha' => 'Ant Fecha',
-			'ant_pac_correl' => 'Ant Pac Correl',
+			'ant_correl' => 'Codigo',
+			'ant_fecha' => 'Fecha',
+			'ant_pac_correl' => 'Paciente',
 		);
 	}
 

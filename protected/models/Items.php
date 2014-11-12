@@ -56,9 +56,9 @@ class Items extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ite_correl' => 'Ite Correl',
-			'ite_nombre' => 'Ite Nombre',
-			'ite_estado' => 'Ite Estado',
+			'ite_correl' => 'Codigo',
+			'ite_nombre' => 'Nombre',
+			'ite_estado' => 'Estado',
 		);
 	}
 
