@@ -5,18 +5,15 @@
 
 <?php
 $this->breadcrumbs=array(
-	'Pacientes'=>array('index'),
-	$model->pac_correl=>array('view','id'=>$model->pac_correl),
-	'Update',
+	'Pacientes'=>array('admin'),
+	$model->pac_nombre." ".$model->pac_aPaterno=>array('view','id'=>$model->pac_correl),
+	'Editar',
 );
 
 $this->menu=array(
-    array('icon' => 'glyphicon glyphicon-list','label'=>'List Paciente', 'url'=>array('index')),
-	array('icon' => 'glyphicon glyphicon-plus-sign','label'=>'Create Paciente', 'url'=>array('create')),
-    array('icon' => 'glyphicon glyphicon-list-alt','label'=>'View Paciente', 'url'=>array('view', 'id'=>$model->pac_correl)),
-    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Manage Paciente', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('view','id'=>$model->pac_correl)),
 );
 ?>
 
-<?php echo BsHtml::pageHeader('Update','Paciente '.$model->pac_correl) ?>
+<?php echo BsHtml::pageHeader('Editar','Paciente '.$model->pac_nombre." ".$model->pac_aPaterno) ?>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

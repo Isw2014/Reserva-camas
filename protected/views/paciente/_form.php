@@ -13,20 +13,38 @@
     'enableAjaxValidation'=>false,
 )); ?>
 
-    <p class="help-block">Fields with <span class="required">*</span> are required.</p>
+    <p class="help-block">Campos con <span class="required">*</span> son obligatorios.</p>
 
     <?php echo $form->errorSummary($model); ?>
 
-    <?php echo $form->textFieldControlGroup($model,'pac_nombre',array('maxlength'=>45)); ?>
-    <?php echo $form->textFieldControlGroup($model,'pac_aPaterno',array('maxlength'=>45)); ?>
-    <?php echo $form->textFieldControlGroup($model,'pac_aMaterno',array('maxlength'=>45)); ?>
-    <?php echo $form->textFieldControlGroup($model,'pac_estado',array('maxlength'=>45)); ?>
+    <?php echo $form->textFieldControlGroup($model,'pac_nombre',array('disabled' => true)); ?>
+    <?php echo $form->textFieldControlGroup($model,'pac_aPaterno',array('disabled' => true)); ?>
+    <?php echo $form->textFieldControlGroup($model,'pac_aMaterno',array('disabled' => true)); ?>
+    <?php echo $form->dropDownListControlGroup($model, 'pac_estado', array(
+        '1' => 'Estable', '2' => 'Grave','3' => 'Saludable',   
+        ), array('empty' => 'Seleccione Estado' ));  ?>
+        
     <?php echo $form->textFieldControlGroup($model,'pac_puntaje'); ?>
-    <?php echo $form->textFieldControlGroup($model,'pac_rut',array('maxlength'=>12)); ?>
-    <?php echo $form->textFieldControlGroup($model,'pac_esp_correl',array('maxlength'=>10)); ?>
-    <?php echo $form->textFieldControlGroup($model,'pac_cam_correl',array('maxlength'=>10)); ?>
-    <?php echo $form->textFieldControlGroup($model,'pac_sal_correl',array('maxlength'=>10)); ?>
+    <?php echo $form->textFieldControlGroup($model,'pac_rut',array('disabled' => true)); ?>
 
-    <?php echo BsHtml::submitButton('Submit', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
+    <?php echo $form->dropDownListControlGroup($model,'pac_esp_correl', array(
+        CHtml::listData(especialidad::model()->findAll(),'esp_correl','esp_descripcion'),
+        ), array('empty' => '(Seleccione Especialidad)',
+        ));
+    ?>
+
+    <?php echo $form->dropDownListControlGroup($model, 'pac_sal_correl', array(
+        CHtml::listData(sala::model()->findAll(),'sal_correl','sal_numero'),
+        ), array('empty' => '(Seleccione Sala)',
+        ));
+    ?>
+
+    <?php echo $form->dropDownListControlGroup($model, 'pac_cam_correl', array(
+        CHtml::listData(cama::model()->findAll(),'cam_correl','cam_numero'),
+        ), array('empty' => '(Seleccione cama)',
+        ));
+    ?>
+
+    <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 
 <?php $this->endWidget(); ?>

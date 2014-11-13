@@ -137,9 +137,10 @@ class AntecedentesController extends Controller
 	/**
 	* Manages all models.
 	*/
-	public function actionAdmin()
+	public function actionAdmin($id)
 	{
 		$model=new Antecedentes('search');
+		
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Antecedentes']))
 			$model->attributes=$_GET['Antecedentes'];

@@ -25,6 +25,7 @@ $this->menu=array(
 			'id'=>'antecedentes-grid',
 			'dataProvider'=>$model->search(),
 			'filter'=>$model,
+			'type'=>BsHtml::GRID_TYPE_BORDERED,
 			'columns'=>array(
         		//'ant_correl',
 				'ant_fecha',
