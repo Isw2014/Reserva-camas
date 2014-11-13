@@ -32,5 +32,6 @@ $this->menu=array(
 		'pac_rut',
 		'pac_esp_correl',
 		'pac_cam_correl',
+		'pac_sal_correl',
 	),
 )); ?>

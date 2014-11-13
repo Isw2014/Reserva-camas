@@ -19,7 +19,7 @@
     <?php echo $form->textFieldControlGroup($model,'cam_numero',array('maxlength'=>10)); ?>
 
     <?php echo $form->dropDownListControlGroup($model, 'cam_estado', array(
-        'Libre' => 'Libre', 'Ocupada' => 'Ocupada',
+        '1' => 'Libre', '2' => 'Ocupada','3' => 'Dañada',
         ), array('empty' => 'Seleccione Estado'
         ));     ?>
 

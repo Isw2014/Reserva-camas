@@ -25,6 +25,7 @@
     <?php echo $form->textFieldControlGroup($model,'pac_rut',array('maxlength'=>12)); ?>
     <?php echo $form->textFieldControlGroup($model,'pac_esp_correl',array('maxlength'=>10)); ?>
     <?php echo $form->textFieldControlGroup($model,'pac_cam_correl',array('maxlength'=>10)); ?>
+    <?php echo $form->textFieldControlGroup($model,'pac_sal_correl',array('maxlength'=>10)); ?>
 
     <?php echo BsHtml::submitButton('Submit', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 

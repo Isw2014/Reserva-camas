@@ -6,7 +6,7 @@
  * The followings are the available columns in table 'cama':
  * @property string $cam_correl
  * @property string $cam_numero
- * @property string $cam_estado
+ * @property integer $cam_estado
  * @property string $cam_sal_correl
  *
  * The followings are the available model relations:
@@ -32,8 +32,8 @@ class Cama extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('cam_numero, cam_estado, cam_sal_correl', 'required'),
+			array('cam_estado', 'numerical', 'integerOnly'=>true),
 			array('cam_numero, cam_sal_correl', 'length', 'max'=>10),
-			array('cam_estado', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('cam_correl, cam_numero, cam_estado, cam_sal_correl', 'safe', 'on'=>'search'),
@@ -86,7 +86,7 @@ class Cama extends CActiveRecord
 
 		$criteria->compare('cam_correl',$this->cam_correl,true);
 		$criteria->compare('cam_numero',$this->cam_numero,true);
-		$criteria->compare('cam_estado',$this->cam_estado,true);
+		$criteria->compare('cam_estado',$this->cam_estado);
 		$criteria->compare('cam_sal_correl',$this->cam_sal_correl,true);
 
 		return new CActiveDataProvider($this, array(

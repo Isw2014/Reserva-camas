@@ -26,6 +26,7 @@ $this->menu=array(
 	'attributes'=>array(
 		//'ant_correl',
 		'ant_fecha',
+		'ant_puntaje',
 		'ant_pac_correl',
 	),
 )); ?>

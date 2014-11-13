@@ -10,12 +10,14 @@
  * @property string $usu_aMaterno
  * @property string $usu_usuario
  * @property string $usu_clave
+ * @property integer $usu_role
  * @property string $usu_rut
  * @property string $usu_mail
  * @property string $usu_esp_correl
  *
  * The followings are the available model relations:
  * @property Especialidad $usuEspCorrel
+ * @property Sala[] $salas
  */
 class Usuario extends CActiveRecord
 {
@@ -35,7 +37,8 @@ class Usuario extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('usu_usuario, usu_clave, usu_mail', 'required'),
+			array('usu_usuario, usu_clave, usu_role, usu_mail', 'required'),
+			array('usu_role', 'numerical', 'integerOnly'=>true),
 			array('usu_nombre, usu_aPaterno, usu_aMaterno, usu_usuario', 'length', 'max'=>45),
 			array('usu_clave', 'length', 'max'=>20),
 			array('usu_rut', 'length', 'max'=>12),
@@ -43,7 +46,7 @@ class Usuario extends CActiveRecord
 			array('usu_esp_correl', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('usu_correl, usu_nombre, usu_aPaterno, usu_aMaterno, usu_usuario, usu_clave, usu_rut, usu_mail, usu_esp_correl', 'safe', 'on'=>'search'),
+			array('usu_correl, usu_nombre, usu_aPaterno, usu_aMaterno, usu_usuario, usu_clave, usu_role, usu_rut, usu_mail, usu_esp_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,6 +59,7 @@ class Usuario extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'usuEspCorrel' => array(self::BELONGS_TO, 'Especialidad', 'usu_esp_correl'),
+			'salas' => array(self::MANY_MANY, 'Sala', 'usuario_has_sala(sal_usu_correl, sal_sal_correl)'),
 		);
 	}
 
@@ -65,15 +69,16 @@ class Usuario extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'usu_correl' => 'Codigo',
-			'usu_nombre' => 'Nombre',
-			'usu_aPaterno' => 'Apellido Paterno',
-			'usu_aMaterno' => 'Apellido Materno',
-			'usu_usuario' => 'Usuario',
-			'usu_clave' => 'Clave',
-			'usu_rut' => 'Rut',
-			'usu_mail' => 'E-Mail',
-			'usu_esp_correl' => 'Especialidad',
+			'usu_correl' => 'Usu Correl',
+			'usu_nombre' => 'Usu Nombre',
+			'usu_aPaterno' => 'Usu A Paterno',
+			'usu_aMaterno' => 'Usu A Materno',
+			'usu_usuario' => 'Usu Usuario',
+			'usu_clave' => 'Usu Clave',
+			'usu_role' => 'Usu Role',
+			'usu_rut' => 'Usu Rut',
+			'usu_mail' => 'Usu Mail',
+			'usu_esp_correl' => 'Usu Esp Correl',
 		);
 	}
 
@@ -101,6 +106,7 @@ class Usuario extends CActiveRecord
 		$criteria->compare('usu_aMaterno',$this->usu_aMaterno,true);
 		$criteria->compare('usu_usuario',$this->usu_usuario,true);
 		$criteria->compare('usu_clave',$this->usu_clave,true);
+		$criteria->compare('usu_role',$this->usu_role);
 		$criteria->compare('usu_rut',$this->usu_rut,true);
 		$criteria->compare('usu_mail',$this->usu_mail,true);
 		$criteria->compare('usu_esp_correl',$this->usu_esp_correl,true);

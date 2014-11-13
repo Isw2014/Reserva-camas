@@ -1,21 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "items_has_antecedentes".
+ * This is the model class for table "usuario_has_sala".
  *
- * The followings are the available columns in table 'items_has_antecedentes':
- * @property string $ite_ite_correl
- * @property string $ant_ant_correl
- * @property integer $ite_ant_puntaje
+ * The followings are the available columns in table 'usuario_has_sala':
+ * @property string $sal_usu_correl
+ * @property string $sal_sal_correl
  */
-class ItemsHasAntecedentes extends CActiveRecord
+class UsuarioHasSala extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'items_has_antecedentes';
+		return 'usuario_has_sala';
 	}
 
 	/**
@@ -26,12 +25,11 @@ class ItemsHasAntecedentes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ite_ite_correl, ant_ant_correl, ite_ant_puntaje', 'required'),
-			array('ite_ant_puntaje', 'numerical', 'integerOnly'=>true),
-			array('ite_ite_correl, ant_ant_correl', 'length', 'max'=>10),
+			array('sal_usu_correl, sal_sal_correl', 'required'),
+			array('sal_usu_correl, sal_sal_correl', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ite_ite_correl, ant_ant_correl, ite_ant_puntaje', 'safe', 'on'=>'search'),
+			array('sal_usu_correl, sal_sal_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,9 +50,8 @@ class ItemsHasAntecedentes extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ite_ite_correl' => 'Ite Ite Correl',
-			'ant_ant_correl' => 'Ant Ant Correl',
-			'ite_ant_puntaje' => 'Ite Ant Puntaje',
+			'sal_usu_correl' => 'Sal Usu Correl',
+			'sal_sal_correl' => 'Sal Sal Correl',
 		);
 	}
 
@@ -76,9 +73,8 @@ class ItemsHasAntecedentes extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('ite_ite_correl',$this->ite_ite_correl,true);
-		$criteria->compare('ant_ant_correl',$this->ant_ant_correl,true);
-		$criteria->compare('ite_ant_puntaje',$this->ite_ant_puntaje);
+		$criteria->compare('sal_usu_correl',$this->sal_usu_correl,true);
+		$criteria->compare('sal_sal_correl',$this->sal_sal_correl,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -89,7 +85,7 @@ class ItemsHasAntecedentes extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return ItemsHasAntecedentes the static model class
+	 * @return UsuarioHasSala the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

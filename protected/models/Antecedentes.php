@@ -5,6 +5,7 @@
  *
  * The followings are the available columns in table 'antecedentes':
  * @property string $ant_correl
+ * @property integer $ant_puntaje
  * @property string $ant_fecha
  * @property string $ant_pac_correl
  *
@@ -31,11 +32,11 @@ class Antecedentes extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('ant_fecha, ant_pac_correl', 'required'),
-			array('ant_fecha', 'length', 'max'=>45),
+			array('ant_puntaje', 'numerical', 'integerOnly'=>true),
 			array('ant_pac_correl', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ant_correl, ant_fecha, ant_pac_correl', 'safe', 'on'=>'search'),
+			array('ant_correl, ant_puntaje, ant_fecha, ant_pac_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,6 +60,7 @@ class Antecedentes extends CActiveRecord
 	{
 		return array(
 			'ant_correl' => 'Codigo',
+			'ant_puntaje' => 'Puntaje',
 			'ant_fecha' => 'Fecha',
 			'ant_pac_correl' => 'Paciente',
 		);
@@ -83,6 +85,7 @@ class Antecedentes extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ant_correl',$this->ant_correl,true);
+		$criteria->compare('ant_puntaje',$this->ant_puntaje);
 		$criteria->compare('ant_fecha',$this->ant_fecha,true);
 		$criteria->compare('ant_pac_correl',$this->ant_pac_correl,true);
 

@@ -17,7 +17,8 @@
 
     <?php echo $form->errorSummary($model); ?>
 
-    <?php echo $form->textFieldControlGroup($model,'ant_fecha',array('maxlength'=>45)); ?>
+    <?php echo $form->dateFieldControlGroup($model,'ant_fecha'); ?>
+    <?php echo $form->textFieldControlGroup($model,'ant_puntaje'); ?>
     <?php echo $form->textFieldControlGroup($model,'ant_pac_correl',array('maxlength'=>10)); ?>
 
     <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>

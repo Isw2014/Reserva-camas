@@ -6016,3 +6016,43 @@ REQUEST_URI=/yii/Isw%202014-2/index.php/sala/create
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\sala\_form.php (25)
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\sala\create.php (19)
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\SalaController.php (79)
+2014/11/12 23:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "gii" solicitada.' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('gii')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('gii')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/gii')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/site/gii
+---
+2014/11/13 00:33:37 [error] [exception.CException] exception 'CException' with message 'BsActiveForm y sus behaviors no tienen un método o closure llamado "dateControlGroup".' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\antecedentes\_form.php(20): CComponent->__call('dateControlGrou...', Array)
+#1 C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\antecedentes\_form.php(20): BsActiveForm->dateControlGroup(Object(Antecedentes), 'ant_fecha', Array)
+#2 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\antecedentes\create.php(19): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\AntecedentesController.php(79): CController->render('create', Array)
+#11 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): AntecedentesController->actionCreate()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#21 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('antecedentes/cr...')
+#22 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/antecedentes/create
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/antecedentes/admin
+---
