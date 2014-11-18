@@ -30,9 +30,9 @@ $this->menu=array(
         		//'ant_correl',
 				'ant_fecha',
 				'ant_puntaje',
-				'ant_pac_correl',
+				//'ant_pac_correl',
 				array(
-					'class'=>'bootstrap.widgets.BsButtonColumn',
+						'class'=>'CButtonColumn',
 				),
 			),
         )); ?>

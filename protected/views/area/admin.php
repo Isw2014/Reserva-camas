@@ -21,6 +21,7 @@ $this->menu=array(
 			'columns'=>array(
 		//'are_correl',
 		'are_nombre',
+		'are_descripcion',
 		array(
 			'class'=>'CButtonColumn',
 		),
