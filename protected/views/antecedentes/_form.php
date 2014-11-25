@@ -21,21 +21,16 @@ $modelo= new items();
 
      <?php 
     if(items::model()->findByAttributes(array('ite_estado'=>"Activo"))) {
-        $i=0;
         $array=  array();
         $array =items::model()->findAllByAttributes(array('ite_estado'=>"Activo"));
         $modle= new itemsHasAntecedentes;
 
         foreach ($array as $value) {
-            echo $array[$i]->ite_nombre;
+            echo $value->ite_nombre;
             echo $form->textFieldControlGroup($modle,'ant_ite_puntaje');
-            $i++;
         }
     }
      ?>
-    <!--<?php echo $form->textFieldControlGroup($model,'ant_puntaje'); ?>-->
-    <!--<?php echo $form->textFieldControlGroup($model,'ant_pac_correl',array('maxlength'=>10)); ?>-->
-
     <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 
 <?php $this->endWidget(); ?>

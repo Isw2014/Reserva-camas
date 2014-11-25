@@ -29,17 +29,32 @@ $this->menu=array(
 	),
 	'data'=>$model,
 	'attributes'=>array(
-		//'ant_correl',
 		'ant_fecha',
 		'ant_puntaje',
 		array('name'=>'Paciente',
 		'value'=>paciente::model()->findByPk($model->ant_pac_correl)->pac_nombre." ".paciente::model()->findByPk($model->ant_pac_correl)->pac_aPaterno,
 			),
 	),
-
-	 //<?php 
-    //if(itemsHasAntecedentes::model()->findByAttributes(array('ant_ant_correl'=>$model->ant_correl))) {
-        //echo "encontro";
-   // }
-	
 )); ?>
+
+<?php
+if(itemsHasAntecedentes::model()->findByAttributes(array('ant_ant_correl'=>$model->ant_correl))) {
+	$array =itemsHasAntecedentes::model()->findAllByAttributes(array('ant_ant_correl'=>$model->ant_correl));
+
+	echo BsHtml::pageHeader(' ','Evaluación ');
+
+	foreach ($array as $value) {
+	
+	$this->widget('zii.widgets.CDetailView',array(
+		'htmlOptions' => array(
+		'class' => 'table table-striped table-condensed table-hover',
+		),
+		'data'=>$model,
+		'attributes'=>array(
+			array('name'=>items::model()->findByPk($value->ite_ite_correl)->ite_nombre,
+		'value'=>$value->ant_ite_puntaje		)
+		,),
+	 ));
+	}
+}
+?>
