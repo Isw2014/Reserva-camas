@@ -29,7 +29,6 @@ $modelo= new items();
         foreach ($array as $value) {
             echo $array[$i]->ite_nombre;
             echo $form->textFieldControlGroup($modle,'ant_ite_puntaje');
-
             $i++;
         }
     }

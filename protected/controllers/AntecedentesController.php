@@ -63,8 +63,8 @@ class AntecedentesController extends Controller
 	public function actionCreate($id)
 	{
 		$model=new Antecedentes;
-		$modelo=new ItemsHasAntecendetes;
-		$modle=new Items;
+		//$modelo=new ItemsHasAntecendetes;
+		//$modle=new Items;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -76,6 +76,14 @@ class AntecedentesController extends Controller
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ant_correl));
 		}
+
+		/*if(isset($_POST['ItemsHasAntecendetes']))
+		{
+			$modelo->attributes=$_POST['ItemsHasAntecendetes'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->ant_correl));
+		}*/
+
 
 		$this->render('create',array(
 		'model'=>$model,
