@@ -15,6 +15,7 @@ $this->breadcrumbs=array(
 			'id'=>'antecedentes-grid',
 			'dataProvider'=>$model->search(),
 			'filter'=>$model,
+			'type'=>BsHtml::GRID_TYPE_BORDERED,
 			'columns'=>array(
 		//'pac_correl',
 		'pac_nombre',

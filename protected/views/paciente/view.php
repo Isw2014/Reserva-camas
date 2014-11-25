@@ -11,6 +11,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Antecedentes', 'url'=>array('//antecedentes/admin','id'=>$model->pac_correl)),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Editar', 'url'=>array('update','id'=>$model->pac_correl)),
     array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
@@ -30,8 +31,14 @@ $this->menu=array(
 		'pac_estado',
 		'pac_puntaje',
 		'pac_rut',
-		'pac_esp_correl',
-		'pac_cam_correl',
-		'pac_sal_correl',
+		array('name'=>'Especialidad',
+		'value'=>especialidad::model()->findByPk($model->pac_esp_correl)->esp_nombre,
+			),
+		array('name'=>'Sala',
+		'value'=>sala::model()->findByPk($model->pac_sal_correl)->sal_numero,
+			),
+		array('name'=>'Cama',
+		'value'=>cama::model()->findByPk($model->pac_cam_correl)->cam_numero,
+			),
 	),
 )); ?>

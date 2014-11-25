@@ -1,18 +1,23 @@
 <?php
 /* @var $this AntecedentesController */
 /* @var $model Antecedentes */
+$modelo= new paciente;
+$modelo->pac_correl=$_GET['id'];
+$modelo=paciente::model()->findByPk($modelo->pac_correl);
 ?>
 
 <?php
 $this->breadcrumbs=array(
-	'Antecedentes'=>array('admin'),
+	'Pacientes'=>array('//paciente/admin'),
+	$modelo->pac_nombre." ".$modelo->pac_aPaterno=>array('//paciente/view','id'=>$modelo->pac_correl),
+	'Antecedentes'=>array('admin','id'=>$modelo->pac_correl),
 	$model->ant_fecha,
 );
 
 $this->menu=array(
 	array('icon' => 'glyphicon glyphicon-edit','label'=>'Editar Antecedentes', 'url'=>array('update', 'id'=>$model->ant_correl)),
 	array('icon' => 'glyphicon glyphicon-minus-sign','label'=>'Eliminar Antecedentes', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ant_correl),'confirm'=>'Are you sure you want to delete this item?')),
-    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin','id'=>$modelo->pac_correl)),
 );
 ?>
 
@@ -27,6 +32,14 @@ $this->menu=array(
 		//'ant_correl',
 		'ant_fecha',
 		'ant_puntaje',
-		'ant_pac_correl',
+		array('name'=>'Paciente',
+		'value'=>paciente::model()->findByPk($model->ant_pac_correl)->pac_nombre." ".paciente::model()->findByPk($model->ant_pac_correl)->pac_aPaterno,
+			),
 	),
+
+	 //<?php 
+    //if(itemsHasAntecedentes::model()->findByAttributes(array('ant_ant_correl'=>$model->ant_correl))) {
+        //echo "encontro";
+   // }
+	
 )); ?>

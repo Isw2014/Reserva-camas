@@ -1,16 +1,20 @@
 <?php
 /* @var $this AntecedentesController */
 /* @var $model Antecedentes */
-?>
 
-<?php
+$modelo= new paciente;
+$modelo->pac_correl=$_GET['id'];
+$modelo=paciente::model()->findByPk($modelo->pac_correl);
+
 $this->breadcrumbs=array(
-	'Antecedentes'=>array('admin'),
+	'Pacientes'=>array('//paciente/admin'),
+	$modelo->pac_nombre." ".$modelo->pac_aPaterno=>array('//paciente/view','id'=>$modelo->pac_correl),
+	'Antecedentes'=>array('admin','id'=>$modelo->pac_correl),
 	'Agregar',
 );
 
 $this->menu=array(
-	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin','id'=>$modelo->pac_correl)),
 );
 ?>
 

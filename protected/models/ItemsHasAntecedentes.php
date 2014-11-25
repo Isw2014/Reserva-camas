@@ -52,9 +52,9 @@ class ItemsHasAntecedentes extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ite_ite_correl' => 'Ite Ite Correl',
-			'ant_ant_correl' => 'Ant Ant Correl',
-			'ite_ant_puntaje' => 'Ite Ant Puntaje',
+			'ite_ite_correl' => 'Codigo Item',
+			'ant_ant_correl' => 'Codigo Antecedente',
+			'ant_ite_puntaje' =>'',
 		);
 	}
 

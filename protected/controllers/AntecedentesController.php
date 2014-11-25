@@ -60,9 +60,11 @@ class AntecedentesController extends Controller
 	* Creates a new model.
 	* If creation is successful, the browser will be redirected to the 'view' page.
 	*/
-	public function actionCreate()
+	public function actionCreate($id)
 	{
 		$model=new Antecedentes;
+		//$modelo=new ItemsHasAntecendetes;
+		//$modle=new Items;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -70,9 +72,18 @@ class AntecedentesController extends Controller
 		if(isset($_POST['Antecedentes']))
 		{
 			$model->attributes=$_POST['Antecedentes'];
+			$model->ant_pac_correl=$id;
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ant_correl));
 		}
+
+		/*if(isset($_POST['ItemsHasAntecendetes']))
+		{
+			$modelo->attributes=$_POST['ItemsHasAntecendetes'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->ant_correl));
+		}*/
+
 
 		$this->render('create',array(
 		'model'=>$model,
@@ -137,9 +148,10 @@ class AntecedentesController extends Controller
 	/**
 	* Manages all models.
 	*/
-	public function actionAdmin()
+	public function actionAdmin($id)
 	{
 		$model=new Antecedentes('search');
+		
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Antecedentes']))
 			$model->attributes=$_GET['Antecedentes'];
