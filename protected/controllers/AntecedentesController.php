@@ -63,19 +63,29 @@ class AntecedentesController extends Controller
 	public function actionCreate($id)
 	{
 		$model=new Antecedentes;
-		//$modelo=new ItemsHasAntecendetes;
+		$modelo=new ItemsHasAntecedentes;
 		//$modle=new Items;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Antecedentes']))
+		if(isset($_POST['Grupo']))
 		{
+
 			$model->attributes=$_POST['Antecedentes'];
 			$model->ant_pac_correl=$id;
+			//$modelo->ant_ant_correl;
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ant_correl));
 		}
+		$Lista=new Antecedentes('search');
+		$Lista->unsetAttributes();
+		$Lista->ant_pac_correl=$id;
+		$this->render('create',array(
+			'model'=>$model,
+			'lista'=>$Lista
+		));
+
 
 		/*if(isset($_POST['ItemsHasAntecendetes']))
 		{
@@ -85,9 +95,9 @@ class AntecedentesController extends Controller
 		}*/
 
 
-		$this->render('create',array(
-		'model'=>$model,
-		));
+		//$this->render('create',array(
+		//'model'=>$model,
+		//));
 	}
 
 	/**
@@ -153,6 +163,7 @@ class AntecedentesController extends Controller
 		$model=new Antecedentes('search');
 		
 		$model->unsetAttributes();  // clear any default values
+		$model->ant_pac_correl=$id;
 		if(isset($_GET['Antecedentes']))
 			$model->attributes=$_GET['Antecedentes'];
 

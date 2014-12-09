@@ -2,8 +2,9 @@
 /* @var $this AntecedentesController */
 /* @var $model Antecedentes */
 $modelo= new paciente;
-$modelo->pac_correl=$_GET['id'];
-$modelo=paciente::model()->findByPk($modelo->pac_correl);
+$model->ant_correl=$_GET['id'];
+$model=Antecedentes::model()->findByPk($model->ant_correl);
+$modelo=paciente::model()->findByPk($model->ant_pac_correl);
 ?>
 
 <?php

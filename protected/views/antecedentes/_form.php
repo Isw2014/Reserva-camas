@@ -15,6 +15,7 @@ $modelo= new items();
 
     <p class="help-block">Campos con <span class="required">*</span> son obligatorios.</p>
 
+<!--
     <?php echo $form->errorSummary($model); ?>
 
     <?php echo $form->dateFieldControlGroup($model,'ant_fecha'); ?>
@@ -28,9 +29,35 @@ $modelo= new items();
         foreach ($array as $value) {
             echo $value->ite_nombre;
             echo $form->textFieldControlGroup($modle,'ant_ite_puntaje');
+
         }
     }
      ?>
     <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
+
+
+<!-- Es importante poner <form> para que el boton submit redireccione por el metodo que aparece cuando apretas el boton-->
+
+<table class="table table-striped table-condensed table-bordered">
+        <tbody>
+            <td><?php echo "fecha";?></td>
+            <td><?php echo $form->dateField($model,'ant_fecha');?></td>
+<?php 
+$array=Items::model()->findAllByAttributes(array('ite_estado'=>"Activo"));
+
+
+foreach ($array as $key) :?>
+        <tr>
+            <td><?php echo $key->ite_nombre; ?></td>
+            <!--Despliega un formulario para cada id de la tabla ITEM-->
+            <td><input type="number" class="form-control" name="Grupo[<?php echo  $key->ite_correl?>]"</td>
+            <?php $ite_correl ?>
+        </tr>
+<?php endforeach; ?>
+      </tbody>
+    </table>
+
+    <!--Boton de Submit-->
+   <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 
 <?php $this->endWidget(); ?>

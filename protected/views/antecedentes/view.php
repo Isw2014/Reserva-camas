@@ -2,10 +2,10 @@
 /* @var $this AntecedentesController */
 /* @var $model Antecedentes */
 $modelo= new paciente;
-$modelo->pac_correl=$_GET['id'];
-$modelo=paciente::model()->findByPk($modelo->pac_correl);
+$model->ant_correl=$_GET['id'];
+$model=Antecedentes::model()->findByPk($model->ant_correl);
+$modelo=paciente::model()->findByPk($model->ant_pac_correl);
 ?>
-
 <?php
 $this->breadcrumbs=array(
 	'Pacientes'=>array('//paciente/admin'),
@@ -38,23 +38,20 @@ $this->menu=array(
 )); ?>
 
 <?php
-if(itemsHasAntecedentes::model()->findByAttributes(array('ant_ant_correl'=>$model->ant_correl))) {
-	$array =itemsHasAntecedentes::model()->findAllByAttributes(array('ant_ant_correl'=>$model->ant_correl));
-
+$array =itemsHasAntecedentes::model()->findAllByAttributes(array('ant_ant_correl'=>$model->ant_correl));
+if(itemsHasAntecedentes::model()->findByAttributes(array('ant_ant_correl'=>$model->ant_correl)))
 	echo BsHtml::pageHeader(' ','Evaluación ');
-
-	foreach ($array as $value) {
-	
-	$this->widget('zii.widgets.CDetailView',array(
-		'htmlOptions' => array(
-		'class' => 'table table-striped table-condensed table-hover',
-		),
-		'data'=>$model,
-		'attributes'=>array(
-			array('name'=>items::model()->findByPk($value->ite_ite_correl)->ite_nombre,
-		'value'=>$value->ant_ite_puntaje		)
-		,),
-	 ));
-	}
-}
 ?>
+
+<table class="table table-striped table-condensed table-bordered">
+      <tbody>
+<?php 
+foreach ($array as $key) :?>
+        <tr>
+          <td><b><?php echo items::model()->findByPk($key->ite_ite_correl)->ite_nombre ?></td>
+          <!--Despliega un formulario para cada id de la tabla ITEM-->
+          <td><?php echo $key->ant_ite_puntaje ?></td></b>
+        </tr>
+<?php endforeach; ?>
+      </tbody>
+    </table>
