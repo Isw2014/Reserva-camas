@@ -63,18 +63,31 @@ class AntecedentesController extends Controller
 	public function actionCreate($id)
 	{
 		$model=new Antecedentes;
-		$modelo=new ItemsHasAntecedentes;
-		//$modle=new Items;
-
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Grupo']))
+		 $this->performAjaxValidation($model);
+		if(isset($_POST['Antecedentes']))
 		{
-
 			$model->attributes=$_POST['Antecedentes'];
 			$model->ant_pac_correl=$id;
-			//$modelo->ant_ant_correl;
+			if(isset($_POST['Grupo'])){
+				$array=Items::model()->findAllByAttributes(array('ite_estado'=>"Activo"));
+				//echo($array[2]->ite_correl);
+
+				//var_dump($_POST['Grupo']);
+				//echo ($_POST['Grupo'][1]);
+
+				//var_dump($_POST['Antecedentes']);
+				//echo ($_POST['Antecedentes']['ant_fecha']);
+				
+				$model->save();
+				foreach ($array as $key) {
+					$modelo=new ItemsHasAntecedentes;
+					$modelo->ant_ant_correl=$model->ant_correl;
+					$modelo->ite_ite_correl=$key->ite_correl;
+					$modelo->ant_ite_puntaje=($_POST['Grupo'][$key->ite_correl]);
+					$modelo->save();
+				}
+			}
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ant_correl));
 		}
@@ -85,19 +98,6 @@ class AntecedentesController extends Controller
 			'model'=>$model,
 			'lista'=>$Lista
 		));
-
-
-		/*if(isset($_POST['ItemsHasAntecendetes']))
-		{
-			$modelo->attributes=$_POST['ItemsHasAntecendetes'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->ant_correl));
-		}*/
-
-
-		//$this->render('create',array(
-		//'model'=>$model,
-		//));
 	}
 
 	/**
@@ -108,6 +108,7 @@ class AntecedentesController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);

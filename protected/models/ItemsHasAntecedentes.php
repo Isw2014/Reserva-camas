@@ -6,7 +6,7 @@
  * The followings are the available columns in table 'items_has_antecedentes':
  * @property string $ite_ite_correl
  * @property string $ant_ant_correl
- * @property integer $ite_ant_puntaje
+ * @property integer $ant_ite_puntaje
  */
 class ItemsHasAntecedentes extends CActiveRecord
 {
@@ -26,12 +26,12 @@ class ItemsHasAntecedentes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ite_ite_correl, ant_ant_correl, ite_ant_puntaje', 'required'),
-			array('ite_ant_puntaje', 'numerical', 'integerOnly'=>true),
+			array('ite_ite_correl, ant_ant_correl, ant_ite_puntaje', 'required'),
+			array('ant_ite_puntaje', 'numerical', 'integerOnly'=>true),
 			array('ite_ite_correl, ant_ant_correl', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ite_ite_correl, ant_ant_correl, ite_ant_puntaje', 'safe', 'on'=>'search'),
+			array('ite_ite_correl, ant_ant_correl, ant_ite_puntaje', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -78,7 +78,7 @@ class ItemsHasAntecedentes extends CActiveRecord
 
 		$criteria->compare('ite_ite_correl',$this->ite_ite_correl,true);
 		$criteria->compare('ant_ant_correl',$this->ant_ant_correl,true);
-		$criteria->compare('ite_ant_puntaje',$this->ite_ant_puntaje);
+		$criteria->compare('ant_ite_puntaje',$this->ant_ite_puntaje);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

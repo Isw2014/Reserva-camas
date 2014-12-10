@@ -51,7 +51,6 @@ foreach ($array as $key) :?>
             <td><?php echo $key->ite_nombre; ?></td>
             <!--Despliega un formulario para cada id de la tabla ITEM-->
             <td><input type="number" class="form-control" name="Grupo[<?php echo  $key->ite_correl?>]"</td>
-            <?php $ite_correl ?>
         </tr>
 <?php endforeach; ?>
       </tbody>
