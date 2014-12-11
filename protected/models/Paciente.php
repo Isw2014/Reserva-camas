@@ -12,7 +12,6 @@
  * @property integer $pac_puntaje
  * @property string $pac_rut
  * @property string $pac_esp_correl
- * @property string $pac_cam_correl
  * @property string $pac_codigo
  * @property string $pac_sal_correl
  *
@@ -43,11 +42,11 @@ class Paciente extends CActiveRecord
 			array('pac_estado, pac_puntaje', 'numerical', 'integerOnly'=>true),
 			array('pac_nombre, pac_aPaterno, pac_aMaterno', 'length', 'max'=>45),
 			array('pac_rut', 'length', 'max'=>12),
-			array('pac_esp_correl, pac_cam_correl, pac_sal_correl', 'length', 'max'=>10),
+			array('pac_esp_correl, pac_sal_correl', 'length', 'max'=>10),
 			array('pac_codigo', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('pac_correl, pac_nombre, pac_aPaterno, pac_aMaterno, pac_estado, pac_puntaje, pac_rut, pac_esp_correl, pac_cam_correl, pac_codigo, pac_sal_correl', 'safe', 'on'=>'search'),
+			array('pac_correl, pac_nombre, pac_aPaterno, pac_aMaterno, pac_estado, pac_puntaje, pac_rut, pac_esp_correl, pac_codigo, pac_sal_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,7 +59,7 @@ class Paciente extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'antecedentes' => array(self::HAS_MANY, 'Antecedentes', 'ant_pac_correl'),
-			'pacCamCorrel' => array(self::BELONGS_TO, 'Cama', 'pac_cam_correl'),
+			'cama' => array(self::MANY_MANY, 'Cama', 'paciente_has_cama(pac_pac_correl, cam_cam_correl)'),
 			'pacEspCorrel' => array(self::BELONGS_TO, 'Especialidad', 'pac_esp_correl'),
 			'pacSalCorrel' => array(self::BELONGS_TO, 'Sala', 'pac_sal_correl'),
 		);
@@ -80,7 +79,6 @@ class Paciente extends CActiveRecord
 			'pac_puntaje' => 'Puntaje',
 			'pac_rut' => 'Rut',
 			'pac_esp_correl' => 'Especialidad',
-			'pac_cam_correl' => 'Cama',
 			'pac_sal_correl' => 'Sala',
 			'pac_codigo' => 'Barra',
 		);
@@ -112,7 +110,6 @@ class Paciente extends CActiveRecord
 		$criteria->compare('pac_puntaje',$this->pac_puntaje);
 		$criteria->compare('pac_rut',$this->pac_rut,true);
 		$criteria->compare('pac_esp_correl',$this->pac_esp_correl,true);
-		$criteria->compare('pac_cam_correl',$this->pac_cam_correl,true);
 		$criteria->compare('pac_codigo',$this->pac_codigo,true);
 		$criteria->compare('pac_sal_correl',$this->pac_sal_correl,true);
 

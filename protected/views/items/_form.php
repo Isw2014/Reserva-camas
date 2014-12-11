@@ -18,8 +18,9 @@
     <?php echo $form->errorSummary($model); ?>
 
     <?php echo $form->textFieldControlGroup($model,'ite_nombre',array('maxlength'=>45)); ?>
-    <?php echo $form->textFieldControlGroup($model,'ite_estado'); ?>
-
+    <?php echo $form->dropDownListControlGroup($model, 'ite_estado', array(
+        '1' => 'Activo', '2' => 'Inactico'
+        ), array('empty' => 'Seleccione Estado' ));  ?>
     <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 
 <?php $this->endWidget(); ?>

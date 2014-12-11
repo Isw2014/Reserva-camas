@@ -85,7 +85,8 @@ class AntecedentesController extends Controller
 					$modelo->ant_ant_correl=$model->ant_correl;
 					$modelo->ite_ite_correl=$key->ite_correl;
 					$modelo->ant_ite_puntaje=($_POST['Grupo'][$key->ite_correl]);
-					$modelo->save();
+					if($modelo->save())
+						$model->ant_puntaje=$model->ant_puntaje+ $modelo->ant_ite_puntaje;
 				}
 			}
 			if($model->save())
@@ -108,7 +109,22 @@ class AntecedentesController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+		$array=ItemsHasAntecedentes::model()->findAllByAttributes(array('ant_ant_correl'=>$id));
+		if (isset($_POST['Grupo'])) {
+			$model->ant_puntaje=0;
 
+			foreach ($array as $key) {
+					$modelo=new ItemsHasAntecedentes;
+					$modelo->ant_ant_correl=$model->ant_correl;
+					$modelo->ite_ite_correl=$key->ite_ite_correl;
+					$modelo->ant_ite_puntaje=($_POST['Grupo'][$key->ite_ite_correl]);
+					$key->delete();
+					if($modelo->save())
+						$model->ant_puntaje=$model->ant_puntaje+ $modelo->ant_ite_puntaje;
+				}
+
+
+		}
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -119,9 +135,9 @@ class AntecedentesController extends Controller
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ant_correl));
 		}
-
 		$this->render('update',array(
 			'model'=>$model,
+			'array'=>$array,
 		));
 	}
 
@@ -134,7 +150,13 @@ class AntecedentesController extends Controller
 	{
 		if(Yii::app()->request->isPostRequest)
 		{
+			$array=ItemsHasAntecedentes::model()->findAllByAttributes(array('ant_ant_correl'=>$id));
+			foreach ($array as $key) {
+				$key->delete();
+			}
 			// we only allow deletion via POST request
+			//var_dump($this);
+			//die();
 			$this->loadModel($id)->delete();
 
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
@@ -162,7 +184,7 @@ class AntecedentesController extends Controller
 	public function actionAdmin($id)
 	{
 		$model=new Antecedentes('search');
-		
+		//$model=new Antecedentes;
 		$model->unsetAttributes();  // clear any default values
 		$model->ant_pac_correl=$id;
 		if(isset($_GET['Antecedentes']))

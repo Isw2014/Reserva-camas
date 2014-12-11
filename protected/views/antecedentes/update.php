@@ -5,6 +5,7 @@ $modelo= new paciente;
 $model->ant_correl=$_GET['id'];
 $model=Antecedentes::model()->findByPk($model->ant_correl);
 $modelo=paciente::model()->findByPk($model->ant_pac_correl);
+
 ?>
 
 <?php
@@ -22,4 +23,4 @@ $this->menu=array(
 ?>
 
 <?php echo BsHtml::pageHeader('Editar','Antecedentes '.$model->ant_fecha) ?>
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_formUpdate', array('model'=>$model,'array'=>$array)); ?>

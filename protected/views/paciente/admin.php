@@ -25,7 +25,6 @@ $this->breadcrumbs=array(
 		'pac_puntaje',
 		'pac_rut',
 		//'pac_esp_correl',
-		'pac_cam_correl',
 		'pac_sal_correl',
 				array(
 					'class'=>'CButtonColumn',

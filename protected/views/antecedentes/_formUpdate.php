@@ -21,12 +21,11 @@ $modelo= new items();
             <td><?php echo "fecha";?></td>
             <td><?php echo $form->dateField($model,'ant_fecha');?></td>
 <?php 
-$array=Items::model()->findAllByAttributes(array('ite_estado'=>"Activo"));
 foreach ($array as $key) :?>
         <tr>
-            <td><?php echo $key->ite_nombre; ?></td>
+            <td><?php echo items::model()->findByPk($key->ite_ite_correl)->ite_nombre; ?></td>
             <!--Despliega un formulario para cada id de la tabla ITEM-->
-            <td><input type="number" class="form-control" name="Grupo[<?php echo  $key->ite_correl?>]"</td>
+            <td><input type="number" class="form-control" name="Grupo[<?php echo $key->ite_ite_correl?>]" value=<?php echo $key->ant_ite_puntaje?> </td>
         </tr>
 <?php endforeach; ?>
       </tbody>

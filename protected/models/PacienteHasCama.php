@@ -1,26 +1,21 @@
 <?php
 
 /**
- * This is the model class for table "cama".
+ * This is the model class for table "paciente_has_cama".
  *
- * The followings are the available columns in table 'cama':
- * @property string $cam_correl
- * @property string $cam_numero
- * @property integer $cam_estado
- * @property string $cam_sal_correl
- *
- * The followings are the available model relations:
- * @property Sala $camSalCorrel
- * @property Paciente[] $pacientes
+ * The followings are the available columns in table 'paciente_has_cama':
+ * @property string $pac_pac_correl
+ * @property string $cam_cam_correl
+ * @property string $pac_cam_fecha
  */
-class Cama extends CActiveRecord
+class PacienteHasCama extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'cama';
+		return 'paciente_has_cama';
 	}
 
 	/**
@@ -31,12 +26,12 @@ class Cama extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cam_numero, cam_estado, cam_sal_correl', 'required'),
-			array('cam_estado', 'numerical', 'integerOnly'=>true),
-			array('cam_numero, cam_sal_correl', 'length', 'max'=>10),
+			array('pac_pac_correl, cam_cam_correl', 'required'),
+			array('pac_pac_correl, cam_cam_correl', 'length', 'max'=>10),
+			array('pac_cam_fecha', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('cam_correl, cam_numero, cam_estado, cam_sal_correl', 'safe', 'on'=>'search'),
+			array('pac_pac_correl, cam_cam_correl, pac_cam_fecha', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -48,9 +43,6 @@ class Cama extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'camSalCorrel' => array(self::BELONGS_TO, 'Sala', 'cam_sal_correl'),
-			'paciente' => array(self::MANY_MANY, 'Paciente', 'paciente_has_cama(pac_pac_correl, cam_cam_correl)'),
-
 		);
 	}
 
@@ -60,10 +52,9 @@ class Cama extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cam_correl' => 'Codigo',
-			'cam_numero' => 'Numero',
-			'cam_estado' => 'Estado',
-			'cam_sal_correl' => 'Sala',
+			'pac_pac_correl' => 'Pac Pac Correl',
+			'cam_cam_correl' => 'Cam Cam Correl',
+			'pac_cam_fecha' => 'Pac Cam Fecha',
 		);
 	}
 
@@ -85,10 +76,9 @@ class Cama extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('cam_correl',$this->cam_correl,true);
-		$criteria->compare('cam_numero',$this->cam_numero,true);
-		$criteria->compare('cam_estado',$this->cam_estado);
-		$criteria->compare('cam_sal_correl',$this->cam_sal_correl,true);
+		$criteria->compare('pac_pac_correl',$this->pac_pac_correl,true);
+		$criteria->compare('cam_cam_correl',$this->cam_cam_correl,true);
+		$criteria->compare('pac_cam_fecha',$this->pac_cam_fecha,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -99,7 +89,7 @@ class Cama extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Cama the static model class
+	 * @return PacienteHasCama the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

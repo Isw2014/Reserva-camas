@@ -37,8 +37,8 @@ $this->menu=array(
 		array('name'=>'Sala',
 		'value'=>sala::model()->findByPk($model->pac_sal_correl)->sal_numero,
 			),
-		array('name'=>'Cama',
-		'value'=>cama::model()->findByPk($model->pac_cam_correl)->cam_numero,
-			),
+		//array('name'=>'Cama',
+		//'value'=>cama::model()->findByPk($model->pac_cam_correl)->cam_numero,
+			//),
 	),
 )); ?>

@@ -39,11 +39,11 @@
         ));
     ?>
 
-    <?php echo $form->dropDownListControlGroup($model, 'pac_cam_correl', array(
+    <!--<?php/* "echo $form->dropDownListControlGroup($model, 'pac_cam_correl', array(
         CHtml::listData(cama::model()->findAll(),'cam_correl','cam_numero'),
         ), array('empty' => '(Seleccione cama)',
-        ));
-    ?>
+        ));"*/
+    ?>-->
 
     <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 
