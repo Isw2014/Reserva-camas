@@ -12,6 +12,10 @@ $this->menu=array(
 
 ?>
 
+
+
+
+
 <?php echo BsHtml::pageHeader('Administrar','Camas') ?>
 <div class="panel panel-default">
     <div class="panel-body">

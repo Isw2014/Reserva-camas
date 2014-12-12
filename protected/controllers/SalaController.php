@@ -141,6 +141,7 @@ class SalaController extends Controller
 	{
 		$model=new Sala('search');
 		$model->unsetAttributes();  // clear any default values
+		$this->actualizarSala();
 		if(isset($_GET['Sala']))
 			$model->attributes=$_GET['Sala'];
 
@@ -174,6 +175,26 @@ class SalaController extends Controller
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
+		}
+	}
+
+	public function actualizarSala($id=null)
+	{
+		if ($id!=null) 
+		{
+			$sal= Sala::model()->findByPk($id);
+			$cam= Cama::model()->findallbyattributes(array('cam_sal_correl' =>$sal->sal_correl));
+			$camas= Cama::model()->findallbyattributes(array('cam_sal_correl' =>$sal->sal_correl,'cam_estado'=>'Libre'));
+			$sal->sal_totalCamas=count ( $cam);
+			$sal->sal_camasDisponibles=count ( $camas);
+			$sal->save();	
+		}
+		else
+		{
+			$sal=Sala::model()->findAll();
+			foreach ($sal as $key) {
+				$this->actualizarSala($key->sal_correl);
+			}
 		}
 	}
 }

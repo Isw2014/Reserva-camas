@@ -63,6 +63,9 @@ class AntecedentesController extends Controller
 	public function actionCreate($id)
 	{
 		$model=new Antecedentes;
+		$perso=Paciente::model()->findByPk($id);
+		$var=new Antecedentes;
+		$vaq=new Antecedentes;
 		// Uncomment the following line if AJAX validation is needed
 		 $this->performAjaxValidation($model);
 		if(isset($_POST['Antecedentes']))
@@ -89,6 +92,24 @@ class AntecedentesController extends Controller
 						$model->ant_puntaje=$model->ant_puntaje+ $modelo->ant_ite_puntaje;
 				}
 			}
+			$vaq->ant_fecha=('0000-00-00');
+			$var=Antecedentes::model()->findAllByAttributes(array('ant_pac_correl' =>$id ));
+			foreach ($var as $key) {
+				if (($key->ant_fecha>$vaq->ant_fecha)&($key->ant_puntaje!=null)) {
+					$perso->pac_puntaje=$key->ant_puntaje;
+				}
+			}
+			//		echo $vaq->ant_puntaje;
+			//$perso->pac_puntaje=$vaq->ant_puntaje;
+			//$__set($perso->pac_puntaje,$vaq->ant_puntaje);
+			
+			if ($perso->save()) {
+
+				var_dump($perso);
+				die();
+			}
+			//echo "no paso";
+			//die();
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ant_correl));
 		}

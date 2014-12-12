@@ -27,6 +27,8 @@ $this->menu=array(
 		//'cam_correl',
 		'cam_numero',
 		'cam_estado',
-		'cam_sal_correl',
+		array('name'=>"Sala",
+			'value'=>((Sala::model()->findByPk($model->cam_sal_correl)->sal_numero)
+			)),
 	),
 )); ?>

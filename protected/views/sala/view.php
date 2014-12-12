@@ -28,6 +28,8 @@ $this->menu=array(
 		'sal_numero',
 		'sal_totalCamas',
 		'sal_camasDisponibles',
-		'sal_are_correl',
+		array('name'=>"Area",
+			'value'=>((Area::model()->findByPk($model->sal_are_correl)->are_nombre)
+			)),
 	),
 )); ?>

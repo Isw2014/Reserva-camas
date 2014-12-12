@@ -62,16 +62,18 @@ class CamaController extends Controller
 	*/
 	public function actionCreate()
 	{
-		$model=new Cama;
 
+		$model=new Cama;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Cama']))
 		{
 			$model->attributes=$_POST['Cama'];
-			if($model->save())
+			if($model->save()){
+				$this->actualizarSala($model->cam_sal_correl);
 				$this->redirect(array('view','id'=>$model->cam_correl));
+			}
 		}
 
 		$this->render('create',array(
@@ -95,6 +97,7 @@ class CamaController extends Controller
 		{
 			$model->attributes=$_POST['Cama'];
 			if($model->save())
+				$this->actualizarSala($model->cam_sal_correl);
 				$this->redirect(array('view','id'=>$model->cam_correl));
 		}
 
@@ -112,8 +115,11 @@ class CamaController extends Controller
 	{
 		if(Yii::app()->request->isPostRequest)
 		{
+			$cama= Cama::model()->findByPk($id);
 			// we only allow deletion via POST request
-			$this->loadModel($id)->delete();
+			$sal= Sala::model()->findByPk($cama->cam_sal_correl);
+			$cama->delete();
+			$this->actualizarSala($sal->sal_correl);
 
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 			if(!isset($_GET['ajax']))
@@ -143,7 +149,6 @@ class CamaController extends Controller
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Cama']))
 			$model->attributes=$_GET['Cama'];
-
 		$this->render('admin',array(
 			'model'=>$model,
 		));
@@ -176,4 +181,36 @@ class CamaController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	public function actualizarSala($id=null)
+	{
+		if ($id!=null) 
+		{
+			$sal= Sala::model()->findByPk($id);
+			$cam= Cama::model()->findallbyattributes(array('cam_sal_correl' =>$sal->sal_correl));
+			$camas= Cama::model()->findallbyattributes(array('cam_sal_correl' =>$sal->sal_correl,'cam_estado'=>'Libre'));
+			$sal->sal_totalCamas=count ( $cam);
+			$sal->sal_camasDisponibles=count ( $camas);
+			$sal->save();	
+		}
+
+		if($id=null){
+			$sal=Sala::model()->findAll();
+			foreach ($sal as $key) {
+				$this->actualizarSala($key->sal_correl);
+			}
+		}
+	}
+
+
+
+
+
+
+
 }
+
+
+
+
+
