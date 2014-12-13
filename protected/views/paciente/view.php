@@ -11,6 +11,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Antecedentes', 'url'=>array('//antecedentes/admin','id'=>$model->pac_correl)),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Hospitalizaciones', 'url'=>array('//pacienteHasCama/admin','id'=>$model->pac_correl)),
     array('icon' => 'glyphicon glyphicon-tasks','label'=>'Editar', 'url'=>array('update','id'=>$model->pac_correl)),
     array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
 );

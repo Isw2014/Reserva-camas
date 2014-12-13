@@ -39,6 +39,7 @@ class Paciente extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('pac_estado,pac_sal_correl','required'),
 			array('pac_estado, pac_puntaje', 'numerical', 'integerOnly'=>true),
 			array('pac_nombre, pac_aPaterno, pac_aMaterno', 'length', 'max'=>45),
 			array('pac_rut', 'length', 'max'=>12),

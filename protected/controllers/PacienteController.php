@@ -84,6 +84,7 @@ class PacienteController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+		$cam= new PacienteHasCama;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -91,7 +92,10 @@ class PacienteController extends Controller
 		if(isset($_POST['Paciente']))
 		{
 			$model->attributes=$_POST['Paciente'];
+			$cam->cam_cam_correl=($_POST['Cama']['cam_correl']);
+			$cam->pac_pac_correl=$id;
 			if($model->save())
+				$cam->save();
 				$this->redirect(array('view','id'=>$model->pac_correl));
 		}
 

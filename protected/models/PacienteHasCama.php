@@ -28,7 +28,7 @@ class PacienteHasCama extends CActiveRecord
 		return array(
 			array('pac_pac_correl, cam_cam_correl', 'required'),
 			array('pac_pac_correl, cam_cam_correl', 'length', 'max'=>10),
-			array('pac_cam_fecha', 'safe'),
+			array('pac_cam_fechaInicio,pac_cam_fechaFin', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('pac_pac_correl, cam_cam_correl, pac_cam_fecha', 'safe', 'on'=>'search'),
@@ -52,9 +52,10 @@ class PacienteHasCama extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'pac_pac_correl' => 'Pac Pac Correl',
-			'cam_cam_correl' => 'Cam Cam Correl',
-			'pac_cam_fecha' => 'Pac Cam Fecha',
+			'pac_pac_correl' => 'Paciente',
+			'cam_cam_correl' => 'Cama',
+			'pac_cam_fechaInicio' => 'Fecha Ingreso',
+			'pac_cam_fechaFin' => 'Fecha Alta',
 		);
 	}
 
@@ -78,7 +79,8 @@ class PacienteHasCama extends CActiveRecord
 
 		$criteria->compare('pac_pac_correl',$this->pac_pac_correl,true);
 		$criteria->compare('cam_cam_correl',$this->cam_cam_correl,true);
-		$criteria->compare('pac_cam_fecha',$this->pac_cam_fecha,true);
+		$criteria->compare('pac_cam_fechaInicio',$this->pac_cam_fechaInicio,true);
+		$criteria->compare('pac_cam_fechaFin',$this->pac_cam_fechaFin,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

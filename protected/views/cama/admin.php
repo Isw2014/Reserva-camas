@@ -23,11 +23,14 @@ $this->menu=array(
 			'id'=>'antecedentes-grid',
 			'dataProvider'=>$model->search(),
 			'filter'=>$model,
+			'type'=>BsHtml::GRID_TYPE_BORDERED,
 			'columns'=>array(
 		//'cam_correl',
 		'cam_numero',
 		'cam_estado',
-		'cam_sal_correl',
+		array('name'=>'cam_sal_correl',
+		 	'value' =>'Sala::model()->findByPk($data->cam_sal_correl)->sal_numero',
+		 	),
 		array(
 			'class'=>'CButtonColumn',
 		),
