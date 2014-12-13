@@ -21,14 +21,11 @@ $this->menu=array(
 		'usu_correl',
 		'usu_nombre',
 		'usu_aPaterno',
-		'usu_aMaterno',
-		'usu_usuario',
-		'usu_clave',
-		/*
+		'usu_aMaterno',			
 		'usu_rut',
 		'usu_esp_correl',
 		'usu_mail',
-		*/
+		
 		array(
 			'class'=>'CButtonColumn',
 		),

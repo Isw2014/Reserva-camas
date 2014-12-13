@@ -11709,3 +11709,435 @@ Stack trace:
 REQUEST_URI=/yii/Isw%202014-2/index.php/sala/actu
 HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/sala/admin
 ---
+2014/12/12 23:29:36 [rbac] [application] PERMISSION IS REQUIRED:
+Freddy
+iduser=10
+tipo:operacion
+itemName:action_ui_usermanagementadmin
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/12 23:29:36 [rbac] [application] PERMISSION IS REQUIRED:
+Freddy
+iduser=10
+tipo:operacion
+itemName:admin
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\views\layouts\ui.php (29)
+2014/12/12 23:30:30 [warning] [application] Error al establecer unsafe al atributo "regdate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/12 23:30:30 [warning] [application] Error al establecer unsafe al atributo "actdate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/12 23:30:30 [warning] [application] Error al establecer unsafe al atributo "logondate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/12 23:44:48 [warning] [application] Error al establecer unsafe al atributo "regdate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/12 23:44:48 [warning] [application] Error al establecer unsafe al atributo "actdate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/12 23:44:48 [warning] [application] Error al establecer unsafe al atributo "logondate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/12 23:45:16 [warning] [application] Error al establecer unsafe al atributo "regdate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/12 23:45:16 [warning] [application] Error al establecer unsafe al atributo "actdate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/12 23:45:16 [warning] [application] Error al establecer unsafe al atributo "logondate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/13 01:52:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php:120
+Stack trace:
+#0 [internal function]: UsuarioController->actionDelete('1')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsuarioController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/usuario/delete/1
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/usuario/admin
+---
+2014/12/13 01:52:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php:120
+Stack trace:
+#0 [internal function]: UsuarioController->actionDelete('1')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsuarioController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/usuario/delete/1
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/usuario/admin
+---
+2014/12/13 02:12:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php:120
+Stack trace:
+#0 [internal function]: UsuarioController->actionDelete('1')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsuarioController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/usuario/delete/1
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/usuario/admin
+---
+2014/12/13 02:13:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php:120
+Stack trace:
+#0 [internal function]: UsuarioController->actionDelete('1')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsuarioController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/usuario/delete/1
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/usuario/admin
+---
+2014/12/13 02:23:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php:120
+Stack trace:
+#0 [internal function]: UsuarioController->actionDelete('1')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsuarioController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/usuario/delete/1
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/usuario/admin
+---
+2014/12/13 02:24:53 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_usuario_create
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/13 02:24:53 [warning] [application] Error al establecer unsafe al atributo "usu_usuario" de "Usuario".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php (69)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii2\Reserva-camas\index.php (13)
+2014/12/13 02:24:53 [warning] [application] Error al establecer unsafe al atributo "usu_clave" de "Usuario".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php (69)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii2\Reserva-camas\index.php (13)
+2014/12/13 02:24:54 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_usuario_view
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/13 02:27:09 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_usuario_view
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/13 02:28:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php:120
+Stack trace:
+#0 [internal function]: UsuarioController->actionDelete('2')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsuarioController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/usuario/delete/2
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/usuario/admin
+---
+2014/12/13 02:30:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php:120
+Stack trace:
+#0 [internal function]: UsuarioController->actionDelete('1')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsuarioController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/usuario/delete/1
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/usuario/admin
+---
+2014/12/13 02:30:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\UsuarioController.php:120
+Stack trace:
+#0 [internal function]: UsuarioController->actionDelete('2')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsuarioController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/usuario/delete/2
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/usuario/admin
+---
+2014/12/13 02:45:30 [warning] [application] Error al establecer unsafe al atributo "regdate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/13 02:45:30 [warning] [application] Error al establecer unsafe al atributo "actdate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/13 02:45:30 [warning] [application] Error al establecer unsafe al atributo "logondate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (230)
+2014/12/13 02:55:35 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_usuario_admin
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/13 03:02:34 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_usuario_admin
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/13 03:30:49 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_cama_admin
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/13 21:09:52 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_cama_admin
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/13 21:58:51 [warning] [application] Error al establecer unsafe al atributo "regdate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (222)
+2014/12/13 21:58:51 [warning] [application] Error al establecer unsafe al atributo "actdate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (222)
+2014/12/13 21:58:51 [warning] [application] Error al establecer unsafe al atributo "logondate" de "CrugeStoredUser".
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\models\data\CrugeStoredUser.php (134)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (240)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\controllers\UiController.php (222)
+2014/12/13 22:13:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\CamaController.php:126
+Stack trace:
+#0 [internal function]: CamaController->actionDelete('3')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CamaController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CamaController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('cama/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/cama/delete/3
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/cama/admin
+---
+2014/12/13 22:13:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\CamaController.php:126
+Stack trace:
+#0 [internal function]: CamaController->actionDelete('2')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CamaController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CamaController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('cama/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/cama/delete/2
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/cama/admin
+---
+2014/12/13 22:13:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\Yii2\Reserva-camas\protected\controllers\CamaController.php:126
+Stack trace:
+#0 [internal function]: CamaController->actionDelete('1')
+#1 C:\xampp\htdocs\Yii2\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CamaController), Array)
+#2 C:\xampp\htdocs\Yii2\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CamaController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\Yii2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii2\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Yii2\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii2\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(282): CController->run('delete')
+#11 C:\xampp\htdocs\Yii2\framework\web\CWebApplication.php(141): CWebApplication->runController('cama/delete')
+#12 C:\xampp\htdocs\Yii2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Yii2\Reserva-camas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii2/Reserva-camas/index.php/cama/delete/1
+HTTP_REFERER=http://127.0.0.1/yii2/Reserva-camas/index.php/cama/admin
+---
+2014/12/14 00:11:33 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_create
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/14 00:11:49 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_admin
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/14 00:12:04 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_create
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/14 00:12:08 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_admin
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/14 00:12:09 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_view
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/14 00:12:10 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/14 00:12:14 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii2\Reserva-camas\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)

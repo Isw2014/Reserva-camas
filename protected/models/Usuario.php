@@ -37,16 +37,14 @@ class Usuario extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('usu_usuario, usu_clave, usu_role, usu_mail', 'required'),
-			array('usu_role', 'numerical', 'integerOnly'=>true),
-			array('usu_nombre, usu_aPaterno, usu_aMaterno, usu_usuario', 'length', 'max'=>45),
-			array('usu_clave', 'length', 'max'=>20),
+			array('usu_mail', 'required'),			
+			array('usu_nombre, usu_aPaterno, usu_aMaterno', 'length', 'max'=>45),		
 			array('usu_rut', 'length', 'max'=>12),
 			array('usu_mail', 'length', 'max'=>100),
 			array('usu_esp_correl', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('usu_correl, usu_nombre, usu_aPaterno, usu_aMaterno, usu_usuario, usu_clave, usu_role, usu_rut, usu_mail, usu_esp_correl', 'safe', 'on'=>'search'),
+			array('usu_correl, usu_nombre, usu_aPaterno, usu_aMaterno, usu_rut, usu_mail, usu_esp_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -69,16 +67,13 @@ class Usuario extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'usu_correl' => 'Usu Correl',
-			'usu_nombre' => 'Usu Nombre',
-			'usu_aPaterno' => 'Usu A Paterno',
-			'usu_aMaterno' => 'Usu A Materno',
-			'usu_usuario' => 'Usu Usuario',
-			'usu_clave' => 'Usu Clave',
-			'usu_role' => 'Usu Role',
-			'usu_rut' => 'Usu Rut',
-			'usu_mail' => 'Usu Mail',
-			'usu_esp_correl' => 'Usu Esp Correl',
+			'usu_correl' => 'Id usuario',
+			'usu_nombre' => 'Nombre usuario',
+			'usu_aPaterno' => 'Ap. Pat.',
+			'usu_aMaterno' => 'Ap. Mat.',			
+			'usu_rut' => 'Rut usuario',
+			'usu_mail' => 'Mail usuario',
+			'usu_esp_correl' => 'Especialidad',
 		);
 	}
 
@@ -100,13 +95,10 @@ class Usuario extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('usu_correl',$this->usu_correl,true);
+		//$criteria->compare('usu_correl',$this->usu_correl,true);
 		$criteria->compare('usu_nombre',$this->usu_nombre,true);
 		$criteria->compare('usu_aPaterno',$this->usu_aPaterno,true);
-		$criteria->compare('usu_aMaterno',$this->usu_aMaterno,true);
-		$criteria->compare('usu_usuario',$this->usu_usuario,true);
-		$criteria->compare('usu_clave',$this->usu_clave,true);
-		$criteria->compare('usu_role',$this->usu_role);
+		$criteria->compare('usu_aMaterno',$this->usu_aMaterno,true);	
 		$criteria->compare('usu_rut',$this->usu_rut,true);
 		$criteria->compare('usu_mail',$this->usu_mail,true);
 		$criteria->compare('usu_esp_correl',$this->usu_esp_correl,true);
