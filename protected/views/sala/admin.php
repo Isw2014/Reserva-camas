@@ -18,12 +18,15 @@ $this->menu=array(
 			'id'=>'antecedentes-grid',
 			'dataProvider'=>$model->search(),
 			'filter'=>$model,
+			'type'=>BsHtml::GRID_TYPE_BORDERED,
 			'columns'=>array(
 		//'sal_correl',
 		'sal_numero',
 		'sal_totalCamas',
 		'sal_camasDisponibles',
-		'sal_are_correl',
+		 array('name'=>'sal_are_correl',
+		 	'value' =>'Area::model()->findByPk($data->sal_are_correl)->are_nombre',
+		 	),
 		array(
 			'class'=>'CButtonColumn',
 		),

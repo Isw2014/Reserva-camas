@@ -18,8 +18,6 @@
     <?php echo $form->errorSummary($model); ?>
 
     <?php echo $form->textFieldControlGroup($model,'sal_numero',array('maxlength'=>10)); ?>
-    <?php echo $form->textFieldControlGroup($model,'sal_totalCamas'); ?>
-    <?php echo $form->textFieldControlGroup($model,'sal_camasDisponibles'); ?>
 
     <?php echo $form->dropDownListControlGroup($model, 'sal_are_correl', array(
         CHtml::listData(area::model()->findAll(),'are_correl','are_nombre'),

@@ -18,6 +18,7 @@ $this->menu=array(
 			'id'=>'antecedentes-grid',
 			'dataProvider'=>$model->search(),
 			'filter'=>$model,
+			'type'=>BsHtml::GRID_TYPE_BORDERED,
 			'columns'=>array(
 		//'esp_correl',
 		'esp_nombre',

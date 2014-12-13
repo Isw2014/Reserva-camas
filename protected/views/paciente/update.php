@@ -15,5 +15,5 @@ $this->menu=array(
 );
 ?>
 
-<?php echo BsHtml::pageHeader('Editar','Paciente '.$model->pac_nombre." ".$model->pac_aPaterno) ?>
+<?php echo BsHtml::pageHeader('Actualizar','Paciente '.$model->pac_nombre." ".$model->pac_aPaterno) ?>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
