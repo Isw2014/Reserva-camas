@@ -12,7 +12,7 @@ $this->menu=array(
 ?>
 
 
-?>
+
 
 <?php echo BsHtml::pageHeader('Administrar','Pacientes') ?>
 

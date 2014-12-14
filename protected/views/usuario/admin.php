@@ -31,5 +31,13 @@ $this->menu=array(
 		),
 	),
 )); ?>
+<?php 
+	/*if($booleanResult = Yii::app()->user->isSuperAdmin){
+		echo "hola mundo";
+	}
+	else{
+		echo "fail mundi";
+	} */
+?>
     </div>
 </div>

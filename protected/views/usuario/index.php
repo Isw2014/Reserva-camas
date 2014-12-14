@@ -19,3 +19,9 @@ $this->menu=array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+<?php if($booleanResult = Yii::app()->user->isSuperAdmin;){
+	echo <h1>hola mundo</h1>
+}
+else{
+	echo <h1>fail mundo </h1>
+} ?>

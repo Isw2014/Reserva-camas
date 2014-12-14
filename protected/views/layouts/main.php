@@ -15,7 +15,14 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css" />
-
+	<style>
+		#div1 {
+			width: 100%;
+			height: 100%;
+			background: #3399cc;
+			
+		}
+	</style>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -24,7 +31,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<a href="http://s72.photobucket.com/user/Kruger182/media/logoCamas_zps7b4466d6.png.html" target="_blank"><img src="http://i72.photobucket.com/albums/i182/Kruger182/logoCamas_zps7b4466d6.png" border="0" alt=" photo logoCamas_zps7b4466d6.png"/></a>
+		<a href="http://127.0.0.1/yii2/Reserva-camas/index.php/site/index"><img src="http://i72.photobucket.com/albums/i182/Kruger182/logoCamas_zps7b4466d6.png" border="0" alt=" photo logoCamas_zps7b4466d6.png"/></a>
 	</div><!-- header -->
 
 	<div id="mainmenu">
@@ -37,7 +44,7 @@
 				array('label'=>'Camas', 'url'=>array('/cama/admin')),
 				array('label'=>'Especialidad', 'url'=>array('/Especialidad/admin')),
 				array('label'=>'Items', 'url'=>array('/items/admin')),								
-				array('label'=>'Usuario', 'url'=>array('/usuario/admin')),
+				//array('label'=>'Usuario', 'url'=>array('/usuario/admin')),
 				array('label'=>'Contáctenos', 'url'=>array('/site/contact')),
 				array('label'=>'Acerca de Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
 				//array('label'=>'Antecedentes', 'url'=>array('/antecedentes/admin')),
