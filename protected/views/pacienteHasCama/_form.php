@@ -6,8 +6,8 @@
 
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'paciente-has-cama-form',
+<?php $form=$this->beginWidget('bootstrap.widgets.BsActiveForm', array(
+    'id'=>'paciente-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
@@ -15,36 +15,32 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="help-block">Campos con <span class="required">*</span> son obligatorios.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'pac_pac_correl'); ?>
-		<?php echo $form->textField($model,'pac_pac_correl',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'pac_pac_correl'); ?>
+		<?php echo $form->dropDownListControlGroup($model,'cam_cam_correl', array(
+        CHtml::listData(cama::model()->findAllByAttributes(array('cam_estado' => "Libre")),'cam_correl','cam_numero'),
+        ), array('empty' => '(Seleccione cama)',
+        ));
+    ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'cam_cam_correl'); ?>
-		<?php echo $form->textField($model,'cam_cam_correl',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'cam_cam_correl'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'pac_cam_fechaInicio'); ?>
-		<?php echo $form->textField($model,'pac_cam_fechaInicio'); ?>
+		<td><b><?php echo "fecha Ingreso";?><br></td>
+        <td><?php echo $form->dateField($model,'pac_cam_fechaInicio');?></td>
 		<?php echo $form->error($model,'pac_cam_fechaInicio'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'pac_cam_fechaFin'); ?>
-		<?php echo $form->textField($model,'pac_cam_fechaFin'); ?>
+		<td><b><?php echo "fecha Alta";?><br></td>
+        <td><?php echo $form->dateField($model,'pac_cam_fechaFin');?></td>
 		<?php echo $form->error($model,'pac_cam_fechaFin'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

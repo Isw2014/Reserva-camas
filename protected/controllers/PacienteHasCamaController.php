@@ -60,18 +60,23 @@ class PacienteHasCamaController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
+	public function actionCreate($id)
 	{
 		$model=new PacienteHasCama;
+		$cam=new Cama;
+
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['PacienteHasCama']))
 		{
 			$model->attributes=$_POST['PacienteHasCama'];
+			$model->pac_pac_correl=$id;
+			if(isset($_POST['Cama'])){
+				$model->cam_cam_correl=$_POST['Cama']['cam_correl'];
+			}
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->pac_pac_correl));
+				$this->redirect(array('view','id'=>$model->pac_pac_correl,'id2'=>$model->cam_cam_correl));
 		}
 
 		$this->render('create',array(
@@ -86,16 +91,19 @@ class PacienteHasCamaController extends Controller
 	 */
 	public function actionUpdate($id,$id2)
 	{
+
 		$model=$this->loadModel($id,$id2);
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['PacienteHasCama']))
 		{
 			$model->attributes=$_POST['PacienteHasCama'];
+			if(isset($_POST['Cama'])){
+				$model->cam_cam_correl=$_POST['Cama']['cam_correl'];
+			}
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->pac_pac_correl));
+				$this->redirect(array('view','id'=>$model->pac_pac_correl,'id2'=>$model->cam_cam_correl));
 		}
 
 		$this->render('update',array(
@@ -131,7 +139,7 @@ class PacienteHasCamaController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin($id)
+	public function actionAdmin($id=null)
 	{
 		$model=new PacienteHasCama('search');
 		$model->unsetAttributes();  // clear any default values

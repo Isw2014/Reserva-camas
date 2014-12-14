@@ -92,10 +92,10 @@ class PacienteController extends Controller
 		if(isset($_POST['Paciente']))
 		{
 			$model->attributes=$_POST['Paciente'];
-			$cam->cam_cam_correl=($_POST['Cama']['cam_correl']);
-			$cam->pac_pac_correl=$id;
+			//$cam->cam_cam_correl=($_POST['Cama']['cam_correl']);
+			//$cam->pac_pac_correl=$id;
 			if($model->save())
-				$cam->save();
+				//$cam->save();
 				$this->redirect(array('view','id'=>$model->pac_correl));
 		}
 

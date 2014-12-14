@@ -1,18 +1,20 @@
 <?php
 /* @var $this PacienteHasCamaController */
 /* @var $model PacienteHasCama */
-
+$modelo= Paciente::model()->findByPk($_GET['id']);
 $this->breadcrumbs=array(
-	'Paciente Has Camas'=>array('index'),
-	'Create',
+		'Pacientes'=>array('//paciente/admin'),
+	$modelo->pac_nombre." ".$modelo->pac_aPaterno=>array('//paciente/view','id'=>$modelo->pac_correl),
+	'Hospitalizaciones'=>array('admin','id'=>$modelo->pac_correl),
+	"Agregar",
 );
 
 $this->menu=array(
-	array('label'=>'List PacienteHasCama', 'url'=>array('index')),
-	array('label'=>'Manage PacienteHasCama', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin','id'=>$modelo->pac_correl)),
 );
 ?>
 
-<h1>Create PacienteHasCama</h1>
+<?php echo BsHtml::pageHeader('Editar','Hospitalización') ?>
+
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -6,6 +6,7 @@ $modelo= new paciente;
 $modelo->pac_correl=$_GET['id'];
 $modelo=paciente::model()->findByPk($modelo->pac_correl);
 
+
 $this->breadcrumbs=array(
 	'Pacientes'=>array('//paciente/admin'),
 	$modelo->pac_nombre." ".$modelo->pac_aPaterno=>array('//paciente/view','id'=>$modelo->pac_correl),
@@ -20,7 +21,10 @@ $this->menu=array(
 
 <?php echo BsHtml::pageHeader('Administrar','Hospitalizaciones') ?>
 
-<?php $this->widget('bootstrap.widgets.BsGridView',array(
+
+<?php
+//die(); 
+$this->widget('bootstrap.widgets.BsGridView',array(
 	'id'=>'paciente-has-cama-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,

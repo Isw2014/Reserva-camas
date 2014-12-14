@@ -18,6 +18,7 @@ $this->menu=array(
 );
 ?>
 
+
 <?php echo BsHtml::pageHeader('Administrar','Antecedentes') ?>
 <div class="panel panel-default">
     <div class="panel-body">

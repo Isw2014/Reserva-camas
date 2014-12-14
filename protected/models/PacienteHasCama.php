@@ -31,7 +31,7 @@ class PacienteHasCama extends CActiveRecord
 			array('pac_cam_fechaInicio,pac_cam_fechaFin', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('pac_pac_correl, cam_cam_correl, pac_cam_fecha', 'safe', 'on'=>'search'),
+			array('pac_pac_correl, cam_cam_correl, pac_cam_fecha,pac_cam_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,6 +53,7 @@ class PacienteHasCama extends CActiveRecord
 	{
 		return array(
 			'pac_pac_correl' => 'Paciente',
+			'pac_cam_correl' => 'Codigo',
 			'cam_cam_correl' => 'Cama',
 			'pac_cam_fechaInicio' => 'Fecha Ingreso',
 			'pac_cam_fechaFin' => 'Fecha Alta',
@@ -79,6 +80,7 @@ class PacienteHasCama extends CActiveRecord
 
 		$criteria->compare('pac_pac_correl',$this->pac_pac_correl,true);
 		$criteria->compare('cam_cam_correl',$this->cam_cam_correl,true);
+		$criteria->compare('pac_cam_correl',$this->pac_cam_correl,true);
 		$criteria->compare('pac_cam_fechaInicio',$this->pac_cam_fechaInicio,true);
 		$criteria->compare('pac_cam_fechaFin',$this->pac_cam_fechaFin,true);
 

@@ -32,9 +32,9 @@
         ), array('empty' => '(Seleccione Especialidad)',
         ));
     ?>
-    <?php echo BsHtml::pageHeader('','Datos hospitalizacion ') ?>
+    <!--<?php //echo BsHtml::pageHeader('','Datos hospitalizacion ') ?>
 
-    <?php echo $form->dropDownListControlGroup($model, 'pac_sal_correl', array(
+    <?php /*echo $form->dropDownListControlGroup($model, 'pac_sal_correl', array(
         CHtml::listData(sala::model()->findAll(),'sal_correl','sal_numero'),
         ), array('empty' => '(Seleccione Sala)',
         ));
@@ -48,7 +48,7 @@
     <div><?php echo "Fecha hospitalizacion" ?></div>
     <div><?php echo $form->dateField(PacienteHasCama::model(),'pac_cam_fechaInicio');?></div>
     <div><?php echo "Fecha Alta" ?></div>
-    <div><?php echo $form->dateField(PacienteHasCama::model(),'pac_cam_fechaFin');?></div>
+    <div><?php echo $form->dateField(PacienteHasCama::model(),'pac_cam_fechaFin');*/?></div>-->
 
     <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 
