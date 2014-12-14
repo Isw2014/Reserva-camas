@@ -25,7 +25,7 @@ class PacienteController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','pdf'),
+				'actions'=>array('index','view','pdf','pdf2'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -183,4 +183,10 @@ class PacienteController extends Controller
         $this->render('pdf'
         );
     }
+     public function actionPdf2($id=null)
+    {
+        $this->render('pdf2'
+        );
+    }
+
 }
