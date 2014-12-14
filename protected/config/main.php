@@ -62,6 +62,11 @@ return array(
 				 'rbacSetupEnabled'=>true,
 				 'allowUserAlways'=>true,
 
+				'afterLoginUrl'=>array('/site/index'), 
+				'afterLogoutUrl'=>array('/site/page','view'=>'about'),
+				'afterSessionExpiredUrl'=>null,
+				'userFilter' => 'application.components.MiFiltroUsuario',
+
 				// MIENTRAS INSTALAS..PONLO EN: false
 				// lee mas abajo respecto a 'Encriptando las claves'
 				//
@@ -80,9 +85,7 @@ return array(
 				//		'afterLoginUrl'=>array('/site/welcome'),  ( !!! no olvidar el slash inicial / )
 				//		'afterLogoutUrl'=>array('/site/page','view'=>'about'),
 				//
-				'afterLoginUrl'=>null,
-				'afterLogoutUrl'=>null,
-				'afterSessionExpiredUrl'=>null,
+				
 
 				// manejo del layout con cruge.
 				//

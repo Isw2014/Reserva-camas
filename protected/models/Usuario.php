@@ -47,7 +47,10 @@ class Usuario extends CActiveRecord
 			array('usu_correl, usu_nombre, usu_aPaterno, usu_aMaterno, usu_rut, usu_mail, usu_esp_correl', 'safe', 'on'=>'search'),
 		);
 	}
-
+	public function getPresentacion(){
+		// usa los magic getters abajo para leer campos personalizados
+		return ucwords($this->nombre." campofeo".$this->apellido);
+	}
 	/**
 	 * @return array relational rules.
 	 */
@@ -58,6 +61,8 @@ class Usuario extends CActiveRecord
 		return array(
 			'usuEspCorrel' => array(self::BELONGS_TO, 'Especialidad', 'usu_esp_correl'),
 			'salas' => array(self::MANY_MANY, 'Sala', 'usuario_has_sala(sal_usu_correl, sal_sal_correl)'),
+			//'userCruge' => array(self::BELONGS_TO, 'cruge_user', 'usu_iduser'),
+			'iduser0' => array(self::BELONGS_TO, 'CrugeStoredUser', 'iduser'),
 		);
 	}
 

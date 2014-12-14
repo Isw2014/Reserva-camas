@@ -24,7 +24,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		<a href="http://s72.photobucket.com/user/Kruger182/media/logoCamas_zps7b4466d6.png.html" target="_blank"><img src="http://i72.photobucket.com/albums/i182/Kruger182/logoCamas_zps7b4466d6.png" border="0" alt=" photo logoCamas_zps7b4466d6.png"/></a>
 	</div><!-- header -->
 
 	<div id="mainmenu">

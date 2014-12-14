@@ -5,6 +5,7 @@ class SiteController extends Controller
 	/**
 	 * Declares class-based actions.
 	 */
+
 	public function actions()
 	{
 		return array(
@@ -20,7 +21,11 @@ class SiteController extends Controller
 			),
 		);
 	}
-
+	
+	public function filters()
+   	{
+      return array(array('CrugeAccessControlFilter'));
+  	}
 	/**
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
