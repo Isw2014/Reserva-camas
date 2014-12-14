@@ -38,6 +38,7 @@ $this->widget('bootstrap.widgets.BsGridView',array(
 		'pac_cam_fechaFin',
 		array(
 			'class'=>'CButtonColumn',
+			'template' => '{view}{delete}',
 		),
 	),
 )); ?>
