@@ -30,7 +30,7 @@ $this->menu=array(
 		'pac_aPaterno',
 		'pac_aMaterno',
 		'pac_estado',
-		'pac_puntaje',
+		'pac_categoria',
 		'pac_rut',
 		array('name'=>'Especialidad',
 		'value'=>especialidad::model()->findByPk($model->pac_esp_correl)->esp_nombre,

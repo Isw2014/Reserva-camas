@@ -27,7 +27,7 @@ $this->menu=array(
 		'pac_aPaterno',
 		'pac_aMaterno',
 		'pac_estado',
-		'pac_puntaje',
+		'pac_categoria',
 		'pac_rut',
 		array('name'=>'pac_esp_correl',
 		 	'value' =>'Especialidad::model()->findByPk($data->pac_esp_correl)->esp_nombre',

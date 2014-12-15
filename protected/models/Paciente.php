@@ -9,7 +9,7 @@
  * @property string $pac_aPaterno
  * @property string $pac_aMaterno
  * @property integer $pac_estado
- * @property integer $pac_puntaje
+ * @property integer $pac_categoria
  * @property string $pac_rut
  * @property string $pac_esp_correl
  * @property string $pac_codigo
@@ -40,14 +40,14 @@ class Paciente extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('pac_estado,pac_sal_correl','required'),
-			array('pac_estado, pac_puntaje', 'numerical', 'integerOnly'=>true),
+			array('pac_estado, pac_categoria', 'numerical', 'integerOnly'=>true),
 			array('pac_nombre, pac_aPaterno, pac_aMaterno', 'length', 'max'=>45),
 			array('pac_rut', 'length', 'max'=>12),
 			array('pac_esp_correl, pac_sal_correl', 'length', 'max'=>10),
 			array('pac_codigo', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('pac_correl, pac_nombre, pac_aPaterno, pac_aMaterno, pac_estado, pac_puntaje, pac_rut, pac_esp_correl, pac_codigo, pac_sal_correl', 'safe', 'on'=>'search'),
+			array('pac_correl, pac_nombre, pac_aPaterno, pac_aMaterno, pac_estado, pac_categoria, pac_rut, pac_esp_correl, pac_codigo, pac_sal_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -77,7 +77,7 @@ class Paciente extends CActiveRecord
 			'pac_aPaterno' => 'Apellido Paterno',
 			'pac_aMaterno' => 'Apellido Materno',
 			'pac_estado' => 'Estado',
-			'pac_puntaje' => 'Puntaje',
+			'pac_categoria' => 'Categoria',
 			'pac_rut' => 'Rut',
 			'pac_esp_correl' => 'Especialidad',
 			'pac_sal_correl' => 'Sala',
@@ -108,7 +108,7 @@ class Paciente extends CActiveRecord
 		$criteria->compare('pac_aPaterno',$this->pac_aPaterno,true);
 		$criteria->compare('pac_aMaterno',$this->pac_aMaterno,true);
 		$criteria->compare('pac_estado',$this->pac_estado);
-		$criteria->compare('pac_puntaje',$this->pac_puntaje);
+		$criteria->compare('pac_categoria',$this->pac_categoria);
 		$criteria->compare('pac_rut',$this->pac_rut,true);
 		$criteria->compare('pac_esp_correl',$this->pac_esp_correl,true);
 		$criteria->compare('pac_codigo',$this->pac_codigo,true);

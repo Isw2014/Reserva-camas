@@ -30,10 +30,13 @@ $this->menu=array(
 			'columns'=>array(
         		//'ant_correl',
 				'ant_fecha',
-				'ant_puntaje',
+				'ant_dependencia',
+				'ant_riesgo',
+				'ant_categoria',
 				//'ant_pac_correl',
 				array(
 						'class'=>'CButtonColumn',
+						'template' => '{view}{update}{delete}',
 				),
 			),
         )); ?>

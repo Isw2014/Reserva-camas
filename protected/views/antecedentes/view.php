@@ -30,7 +30,9 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'ant_fecha',
-		'ant_puntaje',
+		'ant_dependencia',
+        'ant_riesgo',
+        'ant_categoria',
 		array('name'=>'Paciente',
 		'value'=>Paciente::model()->findByPk($model->ant_pac_correl)->pac_nombre." ".Paciente::model()->findByPk($model->ant_pac_correl)->pac_aPaterno,
 			),
@@ -39,8 +41,6 @@ $this->menu=array(
 
 <?php
 $array =ItemsHasAntecedentes::model()->findAllByAttributes(array('ant_ant_correl'=>$model->ant_correl));
-if(ItemsHasAntecedentes::model()->findByAttributes(array('ant_ant_correl'=>$model->ant_correl)))
-	echo BsHtml::pageHeader(' ','Evaluación ');
 ?>
 
 <table class="table table-striped table-condensed table-bordered">

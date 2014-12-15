@@ -10,12 +10,12 @@ $pdf = Yii::createComponent('application.extensions.MPDF57.mpdf');
 
 $html='
 <link rel="stylesheet" type="text/css" href="'.Yii::app()->request->baseUrl.'/css/pdf.css" />
-
+<link rel="stylesheet" type="text/css" href="'.Yii::app()->request->baseUrl.'/css/bootstrap.css" />
 <body>
   <h1><P ALIGN=center>Informe de Pacientes</h1>';
 $html.='
 
- <table class="detail-view2" repeat_header="1" cellpadding="1" cellspacing="1" width="100%" border="0">
+ <table class="table table-striped table-condensed table-bordered">
       <thead>
         <tr>
           <th>N° Pacientes</th>
@@ -41,9 +41,9 @@ $html.='
         </tr>
       </tbody>
     </table>
+    <div> '.BsHtml::pageHeader('Detalle','Antecedentes').'</div>
 </body>
 ';
-
 
 $mpdf=new mPDF('win-1252','LETTER','','',15,15,25,12,5,7);
 $mpdf->WriteHTML($stylesheet,1);

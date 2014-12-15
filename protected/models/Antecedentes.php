@@ -32,11 +32,11 @@ class Antecedentes extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('ant_fecha, ant_pac_correl', 'required'),
-			array('ant_puntaje', 'numerical', 'integerOnly'=>true),
+			array('ant_dependencia', 'numerical', 'integerOnly'=>true),
 			array('ant_pac_correl', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ant_correl, ant_puntaje, ant_fecha, ant_pac_correl', 'safe', 'on'=>'search'),
+			array('ant_correl, ant_dependencia,ant_riesgo,ant_categoria, ant_fecha, ant_pac_correl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,7 +60,9 @@ class Antecedentes extends CActiveRecord
 	{
 		return array(
 			'ant_correl' => 'Codigo',
-			'ant_puntaje' => 'Puntaje',
+			'ant_dependencia' => 'Puntaje Dependencia',
+			'ant_riesgo' => 'Puntaje Riesgo',
+			'ant_categoria' => 'Categoria',
 			'ant_fecha' => 'Fecha',
 			'ant_pac_correl' => 'Paciente',
 		);
@@ -85,7 +87,9 @@ class Antecedentes extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ant_correl',$this->ant_correl,true);
-		$criteria->compare('ant_puntaje',$this->ant_puntaje);
+		$criteria->compare('ant_dependencia',$this->ant_dependencia);
+		$criteria->compare('ant_riesgo',$this->ant_riesgo);
+		$criteria->compare('ant_categoria',$this->ant_categoria);
 		$criteria->compare('ant_fecha',$this->ant_fecha,true);
 		$criteria->compare('ant_pac_correl',$this->ant_pac_correl,true);
 

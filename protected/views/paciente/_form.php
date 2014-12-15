@@ -24,7 +24,6 @@
         '1' => 'Estable', '2' => 'Grave','3' => 'Saludable','4' =>'Muerto'
         ), array('empty' => 'Seleccione Estado' ));  ?>
         
-    <?php echo $form->textFieldControlGroup($model,'pac_puntaje'); ?>
     <?php echo $form->textFieldControlGroup($model,'pac_rut',array('disabled' => true)); ?>
 
     <?php echo $form->dropDownListControlGroup($model,'pac_esp_correl', array(

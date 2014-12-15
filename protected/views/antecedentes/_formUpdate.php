@@ -18,14 +18,40 @@ $modelo= new items();
 
 <table class="table table-striped table-condensed table-bordered">
         <tbody>
+        <div>
             <td><?php echo "fecha";?></td>
             <td><?php echo $form->dateField($model,'ant_fecha');?></td>
+        </div>
+      </tbody>
+    </table>
+
+<table class="table table-striped table-condensed table-bordered">
+        <tbody>
 <?php 
+echo BsHtml::pageHeader('','Categorización por Dependencias');
 foreach ($array as $key) :?>
         <tr>
-            <td><?php echo items::model()->findByPk($key->ite_ite_correl)->ite_nombre; ?></td>
-            <!--Despliega un formulario para cada id de la tabla ITEM-->
-            <td><input type="number" class="form-control" name="Grupo[<?php echo $key->ite_ite_correl?>]" value=<?php echo $key->ant_ite_puntaje?> </td>
+            <?php if((Items::model()->findByPk($key->ite_ite_correl)->ite_tipo)=="Dependencia"): ?>
+                <td><?php echo items::model()->findByPk($key->ite_ite_correl)->ite_nombre; ?></td>
+                <!--Despliega un formulario para cada id de la tabla ITEM-->
+                <td><input type="number" class="form-control" name="Grupo[<?php echo $key->ite_ite_correl?>]"value="<?php echo $key->ant_ite_puntaje ?>"</td>
+            <?php endif; ?>
+        </tr>
+<?php endforeach; ?>
+      </tbody>
+    </table>
+
+    <table class="table table-striped table-condensed table-bordered">
+        <tbody>
+<?php 
+echo BsHtml::pageHeader('','Categorización por Riesgos');
+foreach ($array as $key) :?>
+        <tr>
+            <?php if((Items::model()->findByPk($key->ite_ite_correl)->ite_tipo)=="Riesgo"): ?>
+                <td><?php echo items::model()->findByPk($key->ite_ite_correl)->ite_nombre; ?></td>
+                <!--Despliega un formulario para cada id de la tabla ITEM-->
+                <td><input type="number" class="form-control" name="Grupo[<?php echo $key->ite_ite_correl?>]"value="<?php echo $key->ant_ite_puntaje ?>"</td>
+            <?php endif; ?>
         </tr>
 <?php endforeach; ?>
       </tbody>

@@ -85,15 +85,19 @@ class AntecedentesController extends Controller
 					$modelo->ant_ant_correl=$model->ant_correl;
 					$modelo->ite_ite_correl=$key->ite_correl;
 					$modelo->ant_ite_puntaje=($_POST['Grupo'][$key->ite_correl]);
-					if($modelo->save())
-						$model->ant_puntaje=$model->ant_puntaje+ $modelo->ant_ite_puntaje;
+					if($modelo->save()){
+						if($key->ite_tipo=="Dependencia")
+							$model->ant_dependencia=$model->ant_dependencia+ $modelo->ant_ite_puntaje;
+						if($key->ite_tipo=="Riesgo")
+							$model->ant_riesgo=$model->ant_riesgo+ $modelo->ant_ite_puntaje;
+					}
 				}
 			}
 			$vaq->ant_fecha=('0000-00-00');
 			$var=Antecedentes::model()->findAllByAttributes(array('ant_pac_correl' =>$id ));
 			foreach ($var as $key) {
-				if (($key->ant_fecha>$vaq->ant_fecha)&($key->ant_puntaje!=null)) {
-					$perso->pac_puntaje=$key->ant_puntaje;
+				if (($key->ant_fecha>$vaq->ant_fecha)&($key->ant_categoria!=null)) {
+					$perso->pac_categoria=$key->ant_categoria;
 				}
 			}
 			//		echo $vaq->ant_puntaje;
@@ -126,22 +130,26 @@ class AntecedentesController extends Controller
 	*/
 	public function actionUpdate($id)
 	{
+
 		$model=$this->loadModel($id);
 		$array=ItemsHasAntecedentes::model()->findAllByAttributes(array('ant_ant_correl'=>$id));
 		if (isset($_POST['Grupo'])) {
-			$model->ant_puntaje=0;
-
+			$model->ant_dependencia=0;
+			$model->ant_riesgo=0;
 			foreach ($array as $key) {
 					$modelo=new ItemsHasAntecedentes;
 					$modelo->ant_ant_correl=$model->ant_correl;
 					$modelo->ite_ite_correl=$key->ite_ite_correl;
 					$modelo->ant_ite_puntaje=($_POST['Grupo'][$key->ite_ite_correl]);
+					$item=Items::model()->findByPk($key->ite_ite_correl);
 					$key->delete();
-					if($modelo->save())
-						$model->ant_puntaje=$model->ant_puntaje+ $modelo->ant_ite_puntaje;
+					if($modelo->save()){
+						if($item->ite_tipo=="Dependencia")
+							$model->ant_dependencia=$model->ant_dependencia+ $modelo->ant_ite_puntaje;
+						if($item->ite_tipo=="Riesgo")
+							$model->ant_riesgo=$model->ant_riesgo+ $modelo->ant_ite_puntaje;
+					}
 				}
-
-
 		}
 
 		// Uncomment the following line if AJAX validation is needed
