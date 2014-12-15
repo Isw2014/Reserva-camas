@@ -71,20 +71,14 @@ class AntecedentesController extends Controller
 			$model->ant_pac_correl=$id;
 			if(isset($_POST['Grupo'])){
 				$array=Items::model()->findAllByAttributes(array('ite_estado'=>"Activo"));
-				//echo($array[2]->ite_correl);
-
-				//var_dump($_POST['Grupo']);
-				//echo ($_POST['Grupo'][1]);
-
-				//var_dump($_POST['Antecedentes']);
-				//echo ($_POST['Antecedentes']['ant_fecha']);
-				
 				$model->save();
 				foreach ($array as $key) {
 					$modelo=new ItemsHasAntecedentes;
 					$modelo->ant_ant_correl=$model->ant_correl;
 					$modelo->ite_ite_correl=$key->ite_correl;
 					$modelo->ant_ite_puntaje=($_POST['Grupo'][$key->ite_correl]);
+					if ($modelo->ant_ite_puntaje==null)
+						$modelo->ant_ite_puntaje=0;
 					if($modelo->save()){
 						if($key->ite_tipo=="Dependencia")
 							$model->ant_dependencia=$model->ant_dependencia+ $modelo->ant_ite_puntaje;
@@ -92,6 +86,7 @@ class AntecedentesController extends Controller
 							$model->ant_riesgo=$model->ant_riesgo+ $modelo->ant_ite_puntaje;
 					}
 				}
+				$model->ant_categoria=$this->calculaRiesgo($model->ant_riesgo)[1].$this->calculaDependencia($model->ant_dependencia)[1];
 			}
 			$vaq->ant_fecha=('0000-00-00');
 			$var=Antecedentes::model()->findAllByAttributes(array('ant_pac_correl' =>$id ));
@@ -100,10 +95,6 @@ class AntecedentesController extends Controller
 					$perso->pac_categoria=$key->ant_categoria;
 				}
 			}
-			//		echo $vaq->ant_puntaje;
-			//$perso->pac_puntaje=$vaq->ant_puntaje;
-			//$__set($perso->pac_puntaje,$vaq->ant_puntaje);
-			
 			if ($perso->save()) {
 
 				var_dump($perso);
@@ -130,8 +121,8 @@ class AntecedentesController extends Controller
 	*/
 	public function actionUpdate($id)
 	{
-
 		$model=$this->loadModel($id);
+		$paciente=Paciente::model()->findByPk($model->ant_pac_correl);
 		$array=ItemsHasAntecedentes::model()->findAllByAttributes(array('ant_ant_correl'=>$id));
 		if (isset($_POST['Grupo'])) {
 			$model->ant_dependencia=0;
@@ -141,6 +132,8 @@ class AntecedentesController extends Controller
 					$modelo->ant_ant_correl=$model->ant_correl;
 					$modelo->ite_ite_correl=$key->ite_ite_correl;
 					$modelo->ant_ite_puntaje=($_POST['Grupo'][$key->ite_ite_correl]);
+					if ($modelo->ant_ite_puntaje==null)
+						$modelo->ant_ite_puntaje=0;
 					$item=Items::model()->findByPk($key->ite_ite_correl);
 					$key->delete();
 					if($modelo->save()){
@@ -150,6 +143,9 @@ class AntecedentesController extends Controller
 							$model->ant_riesgo=$model->ant_riesgo+ $modelo->ant_ite_puntaje;
 					}
 				}
+			$model->ant_categoria=$this->calculaRiesgo($model->ant_riesgo)[1].$this->calculaDependencia($model->ant_dependencia)[1];
+			$paciente->pac_categoria=$model->ant_categoria;
+			$paciente->save();
 		}
 
 		// Uncomment the following line if AJAX validation is needed
@@ -193,6 +189,49 @@ class AntecedentesController extends Controller
 			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
 	}
 
+	public function calculaDependencia($id)
+	{
+		$calculo=array();
+		if($id<=6){
+			$calculo[0]="Autosuficiencia Parcial";
+			$calculo[1]=3;
+		}
+		if($id>6 & $id<13){
+			$calculo[0]="Dependencia Parcial";
+			$calculo[1]=2;
+		}
+		if($id>12){
+			$calculo[0]="Dependencia Total";
+			$calculo[1]=1;
+		}
+		if($id==null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $calculo;
+	}
+
+	public function calculaRiesgo($id)
+	{
+		$calculo=array();
+		if($id<=5){
+			$calculo[0]="Bajo Riesgo";
+			$calculo[1]="D";
+		}
+		if($id>5 & $id<12){
+			$calculo[0]="Mediano Riesgo";
+			$calculo[1]="C";
+		}
+		if($id>11 & $id<19){
+			$calculo[0]="Alto Riesgo";
+			$calculo[1]="B";
+		}
+		if($id>18){
+			$calculo[0]="Maximo Riesgo";
+			$calculo[1]="A";
+		}
+		if($id==null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $calculo;
+	}
 	/**
 	* Lists all models.
 	*/
