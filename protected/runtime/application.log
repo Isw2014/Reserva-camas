@@ -20358,3 +20358,1312 @@ itemName:action_paciente_admin
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:36:01 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:36:02 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:36:04 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_view
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:36:07 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:38:19 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:38:21 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:38:27 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:38:31 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:43:26 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:43:38 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:43:38 [error] [php] Array to string conversion (C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php:152)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#1 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (152)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 14:43:56 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:43:57 [error] [php] Object of class PacienteController could not be converted to string (C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php:152)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#1 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (152)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 14:44:21 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:44:51 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:44:51 [error] [php] getdate() expects parameter 1 to be long, string given (C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php:152)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (152)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 14:44:57 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:45:30 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:46:28 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:46:41 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:47:54 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:48:46 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:48:47 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:48:48 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:48:49 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:48:50 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:49:17 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:49:29 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:50:55 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:50:57 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:50:58 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:50:59 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:51:00 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:51:01 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:51:25 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:52:06 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:52:37 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:52:37 [error] [php] Undefined offset: -1 (C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php:153)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#1 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (153)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 14:52:39 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:52:52 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:52:54 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:52:54 [error] [php] Undefined offset: 6 (C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php:153)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#1 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (153)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 14:53:02 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:53:02 [error] [php] Undefined offset: 5 (C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php:153)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#1 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (153)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 14:53:04 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:53:04 [error] [php] Undefined offset: 5 (C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php:153)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#1 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (153)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 14:53:10 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:54:05 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:54:05 [error] [php] getdate() expects parameter 1 to be long, string given (C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php:152)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (152)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 14:55:39 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:55:39 [error] [php] getdate() expects parameter 1 to be long, string given (C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php:152)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (152)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 14:56:05 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:56:05 [error] [php] Use of undefined constant Y - assumed 'Y' (C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php:152)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#1 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (152)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 14:56:38 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:57:05 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:57:19 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 14:57:32 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 15:20:47 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 15:21:48 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 15:23:38 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 15:24:02 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 15:24:21 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 15:24:44 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 15:24:56 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_site_login
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 15:24:59 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_site_login
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 15:36:50 [error] [exception.CDbException] exception 'CDbException' with message 'Tabla "paciente" no contiene la columna con nombre "pac_estado".' in C:\xampp\htdocs\Yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(1535): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php(3): CActiveRecord->findAllByAttributes(Array)
+#2 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(782): CController->renderPartial('pdf', NULL, true)
+#6 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): CController->render('pdf')
+#7 [internal function]: PacienteController->actionPdf(NULL)
+#8 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PacienteController), Array)
+#9 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PacienteController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#13 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#14 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('pdf')
+#18 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('paciente/pdf')
+#19 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/paciente/admin
+---
+2014/12/15 16:00:11 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:00:11 [error] [php] Use of undefined constant String - assumed 'String' (C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php:6)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): PacienteController->render()
+#3 unknown(0): PacienteController->actionPdf()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php (6)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (196)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:00:34 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:00:44 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:00:51 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:01:00 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:01:00 [error] [php] Use of undefined constant Int - assumed 'Int' (C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php:6)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): PacienteController->render()
+#3 unknown(0): PacienteController->actionPdf()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php (6)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (196)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:01:10 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:01:26 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:01:57 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:01:58 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:01:59 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:03:00 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:04:07 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:04:16 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:04:50 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:05:16 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:05:18 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:08:03 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:08:03 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Yii\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridColumn.php(151): BsDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridView.php(616): BsDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridView.php(572): BsGridView->renderTableRow()
+#3 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridView.php(482): BsGridView->renderTableBody()
+#4 C:\xampp\htdocs\Yii\framework\zii\widgets\CBaseListView.php(167): BsGridView->renderItems()
+#5 unknown(0): BsGridView->renderSection()
+#6 C:\xampp\htdocs\Yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 C:\xampp\htdocs\Yii\framework\zii\widgets\CBaseListView.php(135): BsGridView->renderContent()
+#8 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(173): BsGridView->run()
+#9 C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\admin.php(48): PacienteController->widget()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): PacienteController->renderInternal()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#14 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(162): PacienteController->render()
+#15 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): PacienteController->actionAdmin()
+#16 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#18 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#19 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#20 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#21 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#23 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#24 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#25 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\admin.php (48)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (162)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:08:05 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_antecedentes_view
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:08:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\AntecedentesController.php:274
+Stack trace:
+#0 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\AntecedentesController.php(52): AntecedentesController->loadModel('82')
+#1 [internal function]: AntecedentesController->actionView('82')
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AntecedentesController), Array)
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AntecedentesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('antecedentes/vi...')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/antecedentes/82
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/antecedentes/update/82
+---
+2014/12/15 16:08:08 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_especialidad_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:08:11 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_especialidad_create
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:08:28 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_especialidad_create
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:08:28 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_especialidad_view
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:08:39 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Yii\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridColumn.php(151): BsDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridView.php(616): BsDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridView.php(572): BsGridView->renderTableRow()
+#3 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridView.php(482): BsGridView->renderTableBody()
+#4 C:\xampp\htdocs\Yii\framework\zii\widgets\CBaseListView.php(167): BsGridView->renderItems()
+#5 unknown(0): BsGridView->renderSection()
+#6 C:\xampp\htdocs\Yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 C:\xampp\htdocs\Yii\framework\zii\widgets\CBaseListView.php(135): BsGridView->renderContent()
+#8 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(173): BsGridView->run()
+#9 C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\admin.php(48): PacienteController->widget()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): PacienteController->renderInternal()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#14 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(162): PacienteController->render()
+#15 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): PacienteController->actionAdmin()
+#16 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#18 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#19 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#20 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#21 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#23 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#24 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#25 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/admin
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\admin.php (48)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (162)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:19:41 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): PacienteController->render()
+#3 unknown(0): PacienteController->actionPdf()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php (17)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (196)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:20:06 [error] [php] Illegal string offset 'id' (C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): PacienteController->render()
+#3 unknown(0): PacienteController->actionPdf()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php (17)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (196)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:20:27 [error] [php] Undefined variable: id (C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): PacienteController->render()
+#3 unknown(0): PacienteController->actionPdf()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php (17)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (196)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:24:52 [error] [php] Undefined variable: id (C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): PacienteController->render()
+#3 unknown(0): PacienteController->actionPdf()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php (17)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (196)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:25:03 [error] [php] Undefined offset: 2 (C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): PacienteController->render()
+#3 unknown(0): PacienteController->actionPdf()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php (17)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (196)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:25:22 [error] [php] Array to string conversion (C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): PacienteController->render()
+#3 unknown(0): PacienteController->actionPdf()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php (16)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (196)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:25:33 [error] [php] Array to string conversion (C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): PacienteController->render()
+#3 unknown(0): PacienteController->actionPdf()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php (16)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (196)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:25:34 [error] [php] Array to string conversion (C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): PacienteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): PacienteController->renderPartial()
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): PacienteController->render()
+#3 unknown(0): PacienteController->actionPdf()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): PacienteController->runAction()
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): PacienteController->runActionWithFilters()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): PacienteController->run()
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php (16)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php (196)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+2014/12/15 16:33:20 [error] [exception.CException] exception 'CException' with message 'La propiedad "Especialidad"."id" no se encuentra definida.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\xampp\htdocs\Yii\framework\base\CModel.php(596): CActiveRecord->__get('id')
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\views\paciente\pdf.php(37): CModel->offsetGet('id')
+#3 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(782): CController->renderPartial('pdf', NULL, true)
+#7 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\PacienteController.php(196): CController->render('pdf')
+#8 [internal function]: PacienteController->actionPdf(NULL)
+#9 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PacienteController), Array)
+#10 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PacienteController), Object(ReflectionMethod), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#14 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#15 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('pdf')
+#19 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('paciente/pdf')
+#20 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/paciente/pdf
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/paciente/admin
+---
+2014/12/15 16:38:39 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_pdf
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 16:38:42 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 17:09:06 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_sala_update
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 17:09:37 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_sala_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 17:09:39 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_sala_create
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 17:11:25 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_cama_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 17:12:06 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_cama_create
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 17:12:28 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_cama_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 17:12:31 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_cama_view
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)

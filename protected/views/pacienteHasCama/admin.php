@@ -2,9 +2,9 @@
 /* @var $this PacienteHasCamaController */
 /* @var $model PacienteHasCama */
 
-$modelo= new paciente;
+$modelo= new Paciente;
 $modelo->pac_correl=$_GET['id'];
-$modelo=paciente::model()->findByPk($modelo->pac_correl);
+$modelo=Paciente::model()->findByPk($modelo->pac_correl);
 
 
 $this->breadcrumbs=array(

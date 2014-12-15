@@ -1,10 +1,10 @@
 <?php
 /* @var $this AntecedentesController */
 /* @var $model Antecedentes */
-$modelo= new paciente;
+$modelo= new Paciente;
 $model->ant_correl=$_GET['id'];
 $model=Antecedentes::model()->findByPk($model->ant_correl);
-$modelo=paciente::model()->findByPk($model->ant_pac_correl);
+$modelo=Paciente::model()->findByPk($model->ant_pac_correl);
 
 ?>
 

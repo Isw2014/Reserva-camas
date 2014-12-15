@@ -29,10 +29,10 @@ $this->menu=array(
 		'pac_nombre',
 		'pac_aPaterno',
 		'pac_aMaterno',
-		'pac_categoria',
+		//'pac_categoria',
 		'pac_rut',
 		array('name'=>'Especialidad',
-		'value'=>especialidad::model()->findByPk($model->pac_esp_correl)->esp_nombre,
+		'value'=>Especialidad::model()->findByPk($model->pac_esp_correl)->esp_nombre,
 			),
 	),
 )); ?>

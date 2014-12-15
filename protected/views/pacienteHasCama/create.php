@@ -14,7 +14,7 @@ $this->menu=array(
 );
 ?>
 
-<?php echo BsHtml::pageHeader('Editar','Hospitalización') ?>
+<?php echo BsHtml::pageHeader('Agregar','Hospitalización') ?>
 
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

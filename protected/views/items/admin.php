@@ -24,6 +24,7 @@ $this->menu=array(
 		//'ite_correl',
 		'ite_nombre',
 		'ite_estado',
+		'ite_tipo',
 		array(
 			'class'=>'CButtonColumn',
 			'template' => '{view}{update}',

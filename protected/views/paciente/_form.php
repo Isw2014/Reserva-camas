@@ -22,7 +22,7 @@
     <?php echo $form->textFieldControlGroup($model,'pac_aMaterno',array('disabled' => true)); ?>
     <?php echo $form->textFieldControlGroup($model,'pac_rut',array('disabled' => true)); ?>
     <?php echo $form->dropDownListControlGroup($model,'pac_esp_correl', array(
-        CHtml::listData(especialidad::model()->findAll(),'esp_correl','esp_nombre'),
+        CHtml::listData(Especialidad::model()->findAll(),'esp_correl','esp_nombre'),
         ), array('empty' => '(Seleccione Especialidad)',
         ));
     ?>

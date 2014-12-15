@@ -142,20 +142,21 @@ class PacienteController extends Controller
 	{
 		$pac=Paciente::model()->findAll();
 		$model=new Paciente('search');
-		$model->unsetAttributes();  // clear any default values
+		$model->unsetAttributes();
+
+		  // clear any default values
 		if(isset($_GET['Paciente']))
 			$model->attributes=$_GET['Paciente'];
-		foreach ($pac as $key) {
+		/*foreach ($pac as $key) {
 			if(Antecedentes::model()->findByAttributes(array('ant_pac_correl'=>$key->pac_correl))!=null) {
 				$ant=Antecedentes::model()->findByAttributes(array('ant_pac_correl'=>$key->pac_correl));
 				if ($ant->ant_categoria!=null) {
-					$key->pac_categoria=$ant->ant_categoria;
-					$key->save();
+					$paciente=Paciente::model()->findByPk($key->pac_correl);
+					$paciente->pac_categoria=$ant->ant_categoria;
+					$paciente->save();
 				}
 			}
-			
-		}
-
+		}*/
 		$this->render('admin',array(
 			'model'=>$model,
 		));

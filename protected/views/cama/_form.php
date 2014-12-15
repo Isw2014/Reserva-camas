@@ -24,7 +24,7 @@
         ));     ?>
 
     <?php echo $form->dropDownListControlGroup($model, 'cam_sal_correl', array(
-        CHtml::listData(sala::model()->findAll(),'sal_correl','sal_numero'),
+        CHtml::listData(Sala::model()->findAll(),'sal_correl','sal_numero'),
         ), array('empty' => '(Seleccione Sala)',
         ));
     ?>

@@ -2,7 +2,7 @@
 /* @var $this AntecedentesController */
 /* @var $model Antecedentes */
 /* @var $form BSActiveForm */
-$modelo= new items();
+$modelo= new Items();
 ?>
 <?php $form=$this->beginWidget('bootstrap.widgets.BsActiveForm', array(
     'id'=>'antecedentes-form',

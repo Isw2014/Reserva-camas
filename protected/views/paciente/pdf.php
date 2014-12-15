@@ -1,9 +1,20 @@
 
 
-<?php $array=Paciente::model()->findAllByAttributes(array('pac_estado' => "Estable"));
-      $array2=Paciente::model()->findAllByAttributes(array('pac_estado' => "Grave"));
-      $array3=Paciente::model()->findAllByAttributes(array('pac_estado' => "Saludable"));
-      $array4=Paciente::model()->findAllByAttributes(array('pac_estado' => "Muerto"));
+<?php 
+      $pacientes=Paciente::model()->findAll();
+      $espe=Especialidad::model()->findAll();
+      $array=array('id' ,'value');
+      $i=0;
+      foreach ($espe as $key) {
+      $t=0;
+        foreach($pacientes as $koi){
+          if($koi->pac_esp_correl==$key->esp_correl){
+            $t=$t+1;
+          }
+        }
+        $array[$i]= array('id' => $key->esp_nombre,'value'=>$t);
+        $i=$i+1;
+      }
       ?>
 <?php
 $pdf = Yii::createComponent('application.extensions.MPDF57.mpdf');
@@ -18,25 +29,13 @@ $html.='
       <thead>
         <tr>
           <th>N° Pacientes</th>
-          <th>Estado</th>
+          <th>Especialidad</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td align="center">'.count ($array).'</td>
-          <td align="center"><P ALIGN=center>Estables</td>
-        </tr>
-        <tr>
-          <td align="center">'.count ($array2).'</td>
-          <td align="center">Graves</td>
-        </tr>
-        <tr>
-          <td align="center">'.count ($array3).'</td>
-          <td align="center">Saludables</td>
-        </tr>
-        <tr>
-          <td align="center">'.count ($array4).'</td>
-          <td align="center">Muertos</td>
+          <td align="center">'.$array[0]['id'].'</td>
+          <td align="center"><P ALIGN=center>'.$array[0]['value'].'</td>
         </tr>
       </tbody>
     </table>
