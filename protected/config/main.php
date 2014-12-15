@@ -58,12 +58,12 @@ return array(
 				'baseUrl'=>'http://coco.com/',
 
 				 // NO OLVIDES PONER EN FALSE TRAS INSTALAR
-				 'debug'=>true,
-				 'rbacSetupEnabled'=>true,
-				 'allowUserAlways'=>true,
+				 'debug'=>false,
+				 'rbacSetupEnabled'=>false,
+				 'allowUserAlways'=>false,
 
 				'afterLoginUrl'=>array('/site/index'), 
-				'afterLogoutUrl'=>array('/site/page','view'=>'about'),
+				//'afterLogoutUrl'=>array('/site/page','view'=>'about'),
 				'afterSessionExpiredUrl'=>null,
 				'userFilter' => 'application.components.MiFiltroUsuario',
 
