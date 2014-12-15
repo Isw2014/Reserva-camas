@@ -18,10 +18,18 @@ $modelo= new items();
 
 <table class="table table-striped table-condensed table-bordered">
         <tbody>
+        <div>
             <td><?php echo "fecha";?></td>
             <td><?php echo $form->dateField($model,'ant_fecha');?></td>
+        </div>
+      </tbody>
+    </table>
+<table class="table table-striped table-condensed table-bordered">
+        <tbody>
+<div>
 <?php 
-$array=Items::model()->findAllByAttributes(array('ite_estado'=>"Activo"));
+$array=Items::model()->findAllByAttributes(array('ite_estado'=>"Activo",'ite_tipo'=>"Dependencia"));
+echo BsHtml::pageHeader('','Categorización por Dependencias');
 foreach ($array as $key) :?>
         <tr>
             <td><?php echo $key->ite_nombre; ?></td>
@@ -29,7 +37,24 @@ foreach ($array as $key) :?>
             <td><input type="number" class="form-control" name="Grupo[<?php echo  $key->ite_correl?>]"</td>
         </tr>
 <?php endforeach; ?>
+</div>
       </tbody>
+    </table>
+<table class="table table-striped table-condensed table-bordered">
+        <tbody>
+            <div>
+                <?php
+                $array=Items::model()->findAllByAttributes(array('ite_estado'=>"Activo",'ite_tipo'=>"Riesgo"));
+                echo BsHtml::pageHeader('','Categorización por Riesgos');
+                foreach ($array as $key) :?>
+                    <tr>
+                    <td><?php echo $key->ite_nombre; ?></td>
+                    <!--Despliega un formulario para cada id de la tabla ITEM-->
+                    <td><input type="number" class="form-control" name="Grupo[<?php echo  $key->ite_correl?>]"</td>
+                </tr>
+                <?php endforeach; ?>
+            </div>
+        </tbody>
     </table>
 
     <!--Boton de Submit-->

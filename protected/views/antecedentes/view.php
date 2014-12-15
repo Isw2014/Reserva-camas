@@ -1,10 +1,10 @@
 <?php
 /* @var $this AntecedentesController */
 /* @var $model Antecedentes */
-$modelo= new paciente;
+$modelo= new Paciente;
 $model->ant_correl=$_GET['id'];
 $model=Antecedentes::model()->findByPk($model->ant_correl);
-$modelo=paciente::model()->findByPk($model->ant_pac_correl);
+$modelo=Paciente::model()->findByPk($model->ant_pac_correl);
 ?>
 <?php
 $this->breadcrumbs=array(
@@ -32,25 +32,50 @@ $this->menu=array(
 		'ant_fecha',
 		'ant_puntaje',
 		array('name'=>'Paciente',
-		'value'=>paciente::model()->findByPk($model->ant_pac_correl)->pac_nombre." ".paciente::model()->findByPk($model->ant_pac_correl)->pac_aPaterno,
+		'value'=>Paciente::model()->findByPk($model->ant_pac_correl)->pac_nombre." ".Paciente::model()->findByPk($model->ant_pac_correl)->pac_aPaterno,
 			),
 	),
 )); ?>
 
 <?php
-$array =itemsHasAntecedentes::model()->findAllByAttributes(array('ant_ant_correl'=>$model->ant_correl));
-if(itemsHasAntecedentes::model()->findByAttributes(array('ant_ant_correl'=>$model->ant_correl)))
+$array =ItemsHasAntecedentes::model()->findAllByAttributes(array('ant_ant_correl'=>$model->ant_correl));
+if(ItemsHasAntecedentes::model()->findByAttributes(array('ant_ant_correl'=>$model->ant_correl)))
 	echo BsHtml::pageHeader(' ','Evaluación ');
 ?>
 
 <table class="table table-striped table-condensed table-bordered">
       <tbody>
 <?php 
+echo BsHtml::pageHeader(' ','Categorización por Dependencia ');
+$ite= new Items;
 foreach ($array as $key) :?>
         <tr>
-          <td><b><?php echo items::model()->findByPk($key->ite_ite_correl)->ite_nombre ?></td>
-          <!--Despliega un formulario para cada id de la tabla ITEM-->
-          <td><?php echo $key->ant_ite_puntaje ?></td></b>
+        	<?php 
+        	if ((Items::model()->findByPk($key->ite_ite_correl)->ite_tipo)=="Dependencia"){
+        		$ite= Items::model()->findByPk($key->ite_ite_correl);
+        		echo "<td> $ite->ite_nombre </td>";	
+        		echo "<td>$key->ant_ite_puntaje</td>";
+        	}
+        	?>
+        </tr>
+<?php endforeach; ?>
+      </tbody>
+    </table>
+
+    <table class="table table-striped table-condensed table-bordered">
+      <tbody>
+<?php 
+echo BsHtml::pageHeader(' ','Categorización por Riesgos ');
+$ite= new Items;
+foreach ($array as $key) :?>
+        <tr>
+        	<?php 
+        	if ((Items::model()->findByPk($key->ite_ite_correl)->ite_tipo)=="Riesgo"){
+        		$ite= Items::model()->findByPk($key->ite_ite_correl);
+        		echo "<td> $ite->ite_nombre </td>";	
+        		echo "<td>$key->ant_ite_puntaje</td>";
+        	}
+        	?>
         </tr>
 <?php endforeach; ?>
       </tbody>
