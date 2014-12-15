@@ -20304,3 +20304,57 @@ itemName:action_paciente_admin
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 01:27:46 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`mydb`.`paciente`, CONSTRAINT `fk_paciente_especialidad1` FOREIGN KEY (`pac_esp_correl`) REFERENCES `especialidad` (`esp_correl`) ON DELETE NO ACTION ON UPDATE NO ACTION). La sentencia SQL ejecutada fue: DELETE FROM `especialidad` WHERE `especialidad`.`esp_correl`='1'.
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\EspecialidadController.php (113)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (90)
+in C:\xampp\htdocs\Yii\Isw 2014-2\index.php (13)
+2014/12/15 01:27:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`mydb`.`paciente`, CONSTRAINT `fk_paciente_especialidad1` FOREIGN KEY (`pac_esp_correl`) REFERENCES `especialidad` (`esp_correl`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: DELETE FROM `especialidad` WHERE `especialidad`.`esp_correl`='1'' in C:\xampp\htdocs\Yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(1802): CDbCommand->execute()
+#1 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(1222): CActiveRecord->deleteByPk('1')
+#2 C:\xampp\htdocs\Yii\Isw 2014-2\protected\controllers\EspecialidadController.php(113): CActiveRecord->delete()
+#3 [internal function]: EspecialidadController->actionDelete('1')
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(EspecialidadController), Array)
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EspecialidadController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php(90): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('especialidad/de...')
+#15 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Yii\Isw 2014-2\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/Isw%202014-2/index.php/especialidad/delete/1?ajax=antecedentes-grid
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/Especialidad/admin
+---
+2014/12/15 01:50:04 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_area_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 01:50:06 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 02:06:06 [rbac] [application] PERMISSION IS REQUIRED:
+invitado
+iduser=2
+tipo:operacion
+itemName:action_paciente_admin
+
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
+in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)

@@ -21,6 +21,9 @@
     <?php echo $form->dropDownListControlGroup($model, 'ite_estado', array(
         '1' => 'Activo', '2' => 'Inactico'
         ), array('empty' => 'Seleccione Estado' ));  ?>
+    <?php echo $form->dropDownListControlGroup($model, 'ite_tipo', array(
+        '1' => 'Dependencia', '2' => 'Riesgo'
+        ), array('empty' => 'Seleccione Estado' ));  ?>
     <?php echo BsHtml::submitButton('Aceptar', array('color' => BsHtml::BUTTON_COLOR_PRIMARY)); ?>
 
 <?php $this->endWidget(); ?>

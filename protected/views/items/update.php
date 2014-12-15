@@ -11,9 +11,9 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('view','id'=>$model->ite_correl)),
 );
 ?>
 
-<?php echo BsHtml::pageHeader('Update','Items '.$model->ite_correl) ?>
+<?php echo BsHtml::pageHeader('Editar','Item '.$model->ite_nombre) ?>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

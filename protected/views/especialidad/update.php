@@ -11,7 +11,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('admin')),
+    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Cancelar', 'url'=>array('view','id'=>$model->esp_correl)),
 );
 ?>
 

@@ -65,7 +65,7 @@ foreach ($array as $key) :?>
     <table class="table table-striped table-condensed table-bordered">
       <tbody>
 <?php 
-echo BsHtml::pageHeader(' ','Categorización por Riesgos ');
+echo BsHtml::pageHeader('','Categorización por Riesgos ');
 $ite= new Items;
 foreach ($array as $key) :?>
         <tr>

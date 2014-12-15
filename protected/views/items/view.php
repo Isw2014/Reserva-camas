@@ -11,8 +11,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('icon' => 'glyphicon glyphicon-edit','label'=>'Editar Items', 'url'=>array('update', 'id'=>$model->ite_correl)),
-	array('icon' => 'glyphicon glyphicon-minus-sign','label'=>'Eliminar Items', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ite_correl),'confirm'=>'Are you sure you want to delete this item?')),
-    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 
@@ -27,5 +26,6 @@ $this->menu=array(
 		//'ite_correl',
 		'ite_nombre',
 		'ite_estado',
+		'ite_tipo',
 	),
 )); ?>

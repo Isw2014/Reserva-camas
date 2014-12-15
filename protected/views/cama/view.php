@@ -11,8 +11,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('icon' => 'glyphicon glyphicon-edit','label'=>'Editar Cama', 'url'=>array('update', 'id'=>$model->cam_correl)),
-	array('icon' => 'glyphicon glyphicon-minus-sign','label'=>'Eliminar Cama', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cam_correl),'confirm'=>'Are you sure you want to delete this item?')),
-    array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
+	array('icon' => 'glyphicon glyphicon-tasks','label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 

@@ -10,10 +10,6 @@ $this->menu=array(
 	array('icon' => 'glyphicon glyphicon-plus-sign','label'=>'Informes', 'url'=>array('pdf')),
 	);
 ?>
-
-
-
-
 <?php echo BsHtml::pageHeader('Administrar','Pacientes') ?>
 
 
@@ -41,7 +37,7 @@ $this->menu=array(
 		 	//),
 				array(
 				    'class'=>'CButtonColumn',
-                    'template' => '{view}{update}{pdf}',
+                    'template' => '{view}{update}',
                 	'buttons'=>array(
                         'pdf' => array(
                                 'label'=>'Generar PDF', 

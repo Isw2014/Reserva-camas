@@ -29,12 +29,12 @@ class Items extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ite_nombre, ite_estado', 'required'),
+			array('ite_nombre, ite_estado, ite_tipo', 'required'),
 			array('ite_estado', 'numerical', 'integerOnly'=>true),
 			array('ite_nombre', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ite_correl, ite_nombre, ite_estado', 'safe', 'on'=>'search'),
+			array('ite_correl, ite_nombre, ite_estado, ite_tipo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,6 +59,7 @@ class Items extends CActiveRecord
 			'ite_correl' => 'Codigo',
 			'ite_nombre' => 'Nombre',
 			'ite_estado' => 'Estado',
+			'ite_tipo' => 'Categorización',
 		);
 	}
 
