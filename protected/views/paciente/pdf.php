@@ -7,7 +7,6 @@
       ?>
 <?php
 $pdf = Yii::createComponent('application.extensions.MPDF57.mpdf');
-
 $html='
 <link rel="stylesheet" type="text/css" href="'.Yii::app()->request->baseUrl.'/css/pdf.css" />
 <link rel="stylesheet" type="text/css" href="'.Yii::app()->request->baseUrl.'/css/bootstrap.css" />
@@ -44,10 +43,11 @@ $html.='
     <div> '.BsHtml::pageHeader('Detalle','Antecedentes').'</div>
 </body>
 ';
-
+$header='<div><center><img src="'.Yii::app()->request->baseUrl.'/css/bg.GIF"/ height="145" width="100%"></center></div>';
 $mpdf=new mPDF('win-1252','LETTER','','',15,15,25,12,5,7);
 $mpdf->WriteHTML($stylesheet,1);
 $mpdf->WriteHTML($html);
+$mpdf->WriteHTML($header);
 
 $mpdf->Output('Pacientes'.'.pdf','I');
 exit;

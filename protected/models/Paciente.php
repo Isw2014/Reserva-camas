@@ -39,15 +39,14 @@ class Paciente extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('pac_estado,pac_sal_correl','required'),
-			array('pac_estado, pac_categoria', 'numerical', 'integerOnly'=>true),
+			array('pac_categoria', 'numerical', 'integerOnly'=>true),
 			array('pac_nombre, pac_aPaterno, pac_aMaterno', 'length', 'max'=>45),
 			array('pac_rut', 'length', 'max'=>12),
-			array('pac_esp_correl, pac_sal_correl', 'length', 'max'=>10),
+			array('pac_esp_correl', 'length', 'max'=>10),
 			array('pac_codigo', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('pac_correl, pac_nombre, pac_aPaterno, pac_aMaterno, pac_estado, pac_categoria, pac_rut, pac_esp_correl, pac_codigo, pac_sal_correl', 'safe', 'on'=>'search'),
+			array('pac_correl, pac_nombre, pac_aPaterno, pac_aMaterno,pac_categoria, pac_rut, pac_esp_correl, pac_codigo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,7 +61,6 @@ class Paciente extends CActiveRecord
 			'antecedentes' => array(self::HAS_MANY, 'Antecedentes', 'ant_pac_correl'),
 			'cama' => array(self::MANY_MANY, 'Cama', 'paciente_has_cama(pac_pac_correl, cam_cam_correl)'),
 			'pacEspCorrel' => array(self::BELONGS_TO, 'Especialidad', 'pac_esp_correl'),
-			'pacSalCorrel' => array(self::BELONGS_TO, 'Sala', 'pac_sal_correl'),
 		);
 	}
 
@@ -76,11 +74,9 @@ class Paciente extends CActiveRecord
 			'pac_nombre' => 'Nombre',
 			'pac_aPaterno' => 'Apellido Paterno',
 			'pac_aMaterno' => 'Apellido Materno',
-			'pac_estado' => 'Estado',
 			'pac_categoria' => 'Categoria',
 			'pac_rut' => 'Rut',
 			'pac_esp_correl' => 'Especialidad',
-			'pac_sal_correl' => 'Sala',
 			'pac_codigo' => 'Barra',
 		);
 	}
@@ -107,7 +103,6 @@ class Paciente extends CActiveRecord
 		$criteria->compare('pac_nombre',$this->pac_nombre,true);
 		$criteria->compare('pac_aPaterno',$this->pac_aPaterno,true);
 		$criteria->compare('pac_aMaterno',$this->pac_aMaterno,true);
-		$criteria->compare('pac_estado',$this->pac_estado);
 		$criteria->compare('pac_categoria',$this->pac_categoria);
 		$criteria->compare('pac_rut',$this->pac_rut,true);
 		$criteria->compare('pac_esp_correl',$this->pac_esp_correl,true);
