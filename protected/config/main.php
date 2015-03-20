@@ -79,7 +79,7 @@ return array(
 				// Estos tres atributos controlan la redirección del usuario. Solo serán son usados si no
 				// hay un filtro de sesion definido (el componente MiSesionCruge), es mejor usar un filtro.
 				//  lee en la wiki acerca de:
-                                //   "CONTROL AVANZADO DE SESIONES Y EVENTOS DE AUTENTICACION Y SESION"
+                                //s   "CONTROL AVANZADO DE SESIONES Y EVENTOS DE AUTENTICACION Y SESION"
                                 //
 				// ejemplo:
 				//		'afterLoginUrl'=>array('/site/welcome'),  ( !!! no olvidar el slash inicial / )

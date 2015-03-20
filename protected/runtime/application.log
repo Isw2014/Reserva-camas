@@ -21667,3 +21667,14 @@ itemName:action_cama_view
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeUi.php (441)
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeWebUser.php (149)
 in C:\xampp\htdocs\Yii\Isw 2014-2\protected\modules\Cruge\components\CrugeAccessControlFilter.php (73)
+2014/12/15 18:50:53 [error] [exception.CrugeException.401] action_site_page<br/>401
+REQUEST_URI=/yii/Isw%202014-2/index.php/site/page?view=about
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/site/index
+---
+2014/12/15 18:50:55 [error] [exception.CrugeException.401] action_cama_admin<br/>401
+REQUEST_URI=/yii/Isw%202014-2/index.php/cama/admin
+HTTP_REFERER=http://localhost:200/yii/Isw%202014-2/index.php/site/page?view=about
+---
+2014/12/15 20:50:53 [error] [exception.CrugeException.401] action_site_login<br/>401
+REQUEST_URI=/yii/Isw%202014-2/index.php/site/login
+---
